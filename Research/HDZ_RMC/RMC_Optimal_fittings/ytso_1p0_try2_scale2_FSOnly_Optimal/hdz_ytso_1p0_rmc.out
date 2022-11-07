@@ -1,0 +1,5579 @@
+ Use CPU version
+
+----------------------------------------------------------------------------
+
+            RMCProfile version 6.7.9.4 
+            ==========================
+
+Version type: Version with molecular constraints and EXAFS
+Version date: Mar-08-2022::01
+Release notes: Robust XRAY implementation; auto weights adjustment; topas profile for Bragg
+Using files: ytso_1p0
+
+----------------------------------------------------------------------------
+
+ THREADS_numbr =            4
+ THREADS_id =            0
+ THREADS_id =            2
+ THREADS_id =            1
+ THREADS_id =            3
+No XML/CML output requested
+Info> Read history file if present
+ Reading configuration file ytso_1p0.rmc6f
+Info> ntypes,ni: 3
+       16000       16000       56000
+Info> Elements in configuration:
+Yb
+Sn
+O 
+Info> ntypes,ni: 3
+       16000       16000       56000
+Info> Number of atom types = 3
+Info> Number of partials = 6
+ Message> Check the 'MINIMUM_DISTANCES' section
+ Message> in the '.dat' file if program stops here.
+ Message> Check the 'MAXIMUM_MOVES' section
+ Message> in the '.dat' file if program stops here.
+ Sorry, no GPU_ACCELERATOR line in file
+Material: Yb2Sn2O7
+Phase: Cubic
+Sample temperature: 300 K
+Investigator: Yuanpeng
+Info> d,d/dr,int(d/dr),nr:    51.503449999999994        5150.3449999999993             5150        5150
+Info> Numbers of data sets (ngr, nsq, nfq) = 1 1 0
+Status> Calculating partial weighting coefficients.
+Neutron r-space Info> Constant offset assumed to be zero.
+Neutron r-space Info> Constant factor assumed to be 1.
+Neutron r-space Info> Fitted renormalisation of neutron PDF data required
+Neutron r-space Info> Assuming no renormalisation of neutron PDF data required
+Neutron r-space Info> qdamp assumed to be zero for
+Neutron r-space Info> 'NEUTRON_REAL_SPACE_DATA' section-1.
+Neutron r-space Info> qbroad assumed to be zero for
+Neutron r-space Info> 'NEUTRON_REAL_SPACE_DATA' section-1.
+Neutron r-space Info> Finite q-range effect ignored for
+Neutron r-space Info> 'NEUTRON_REAL_SPACE_DATA' section-1.
+ Neutron r-space Info> Flags for gudrun and stog file types:  F F
+Neutron q-space Info> qdamp assumed to be zero for
+Neutron q-space Info> 'NEUTRON_RECIPROCAL_SPACE_DATA' section-1.
+Neutron q-space Info> qbroad assumed to be zero for
+Neutron q-space Info> 'NEUTRON_RECIPROCAL_SPACE_DATA' section-1.
+Info> Norm. exp. for neutron S(Q) file is assumed to be 0
+Neutron q-space Info> Constant offset assumed to be zero.
+Neutron q-space Info> Constant scale assumed to be 1.
+Neutron q-space Info> Fitting offset of neutron scattering data required
+Neutron q-space Info> Fitting renormalisation of neutron scattering data required
+Neutron q-space Info> Number of points for S(Q) data set 1 is 3664
+Neutron q-space Info> Allocated dimension of S(Q) arrays is 3664
+Status> Convolved neutron reciprocal space data set 1
+Info> sumsqcoeffs,sumiqcoeffs:     0.501921    0.565668
+Info> sumsqcoeffs,sumiqcoeffs:     0.501921    0.565668
+Info> Number of coordination constraints assumed to be zero
+Info> Number of average coordination number constraints assumed to be zero
+Info> No polyhedral constraints to be used
+Bragg Dummy Info> No Bragg dummy data to be generated.
+Bragg Info> No Bragg profile data to be used
+Info> No magnetic scattering included
+
+ No atom swap moves will be generated,
+ atoms will only be translated.
+
+ Since there is no ZMOVESCALE line ZMOVESCALE=1.0
+ Made it to the start of rmca_main_code
+ Random seed is    820.00000000000000     
+ about to call rmca_list
+
+ Title of run: (Version 6f format configuration file)                           
+
+ Configuration contains 88000 atoms of 3 types
+ Numbers of each type are:
+ 16000 16000 56000
+
+ Configuration cell vectors are:  51.5035  -0.0000  -0.0000
+                                   0.0000  51.5035  -0.0000
+                                   0.0000   0.0000  51.5035
+
+ Number density is 0.080516 atoms per cubic Angstrom
+
+ Cut offs in partial g(r)'s are at:
+ 1-1  2.500 Angstrom
+ 1-2  2.130 Angstrom
+ 1-3  1.000 Angstrom
+ 2-2  2.500 Angstrom
+ 2-3  1.000 Angstrom
+ 3-3  1.000 Angstrom
+
+ Maximum change in any coordinate is 0.0500 A for particles of type 1
+ Maximum change in any coordinate is 0.0500 A for particles of type 2
+ Maximum change in any coordinate is 0.0500 A for particles of type 3
+
+ Using 5150 r points spaced at 0.010 A up to 51.500 A
+
+ Writing summary every 10000 generated moves
+ Programme will run for******** minutes saving every    10.0 minutes
+
+ Fitting to 1 T(r)'s:
+
+ Data set 1 uses points    1 to 5000 after subtraction of  0.000
+ Standard deviation is 1.0000
+ Data will be renormalised
+ Coefficients of partials are:
+ 0.05108 0.05116 0.16692 0.01281 0.08359 0.13637
+ Info> Faber-Ziman Coefficient =   0.50192072404958687     
+
+ Fitting to 1 S(Q)'s with constant coefficients
+
+ Data set 1 uses points    1 to 3664 after subtraction of  0.000
+ Standard deviation is 1.0000
+ Data will be renormalised
+ Coefficients of partials are:
+ 0.05108 0.05116 0.16692 0.01281 0.08359 0.13637
+ Info> Faber-Ziman Coefficient =   0.50192072404958687     
+
+ There are  0 coordination constraints
+
+ There are  0 coordination number constraints
+ back from rmca_list
+
+ Vectors
+   51.503450000000001        0.0000000000000000        0.0000000000000000     
+  -0.0000000000000000        51.503450000000001        0.0000000000000000     
+  -0.0000000000000000       -0.0000000000000000        51.503450000000001     
+ real space cell parameters of supercell
+  103.00690    103.00690    103.00690     90.00000     90.00000     90.00000
+
+
+Calculating g(r) histogram for cell 1
+
+ Writing g(r) histogram to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+ About to enter main loop
+
+ ---------------------------------------------------->
+ Time used    1.1 ,time limit ****** ,Last saved at    1.1
+
+ Moves accepted  :: 0
+ Moves generated :: 1
+ Moves tested    :: 0
+
+ Chi^2/dof        =  0.3859E-01
+
+ Expt  1: Renorm    31.8363  Constant = 0.0000  Chi**2/nq =  0.3139E-01
+ Expt  2: Renorm     1.3938  Constant = 0.0000  Chi**2/nq =  0.4841E-01
+
+ ---------------------------------------------------->
+ Time used    4.6 ,time limit ****** ,Last saved at    1.1
+
+ Moves accepted  :: 9995
+ Moves generated :: 10000
+ Moves tested    :: 9999
+
+ Chi^2/dof        =  0.1494E-09
+
+ Expt  1: Renorm    21.6737  Constant = 0.0000  Chi**2/nq =  0.1337E-09
+ Expt  2: Renorm     1.3658  Constant = 0.0000  Chi**2/nq =  0.1708E-09
+
+ ---------------------------------------------------->
+ Time used    8.1 ,time limit ****** ,Last saved at    1.1
+
+ Moves accepted  :: 19990
+ Moves generated :: 20000
+ Moves tested    :: 19999
+
+ Chi^2/dof        =  0.1279E-09
+
+ Expt  1: Renorm    14.9607  Constant = 0.0000  Chi**2/nq =  0.1199E-09
+ Expt  2: Renorm     1.3408  Constant = 0.0000  Chi**2/nq =  0.1388E-09
+
+Total time in loop so far :    531.7     s
+Time per generated move is :   20.79     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used   11.6 ,time limit ****** ,Last saved at   10.0
+
+ Moves accepted  :: 29985
+ Moves generated :: 30000
+ Moves tested    :: 29999
+
+ Chi^2/dof        =  0.1005E-09
+
+ Expt  1: Renorm    10.5839  Constant = 0.0000  Chi**2/nq =  0.9103E-10
+ Expt  2: Renorm     1.3189  Constant = 0.0000  Chi**2/nq =  0.1134E-09
+
+ ---------------------------------------------------->
+ Time used   15.1 ,time limit ****** ,Last saved at   10.0
+
+ Moves accepted  :: 39968
+ Moves generated :: 40000
+ Moves tested    :: 39999
+
+ Chi^2/dof        =   2.825    
+
+ Expt  1: Renorm     7.6583  Constant = 0.0000  Chi**2/nq =   2.595    
+ Expt  2: Renorm     1.2994  Constant = 0.0000  Chi**2/nq =   3.140    
+
+ ---------------------------------------------------->
+ Time used   18.5 ,time limit ****** ,Last saved at   10.0
+
+ Moves accepted  :: 49889
+ Moves generated :: 50000
+ Moves tested    :: 49999
+
+ Chi^2/dof        =   20.91    
+
+ Expt  1: Renorm     5.7513  Constant = 0.0000  Chi**2/nq =   19.35    
+ Expt  2: Renorm     1.2814  Constant = 0.0000  Chi**2/nq =   23.05    
+
+Total time in loop so far :    1130.     s
+Time per generated move is :   20.74     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used   22.0 ,time limit ****** ,Last saved at   20.0
+
+ Moves accepted  :: 59541
+ Moves generated :: 60000
+ Moves tested    :: 59999
+
+ Chi^2/dof        =   76.39    
+
+ Expt  1: Renorm     4.4229  Constant = 0.0000  Chi**2/nq =   67.95    
+ Expt  2: Renorm     1.2646  Constant = 0.0000  Chi**2/nq =   87.91    
+
+ ---------------------------------------------------->
+ Time used   25.5 ,time limit ****** ,Last saved at   20.0
+
+ Moves accepted  :: 68960
+ Moves generated :: 70000
+ Moves tested    :: 69999
+
+ Chi^2/dof        =   32.45    
+
+ Expt  1: Renorm     3.5373  Constant = 0.0000  Chi**2/nq =   28.63    
+ Expt  2: Renorm     1.2491  Constant = 0.0000  Chi**2/nq =   37.66    
+
+ ---------------------------------------------------->
+ Time used   28.9 ,time limit ****** ,Last saved at   20.0
+
+ Moves accepted  :: 78039
+ Moves generated :: 80000
+ Moves tested    :: 79999
+
+ Chi^2/dof        =   147.3    
+
+ Expt  1: Renorm     2.9141  Constant = 0.0000  Chi**2/nq =   127.8    
+ Expt  2: Renorm     1.2345  Constant = 0.0000  Chi**2/nq =   173.8    
+
+Total time in loop so far :    1729.     s
+Time per generated move is :   20.82     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used   32.4 ,time limit ****** ,Last saved at   30.0
+
+ Moves accepted  :: 87008
+ Moves generated :: 90000
+ Moves tested    :: 89999
+
+ Chi^2/dof        =   138.6    
+
+ Expt  1: Renorm     2.4774  Constant = 0.0000  Chi**2/nq =   117.7    
+ Expt  2: Renorm     1.2208  Constant = 0.0000  Chi**2/nq =   167.2    
+
+ ---------------------------------------------------->
+ Time used   36.0 ,time limit ****** ,Last saved at   30.0
+
+ Moves accepted  :: 95722
+ Moves generated :: 100000
+ Moves tested    :: 99999
+
+ Chi^2/dof        =   246.8    
+
+ Expt  1: Renorm     2.1693  Constant = 0.0000  Chi**2/nq =   203.8    
+ Expt  2: Renorm     1.2085  Constant = 0.0000  Chi**2/nq =   305.6    
+
+ ---------------------------------------------------->
+ Time used   39.4 ,time limit ****** ,Last saved at   30.0
+
+ Moves accepted  :: 104157
+ Moves generated :: 110000
+ Moves tested    :: 109999
+
+ Chi^2/dof        =   142.4    
+
+ Expt  1: Renorm     1.9398  Constant = 0.0000  Chi**2/nq =   113.9    
+ Expt  2: Renorm     1.1965  Constant = 0.0000  Chi**2/nq =   181.3    
+
+Total time in loop so far :    2328.     s
+Time per generated move is :   20.84     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used   42.9 ,time limit ****** ,Last saved at   40.0
+
+ Moves accepted  :: 112336
+ Moves generated :: 120002
+ Moves tested    :: 120001
+
+ Chi^2/dof        =   276.8    
+
+ Expt  1: Renorm     1.7724  Constant = 0.0000  Chi**2/nq =   213.8    
+ Expt  2: Renorm     1.1860  Constant = 0.0000  Chi**2/nq =   362.7    
+
+ ---------------------------------------------------->
+ Time used   46.4 ,time limit ****** ,Last saved at   40.0
+
+ Moves accepted  :: 120479
+ Moves generated :: 130000
+ Moves tested    :: 129999
+
+ Chi^2/dof        =   197.9    
+
+ Expt  1: Renorm     1.6456  Constant = 0.0000  Chi**2/nq =   147.6    
+ Expt  2: Renorm     1.1761  Constant = 0.0000  Chi**2/nq =   266.6    
+
+ ---------------------------------------------------->
+ Time used   49.8 ,time limit ****** ,Last saved at   40.0
+
+ Moves accepted  :: 128463
+ Moves generated :: 140000
+ Moves tested    :: 139999
+
+ Chi^2/dof        =   219.7    
+
+ Expt  1: Renorm     1.5459  Constant = 0.0000  Chi**2/nq =   158.3    
+ Expt  2: Renorm     1.1666  Constant = 0.0000  Chi**2/nq =   303.5    
+
+Total time in loop so far :    2926.     s
+Time per generated move is :   20.81     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used   53.2 ,time limit ****** ,Last saved at   50.0
+
+ Moves accepted  :: 136277
+ Moves generated :: 150000
+ Moves tested    :: 149999
+
+ Chi^2/dof        =   353.8    
+
+ Expt  1: Renorm     1.4657  Constant = 0.0000  Chi**2/nq =   246.3    
+ Expt  2: Renorm     1.1576  Constant = 0.0000  Chi**2/nq =   500.4    
+
+ ---------------------------------------------------->
+ Time used   56.7 ,time limit ****** ,Last saved at   50.0
+
+ Moves accepted  :: 143912
+ Moves generated :: 160000
+ Moves tested    :: 159999
+
+ Chi^2/dof        =   305.3    
+
+ Expt  1: Renorm     1.3986  Constant = 0.0000  Chi**2/nq =   205.0    
+ Expt  2: Renorm     1.1491  Constant = 0.0000  Chi**2/nq =   442.2    
+
+Total time in loop so far :    3525.     s
+Time per generated move is :   20.79     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used   60.2 ,time limit ****** ,Last saved at   60.0
+
+ Moves accepted  :: 151507
+ Moves generated :: 170010
+ Moves tested    :: 170009
+
+ Chi^2/dof        =   278.0    
+
+ Expt  1: Renorm     1.3436  Constant = 0.0000  Chi**2/nq =   189.5    
+ Expt  2: Renorm     1.1410  Constant = 0.0000  Chi**2/nq =   398.7    
+
+ ---------------------------------------------------->
+ Time used   63.5 ,time limit ****** ,Last saved at   60.0
+
+ Moves accepted  :: 158998
+ Moves generated :: 180000
+ Moves tested    :: 179999
+
+ Chi^2/dof        =   318.9    
+
+ Expt  1: Renorm     1.2969  Constant = 0.0000  Chi**2/nq =   210.4    
+ Expt  2: Renorm     1.1332  Constant = 0.0000  Chi**2/nq =   467.0    
+
+ ---------------------------------------------------->
+ Time used   67.1 ,time limit ****** ,Last saved at   60.0
+
+ Moves accepted  :: 166309
+ Moves generated :: 190000
+ Moves tested    :: 189999
+
+ Chi^2/dof        =   509.9    
+
+ Expt  1: Renorm     1.2572  Constant = 0.0000  Chi**2/nq =   325.0    
+ Expt  2: Renorm     1.1262  Constant = 0.0000  Chi**2/nq =   762.3    
+
+Total time in loop so far :    4124.     s
+Time per generated move is :   20.86     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used   70.9 ,time limit ****** ,Last saved at   70.0
+
+ Moves accepted  :: 173528
+ Moves generated :: 200016
+ Moves tested    :: 200015
+
+ Chi^2/dof        =   396.1    
+
+ Expt  1: Renorm     1.2221  Constant = 0.0000  Chi**2/nq =   243.8    
+ Expt  2: Renorm     1.1194  Constant = 0.0000  Chi**2/nq =   603.8    
+
+ ---------------------------------------------------->
+ Time used   74.8 ,time limit ****** ,Last saved at   70.0
+
+ Moves accepted  :: 180635
+ Moves generated :: 210000
+ Moves tested    :: 209999
+
+ Chi^2/dof        =   740.5    
+
+ Expt  1: Renorm     1.1915  Constant = 0.0000  Chi**2/nq =   439.5    
+ Expt  2: Renorm     1.1130  Constant = 0.0000  Chi**2/nq =   1151.    
+
+ ---------------------------------------------------->
+ Time used   78.5 ,time limit ****** ,Last saved at   70.0
+
+ Moves accepted  :: 187672
+ Moves generated :: 220000
+ Moves tested    :: 219999
+
+ Chi^2/dof        =   550.0    
+
+ Expt  1: Renorm     1.1637  Constant = 0.0000  Chi**2/nq =   313.8    
+ Expt  2: Renorm     1.1068  Constant = 0.0000  Chi**2/nq =   872.2    
+
+Total time in loop so far :    4722.     s
+Time per generated move is :   21.06     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used   82.1 ,time limit ****** ,Last saved at   80.0
+
+ Moves accepted  :: 194660
+ Moves generated :: 230002
+ Moves tested    :: 230001
+
+ Chi^2/dof        =   582.2    
+
+ Expt  1: Renorm     1.1391  Constant = 0.0000  Chi**2/nq =   319.3    
+ Expt  2: Renorm     1.1009  Constant = 0.0000  Chi**2/nq =   940.9    
+
+ ---------------------------------------------------->
+ Time used   85.7 ,time limit ****** ,Last saved at   80.0
+
+ Moves accepted  :: 201457
+ Moves generated :: 240000
+ Moves tested    :: 239999
+
+ Chi^2/dof        =   707.2    
+
+ Expt  1: Renorm     1.1172  Constant = 0.0000  Chi**2/nq =   372.3    
+ Expt  2: Renorm     1.0953  Constant = 0.0000  Chi**2/nq =   1164.    
+
+ ---------------------------------------------------->
+ Time used   89.2 ,time limit ****** ,Last saved at   80.0
+
+ Moves accepted  :: 208156
+ Moves generated :: 250002
+ Moves tested    :: 250001
+
+ Chi^2/dof        =   762.2    
+
+ Expt  1: Renorm     1.0973  Constant = 0.0000  Chi**2/nq =   383.5    
+ Expt  2: Renorm     1.0901  Constant = 0.0000  Chi**2/nq =   1279.    
+
+Total time in loop so far :    5321.     s
+Time per generated move is :   21.07     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used   92.6 ,time limit ****** ,Last saved at   90.0
+
+ Moves accepted  :: 214690
+ Moves generated :: 260000
+ Moves tested    :: 259999
+
+ Chi^2/dof        =   577.5    
+
+ Expt  1: Renorm     1.0797  Constant = 0.0000  Chi**2/nq =   277.2    
+ Expt  2: Renorm     1.0852  Constant = 0.0000  Chi**2/nq =   987.3    
+
+ ---------------------------------------------------->
+ Time used   96.0 ,time limit ****** ,Last saved at   90.0
+
+ Moves accepted  :: 221131
+ Moves generated :: 270013
+ Moves tested    :: 270012
+
+ Chi^2/dof        =   713.1    
+
+ Expt  1: Renorm     1.0634  Constant = 0.0000  Chi**2/nq =   325.8    
+ Expt  2: Renorm     1.0805  Constant = 0.0000  Chi**2/nq =   1242.    
+
+ ---------------------------------------------------->
+ Time used   99.3 ,time limit ****** ,Last saved at   90.0
+
+ Moves accepted  :: 227421
+ Moves generated :: 280002
+ Moves tested    :: 280001
+
+ Chi^2/dof        =   876.2    
+
+ Expt  1: Renorm     1.0489  Constant = 0.0000  Chi**2/nq =   380.2    
+ Expt  2: Renorm     1.0761  Constant = 0.0000  Chi**2/nq =   1553.    
+
+Total time in loop so far :    5920.     s
+Time per generated move is :   21.00     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  102.9 ,time limit ****** ,Last saved at  100.0
+
+ Moves accepted  :: 233610
+ Moves generated :: 290000
+ Moves tested    :: 289999
+
+ Chi^2/dof        =   1104.    
+
+ Expt  1: Renorm     1.0360  Constant = 0.0000  Chi**2/nq =   453.8    
+ Expt  2: Renorm     1.0719  Constant = 0.0000  Chi**2/nq =   1990.    
+
+ ---------------------------------------------------->
+ Time used  106.3 ,time limit ****** ,Last saved at  100.0
+
+ Moves accepted  :: 239599
+ Moves generated :: 300000
+ Moves tested    :: 299999
+
+ Chi^2/dof        =   1291.    
+
+ Expt  1: Renorm     1.0245  Constant = 0.0000  Chi**2/nq =   500.3    
+ Expt  2: Renorm     1.0681  Constant = 0.0000  Chi**2/nq =   2370.    
+
+ ---------------------------------------------------->
+ Time used  109.7 ,time limit ****** ,Last saved at  100.0
+
+ Moves accepted  :: 245445
+ Moves generated :: 310000
+ Moves tested    :: 309999
+
+ Chi^2/dof        =   1265.    
+
+ Expt  1: Renorm     1.0141  Constant = 0.0000  Chi**2/nq =   462.0    
+ Expt  2: Renorm     1.0645  Constant = 0.0000  Chi**2/nq =   2361.    
+
+Total time in loop so far :    6519.     s
+Time per generated move is :   20.96     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  113.0 ,time limit ****** ,Last saved at  110.0
+
+ Moves accepted  :: 251054
+ Moves generated :: 320000
+ Moves tested    :: 319999
+
+ Chi^2/dof        =   931.8    
+
+ Expt  1: Renorm     1.0050  Constant = 0.0000  Chi**2/nq =   320.6    
+ Expt  2: Renorm     1.0611  Constant = 0.0000  Chi**2/nq =   1766.    
+
+ ---------------------------------------------------->
+ Time used  116.4 ,time limit ****** ,Last saved at  110.0
+
+ Moves accepted  :: 256616
+ Moves generated :: 330000
+ Moves tested    :: 329999
+
+ Chi^2/dof        =   1167.    
+
+ Expt  1: Renorm     0.9969  Constant = 0.0000  Chi**2/nq =   378.6    
+ Expt  2: Renorm     1.0580  Constant = 0.0000  Chi**2/nq =   2242.    
+
+ ---------------------------------------------------->
+ Time used  119.6 ,time limit ****** ,Last saved at  110.0
+
+ Moves accepted  :: 262074
+ Moves generated :: 340000
+ Moves tested    :: 339999
+
+ Chi^2/dof        =   1559.    
+
+ Expt  1: Renorm     0.9897  Constant = 0.0000  Chi**2/nq =   477.9    
+ Expt  2: Renorm     1.0551  Constant = 0.0000  Chi**2/nq =   3034.    
+
+Total time in loop so far :    7118.     s
+Time per generated move is :   20.87     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  123.1 ,time limit ****** ,Last saved at  120.0
+
+ Moves accepted  :: 267445
+ Moves generated :: 350011
+ Moves tested    :: 350010
+
+ Chi^2/dof        =   1419.    
+
+ Expt  1: Renorm     0.9830  Constant = 0.0000  Chi**2/nq =   413.1    
+ Expt  2: Renorm     1.0522  Constant = 0.0000  Chi**2/nq =   2793.    
+
+ ---------------------------------------------------->
+ Time used  126.3 ,time limit ****** ,Last saved at  120.0
+
+ Moves accepted  :: 272738
+ Moves generated :: 360000
+ Moves tested    :: 359999
+
+ Chi^2/dof        =   2055.    
+
+ Expt  1: Renorm     0.9768  Constant = 0.0000  Chi**2/nq =   570.4    
+ Expt  2: Renorm     1.0495  Constant = 0.0000  Chi**2/nq =   4081.    
+
+ ---------------------------------------------------->
+ Time used  129.7 ,time limit ****** ,Last saved at  120.0
+
+ Moves accepted  :: 277956
+ Moves generated :: 370000
+ Moves tested    :: 369999
+
+ Chi^2/dof        =   1777.    
+
+ Expt  1: Renorm     0.9716  Constant = 0.0000  Chi**2/nq =   442.4    
+ Expt  2: Renorm     1.0470  Constant = 0.0000  Chi**2/nq =   3597.    
+
+Total time in loop so far :    7716.     s
+Time per generated move is :   20.80     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  133.5 ,time limit ****** ,Last saved at  130.0
+
+ Moves accepted  :: 283282
+ Moves generated :: 380000
+ Moves tested    :: 379999
+
+ Chi^2/dof        =   1470.    
+
+ Expt  1: Renorm     0.9669  Constant = 0.0000  Chi**2/nq =   351.3    
+ Expt  2: Renorm     1.0446  Constant = 0.0000  Chi**2/nq =   2996.    
+
+ ---------------------------------------------------->
+ Time used  137.2 ,time limit ****** ,Last saved at  130.0
+
+ Moves accepted  :: 288238
+ Moves generated :: 390002
+ Moves tested    :: 390001
+
+ Chi^2/dof        =   2586.    
+
+ Expt  1: Renorm     0.9631  Constant = 0.0000  Chi**2/nq =   597.4    
+ Expt  2: Renorm     1.0426  Constant = 0.0000  Chi**2/nq =   5299.    
+
+Total time in loop so far :    8315.     s
+Time per generated move is :   20.88     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  140.7 ,time limit ****** ,Last saved at  140.0
+
+ Moves accepted  :: 293222
+ Moves generated :: 400000
+ Moves tested    :: 399999
+
+ Chi^2/dof        =   3064.    
+
+ Expt  1: Renorm     0.9600  Constant = 0.0000  Chi**2/nq =   684.4    
+ Expt  2: Renorm     1.0408  Constant = 0.0000  Chi**2/nq =   6311.    
+
+ ---------------------------------------------------->
+ Time used  144.1 ,time limit ****** ,Last saved at  140.0
+
+ Moves accepted  :: 297975
+ Moves generated :: 410000
+ Moves tested    :: 409999
+
+ Chi^2/dof        =   4951.    
+
+ Expt  1: Renorm     0.9577  Constant = 0.0000  Chi**2/nq =   1069.    
+ Expt  2: Renorm     1.0394  Constant = 0.0000  Chi**2/nq =  0.1025E+05
+
+ ---------------------------------------------------->
+ Time used  147.6 ,time limit ****** ,Last saved at  140.0
+
+ Moves accepted  :: 302690
+ Moves generated :: 420013
+ Moves tested    :: 420012
+
+ Chi^2/dof        =   4410.    
+
+ Expt  1: Renorm     0.9559  Constant = 0.0000  Chi**2/nq =   891.4    
+ Expt  2: Renorm     1.0381  Constant = 0.0000  Chi**2/nq =   9211.    
+
+Total time in loop so far :    8914.     s
+Time per generated move is :   20.86     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  151.0 ,time limit ****** ,Last saved at  150.0
+
+ Moves accepted  :: 307310
+ Moves generated :: 430002
+ Moves tested    :: 430001
+
+ Chi^2/dof        =   4469.    
+
+ Expt  1: Renorm     0.9545  Constant = 0.0000  Chi**2/nq =   906.7    
+ Expt  2: Renorm     1.0370  Constant = 0.0000  Chi**2/nq =   9329.    
+
+ ---------------------------------------------------->
+ Time used  154.4 ,time limit ****** ,Last saved at  150.0
+
+ Moves accepted  :: 311862
+ Moves generated :: 440000
+ Moves tested    :: 439999
+
+ Chi^2/dof        =   7133.    
+
+ Expt  1: Renorm     0.9536  Constant = 0.0000  Chi**2/nq =   1357.    
+ Expt  2: Renorm     1.0361  Constant = 0.0000  Chi**2/nq =  0.1501E+05
+
+ ---------------------------------------------------->
+ Time used  157.9 ,time limit ****** ,Last saved at  150.0
+
+ Moves accepted  :: 316255
+ Moves generated :: 450002
+ Moves tested    :: 450001
+
+ Chi^2/dof        =   5975.    
+
+ Expt  1: Renorm     0.9527  Constant = 0.0000  Chi**2/nq =   1144.    
+ Expt  2: Renorm     1.0353  Constant = 0.0000  Chi**2/nq =  0.1257E+05
+
+Total time in loop so far :    9513.     s
+Time per generated move is :   20.85     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  161.4 ,time limit ****** ,Last saved at  160.0
+
+ Moves accepted  :: 320720
+ Moves generated :: 460008
+ Moves tested    :: 460007
+
+ Chi^2/dof        =   6369.    
+
+ Expt  1: Renorm     0.9521  Constant = 0.0000  Chi**2/nq =   1186.    
+ Expt  2: Renorm     1.0345  Constant = 0.0000  Chi**2/nq =  0.1344E+05
+
+ ---------------------------------------------------->
+ Time used  164.8 ,time limit ****** ,Last saved at  160.0
+
+ Moves accepted  :: 324834
+ Moves generated :: 470000
+ Moves tested    :: 469999
+
+ Chi^2/dof        =  0.1226E+05
+
+ Expt  1: Renorm     0.9515  Constant = 0.0000  Chi**2/nq =   2231.    
+ Expt  2: Renorm     1.0337  Constant = 0.0000  Chi**2/nq =  0.2595E+05
+
+ ---------------------------------------------------->
+ Time used  168.2 ,time limit ****** ,Last saved at  160.0
+
+ Moves accepted  :: 328993
+ Moves generated :: 480000
+ Moves tested    :: 479999
+
+ Chi^2/dof        =  0.1218E+05
+
+ Expt  1: Renorm     0.9512  Constant = 0.0000  Chi**2/nq =   2167.    
+ Expt  2: Renorm     1.0331  Constant = 0.0000  Chi**2/nq =  0.2584E+05
+
+Total time in loop so far :   0.1011E+05 s
+Time per generated move is :   20.84     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  171.7 ,time limit ****** ,Last saved at  170.0
+
+ Moves accepted  :: 333086
+ Moves generated :: 490000
+ Moves tested    :: 489999
+
+ Chi^2/dof        =  0.1098E+05
+
+ Expt  1: Renorm     0.9508  Constant = 0.0000  Chi**2/nq =   1916.    
+ Expt  2: Renorm     1.0326  Constant = 0.0000  Chi**2/nq =  0.2335E+05
+
+ ---------------------------------------------------->
+ Time used  175.1 ,time limit ****** ,Last saved at  170.0
+
+ Moves accepted  :: 337167
+ Moves generated :: 500005
+ Moves tested    :: 500004
+
+ Chi^2/dof        =  0.1200E+05
+
+ Expt  1: Renorm     0.9505  Constant = 0.0000  Chi**2/nq =   2052.    
+ Expt  2: Renorm     1.0319  Constant = 0.0000  Chi**2/nq =  0.2557E+05
+
+ ---------------------------------------------------->
+ Time used  178.5 ,time limit ****** ,Last saved at  170.0
+
+ Moves accepted  :: 341062
+ Moves generated :: 510002
+ Moves tested    :: 510001
+
+ Chi^2/dof        =  0.1012E+05
+
+ Expt  1: Renorm     0.9502  Constant = 0.0000  Chi**2/nq =   1640.    
+ Expt  2: Renorm     1.0313  Constant = 0.0000  Chi**2/nq =  0.2169E+05
+
+Total time in loop so far :   0.1071E+05 s
+Time per generated move is :   20.82     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  182.0 ,time limit ****** ,Last saved at  180.0
+
+ Moves accepted  :: 344913
+ Moves generated :: 520002
+ Moves tested    :: 520001
+
+ Chi^2/dof        =  0.1496E+05
+
+ Expt  1: Renorm     0.9502  Constant = 0.0000  Chi**2/nq =   2469.    
+ Expt  2: Renorm     1.0309  Constant = 0.0000  Chi**2/nq =  0.3201E+05
+
+ ---------------------------------------------------->
+ Time used  185.4 ,time limit ****** ,Last saved at  180.0
+
+ Moves accepted  :: 348801
+ Moves generated :: 530002
+ Moves tested    :: 530001
+
+ Chi^2/dof        =  0.1252E+05
+
+ Expt  1: Renorm     0.9501  Constant = 0.0000  Chi**2/nq =   2030.    
+ Expt  2: Renorm     1.0304  Constant = 0.0000  Chi**2/nq =  0.2684E+05
+
+ ---------------------------------------------------->
+ Time used  188.7 ,time limit ****** ,Last saved at  180.0
+
+ Moves accepted  :: 352522
+ Moves generated :: 540009
+ Moves tested    :: 540008
+
+ Chi^2/dof        =  0.2329E+05
+
+ Expt  1: Renorm     0.9503  Constant = 0.0000  Chi**2/nq =   3710.    
+ Expt  2: Renorm     1.0301  Constant = 0.0000  Chi**2/nq =  0.5000E+05
+
+Total time in loop so far :   0.1131E+05 s
+Time per generated move is :   20.80     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  192.2 ,time limit ****** ,Last saved at  190.0
+
+ Moves accepted  :: 356317
+ Moves generated :: 550003
+ Moves tested    :: 550002
+
+ Chi^2/dof        =  0.1308E+05
+
+ Expt  1: Renorm     0.9504  Constant = 0.0000  Chi**2/nq =   2049.    
+ Expt  2: Renorm     1.0298  Constant = 0.0000  Chi**2/nq =  0.2812E+05
+
+ ---------------------------------------------------->
+ Time used  195.6 ,time limit ****** ,Last saved at  190.0
+
+ Moves accepted  :: 360050
+ Moves generated :: 560057
+ Moves tested    :: 560056
+
+ Chi^2/dof        =  0.2062E+05
+
+ Expt  1: Renorm     0.9505  Constant = 0.0000  Chi**2/nq =   3187.    
+ Expt  2: Renorm     1.0295  Constant = 0.0000  Chi**2/nq =  0.4440E+05
+
+ ---------------------------------------------------->
+ Time used  198.9 ,time limit ****** ,Last saved at  190.0
+
+ Moves accepted  :: 363670
+ Moves generated :: 570000
+ Moves tested    :: 569999
+
+ Chi^2/dof        =  0.1563E+05
+
+ Expt  1: Renorm     0.9505  Constant = 0.0000  Chi**2/nq =   2383.    
+ Expt  2: Renorm     1.0292  Constant = 0.0000  Chi**2/nq =  0.3370E+05
+
+Total time in loop so far :   0.1191E+05 s
+Time per generated move is :   20.77     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  202.3 ,time limit ****** ,Last saved at  200.0
+
+ Moves accepted  :: 367266
+ Moves generated :: 580005
+ Moves tested    :: 580004
+
+ Chi^2/dof        =  0.1230E+05
+
+ Expt  1: Renorm     0.9507  Constant = 0.0000  Chi**2/nq =   1987.    
+ Expt  2: Renorm     1.0289  Constant = 0.0000  Chi**2/nq =  0.2638E+05
+
+ ---------------------------------------------------->
+ Time used  205.6 ,time limit ****** ,Last saved at  200.0
+
+ Moves accepted  :: 370824
+ Moves generated :: 590003
+ Moves tested    :: 590002
+
+ Chi^2/dof        =  0.1561E+05
+
+ Expt  1: Renorm     0.9507  Constant = 0.0000  Chi**2/nq =   2321.    
+ Expt  2: Renorm     1.0286  Constant = 0.0000  Chi**2/nq =  0.3376E+05
+
+ ---------------------------------------------------->
+ Time used  209.1 ,time limit ****** ,Last saved at  200.0
+
+ Moves accepted  :: 374261
+ Moves generated :: 600002
+ Moves tested    :: 600001
+
+ Chi^2/dof        =  0.2312E+05
+
+ Expt  1: Renorm     0.9509  Constant = 0.0000  Chi**2/nq =   3393.    
+ Expt  2: Renorm     1.0284  Constant = 0.0000  Chi**2/nq =  0.5003E+05
+
+Total time in loop so far :   0.1251E+05 s
+Time per generated move is :   20.75     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  212.5 ,time limit ****** ,Last saved at  210.0
+
+ Moves accepted  :: 377797
+ Moves generated :: 610000
+ Moves tested    :: 609999
+
+ Chi^2/dof        =  0.2569E+05
+
+ Expt  1: Renorm     0.9510  Constant = 0.0000  Chi**2/nq =   4010.    
+ Expt  2: Renorm     1.0281  Constant = 0.0000  Chi**2/nq =  0.5526E+05
+
+ ---------------------------------------------------->
+ Time used  215.9 ,time limit ****** ,Last saved at  210.0
+
+ Moves accepted  :: 381266
+ Moves generated :: 620002
+ Moves tested    :: 620001
+
+ Chi^2/dof        =  0.2615E+05
+
+ Expt  1: Renorm     0.9512  Constant = 0.0000  Chi**2/nq =   4035.    
+ Expt  2: Renorm     1.0279  Constant = 0.0000  Chi**2/nq =  0.5634E+05
+
+ ---------------------------------------------------->
+ Time used  219.3 ,time limit ****** ,Last saved at  210.0
+
+ Moves accepted  :: 384683
+ Moves generated :: 630016
+ Moves tested    :: 630015
+
+ Chi^2/dof        =  0.2437E+05
+
+ Expt  1: Renorm     0.9512  Constant = 0.0000  Chi**2/nq =   3463.    
+ Expt  2: Renorm     1.0277  Constant = 0.0000  Chi**2/nq =  0.5290E+05
+
+Total time in loop so far :   0.1310E+05 s
+Time per generated move is :   20.73     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  222.8 ,time limit ****** ,Last saved at  220.0
+
+ Moves accepted  :: 388059
+ Moves generated :: 640004
+ Moves tested    :: 640003
+
+ Chi^2/dof        =  0.1453E+05
+
+ Expt  1: Renorm     0.9516  Constant = 0.0000  Chi**2/nq =   2192.    
+ Expt  2: Renorm     1.0275  Constant = 0.0000  Chi**2/nq =  0.3137E+05
+
+ ---------------------------------------------------->
+ Time used  226.1 ,time limit ****** ,Last saved at  220.0
+
+ Moves accepted  :: 391462
+ Moves generated :: 650002
+ Moves tested    :: 650001
+
+ Chi^2/dof        =  0.1246E+05
+
+ Expt  1: Renorm     0.9517  Constant = 0.0000  Chi**2/nq =   1862.    
+ Expt  2: Renorm     1.0273  Constant = 0.0000  Chi**2/nq =  0.2692E+05
+
+ ---------------------------------------------------->
+ Time used  229.6 ,time limit ****** ,Last saved at  220.0
+
+ Moves accepted  :: 394792
+ Moves generated :: 660004
+ Moves tested    :: 660003
+
+ Chi^2/dof        =  0.1723E+05
+
+ Expt  1: Renorm     0.9518  Constant = 0.0000  Chi**2/nq =   2552.    
+ Expt  2: Renorm     1.0271  Constant = 0.0000  Chi**2/nq =  0.3725E+05
+
+Total time in loop so far :   0.1370E+05 s
+Time per generated move is :   20.73     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  233.1 ,time limit ****** ,Last saved at  230.0
+
+ Moves accepted  :: 398051
+ Moves generated :: 670000
+ Moves tested    :: 669999
+
+ Chi^2/dof        =  0.1520E+05
+
+ Expt  1: Renorm     0.9520  Constant = 0.0000  Chi**2/nq =   2229.    
+ Expt  2: Renorm     1.0269  Constant = 0.0000  Chi**2/nq =  0.3290E+05
+
+ ---------------------------------------------------->
+ Time used  236.5 ,time limit ****** ,Last saved at  230.0
+
+ Moves accepted  :: 401451
+ Moves generated :: 680009
+ Moves tested    :: 680008
+
+ Chi^2/dof        =  0.2023E+05
+
+ Expt  1: Renorm     0.9522  Constant = 0.0000  Chi**2/nq =   2935.    
+ Expt  2: Renorm     1.0267  Constant = 0.0000  Chi**2/nq =  0.4383E+05
+
+ ---------------------------------------------------->
+ Time used  239.9 ,time limit ****** ,Last saved at  230.0
+
+ Moves accepted  :: 404793
+ Moves generated :: 690002
+ Moves tested    :: 690001
+
+ Chi^2/dof        =  0.2124E+05
+
+ Expt  1: Renorm     0.9523  Constant = 0.0000  Chi**2/nq =   3053.    
+ Expt  2: Renorm     1.0265  Constant = 0.0000  Chi**2/nq =  0.4605E+05
+
+Total time in loop so far :   0.1430E+05 s
+Time per generated move is :   20.72     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  243.4 ,time limit ****** ,Last saved at  240.0
+
+ Moves accepted  :: 408026
+ Moves generated :: 700000
+ Moves tested    :: 699999
+
+ Chi^2/dof        =  0.2467E+05
+
+ Expt  1: Renorm     0.9525  Constant = 0.0000  Chi**2/nq =   3513.    
+ Expt  2: Renorm     1.0263  Constant = 0.0000  Chi**2/nq =  0.5355E+05
+
+ ---------------------------------------------------->
+ Time used  246.8 ,time limit ****** ,Last saved at  240.0
+
+ Moves accepted  :: 411311
+ Moves generated :: 710004
+ Moves tested    :: 710003
+
+ Chi^2/dof        =  0.2026E+05
+
+ Expt  1: Renorm     0.9527  Constant = 0.0000  Chi**2/nq =   3072.    
+ Expt  2: Renorm     1.0262  Constant = 0.0000  Chi**2/nq =  0.4372E+05
+
+Total time in loop so far :   0.1490E+05 s
+Time per generated move is :   20.72     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  250.3 ,time limit ****** ,Last saved at  250.0
+
+ Moves accepted  :: 414625
+ Moves generated :: 720000
+ Moves tested    :: 719999
+
+ Chi^2/dof        =  0.1944E+05
+
+ Expt  1: Renorm     0.9527  Constant = 0.0000  Chi**2/nq =   2720.    
+ Expt  2: Renorm     1.0259  Constant = 0.0000  Chi**2/nq =  0.4226E+05
+
+ ---------------------------------------------------->
+ Time used  253.7 ,time limit ****** ,Last saved at  250.0
+
+ Moves accepted  :: 417943
+ Moves generated :: 730002
+ Moves tested    :: 730001
+
+ Chi^2/dof        =  0.2016E+05
+
+ Expt  1: Renorm     0.9529  Constant = 0.0000  Chi**2/nq =   2796.    
+ Expt  2: Renorm     1.0257  Constant = 0.0000  Chi**2/nq =  0.4386E+05
+
+ ---------------------------------------------------->
+ Time used  257.0 ,time limit ****** ,Last saved at  250.0
+
+ Moves accepted  :: 421201
+ Moves generated :: 740000
+ Moves tested    :: 739999
+
+ Chi^2/dof        =  0.2845E+05
+
+ Expt  1: Renorm     0.9530  Constant = 0.0000  Chi**2/nq =   3910.    
+ Expt  2: Renorm     1.0256  Constant = 0.0000  Chi**2/nq =  0.6194E+05
+
+Total time in loop so far :   0.1550E+05 s
+Time per generated move is :   20.70     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  260.4 ,time limit ****** ,Last saved at  260.0
+
+ Moves accepted  :: 424412
+ Moves generated :: 750000
+ Moves tested    :: 749999
+
+ Chi^2/dof        =  0.2416E+05
+
+ Expt  1: Renorm     0.9531  Constant = 0.0000  Chi**2/nq =   3418.    
+ Expt  2: Renorm     1.0254  Constant = 0.0000  Chi**2/nq =  0.5246E+05
+
+ ---------------------------------------------------->
+ Time used  263.8 ,time limit ****** ,Last saved at  260.0
+
+ Moves accepted  :: 428043
+ Moves generated :: 760000
+ Moves tested    :: 759999
+
+ Chi^2/dof        =  0.1549E+05
+
+ Expt  1: Renorm     0.9528  Constant = 0.0000  Chi**2/nq =   2115.    
+ Expt  2: Renorm     1.0251  Constant = 0.0000  Chi**2/nq =  0.3374E+05
+
+ ---------------------------------------------------->
+ Time used  267.2 ,time limit ****** ,Last saved at  260.0
+
+ Moves accepted  :: 431275
+ Moves generated :: 770000
+ Moves tested    :: 769999
+
+ Chi^2/dof        =  0.2337E+05
+
+ Expt  1: Renorm     0.9532  Constant = 0.0000  Chi**2/nq =   3153.    
+ Expt  2: Renorm     1.0250  Constant = 0.0000  Chi**2/nq =  0.5096E+05
+
+Total time in loop so far :   0.1610E+05 s
+Time per generated move is :   20.69     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  270.7 ,time limit ****** ,Last saved at  270.0
+
+ Moves accepted  :: 434629
+ Moves generated :: 780002
+ Moves tested    :: 780001
+
+ Chi^2/dof        =  0.1907E+05
+
+ Expt  1: Renorm     0.9535  Constant = 0.0000  Chi**2/nq =   2637.    
+ Expt  2: Renorm     1.0250  Constant = 0.0000  Chi**2/nq =  0.4149E+05
+
+ ---------------------------------------------------->
+ Time used  274.0 ,time limit ****** ,Last saved at  270.0
+
+ Moves accepted  :: 437870
+ Moves generated :: 790000
+ Moves tested    :: 789999
+
+ Chi^2/dof        =  0.2630E+05
+
+ Expt  1: Renorm     0.9537  Constant = 0.0000  Chi**2/nq =   3606.    
+ Expt  2: Renorm     1.0248  Constant = 0.0000  Chi**2/nq =  0.5728E+05
+
+ ---------------------------------------------------->
+ Time used  277.4 ,time limit ****** ,Last saved at  270.0
+
+ Moves accepted  :: 440942
+ Moves generated :: 800000
+ Moves tested    :: 799999
+
+ Chi^2/dof        =  0.2116E+05
+
+ Expt  1: Renorm     0.9538  Constant = 0.0000  Chi**2/nq =   2984.    
+ Expt  2: Renorm     1.0245  Constant = 0.0000  Chi**2/nq =  0.4597E+05
+
+Total time in loop so far :   0.1670E+05 s
+Time per generated move is :   20.68     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  280.8 ,time limit ****** ,Last saved at  280.0
+
+ Moves accepted  :: 444129
+ Moves generated :: 810000
+ Moves tested    :: 809999
+
+ Chi^2/dof        =  0.1949E+05
+
+ Expt  1: Renorm     0.9541  Constant = 0.0000  Chi**2/nq =   2820.    
+ Expt  2: Renorm     1.0244  Constant = 0.0000  Chi**2/nq =  0.4224E+05
+
+ ---------------------------------------------------->
+ Time used  284.2 ,time limit ****** ,Last saved at  280.0
+
+ Moves accepted  :: 447350
+ Moves generated :: 820000
+ Moves tested    :: 819999
+
+ Chi^2/dof        =  0.2095E+05
+
+ Expt  1: Renorm     0.9545  Constant = 0.0000  Chi**2/nq =   3000.    
+ Expt  2: Renorm     1.0243  Constant = 0.0000  Chi**2/nq =  0.4545E+05
+
+ ---------------------------------------------------->
+ Time used  287.6 ,time limit ****** ,Last saved at  280.0
+
+ Moves accepted  :: 450492
+ Moves generated :: 830000
+ Moves tested    :: 829999
+
+ Chi^2/dof        =  0.1770E+05
+
+ Expt  1: Renorm     0.9548  Constant = 0.0000  Chi**2/nq =   2510.    
+ Expt  2: Renorm     1.0242  Constant = 0.0000  Chi**2/nq =  0.3842E+05
+
+Total time in loop so far :   0.1730E+05 s
+Time per generated move is :   20.66     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  291.0 ,time limit ****** ,Last saved at  290.0
+
+ Moves accepted  :: 453544
+ Moves generated :: 840000
+ Moves tested    :: 839999
+
+ Chi^2/dof        =  0.4108E+05
+
+ Expt  1: Renorm     0.9550  Constant = 0.0000  Chi**2/nq =   5769.    
+ Expt  2: Renorm     1.0241  Constant = 0.0000  Chi**2/nq =  0.8927E+05
+
+ ---------------------------------------------------->
+ Time used  294.4 ,time limit ****** ,Last saved at  290.0
+
+ Moves accepted  :: 456716
+ Moves generated :: 850000
+ Moves tested    :: 849999
+
+ Chi^2/dof        =  0.3045E+05
+
+ Expt  1: Renorm     0.9551  Constant = 0.0000  Chi**2/nq =   4726.    
+ Expt  2: Renorm     1.0238  Constant = 0.0000  Chi**2/nq =  0.6556E+05
+
+ ---------------------------------------------------->
+ Time used  297.7 ,time limit ****** ,Last saved at  290.0
+
+ Moves accepted  :: 459872
+ Moves generated :: 860002
+ Moves tested    :: 860001
+
+ Chi^2/dof        =  0.2374E+05
+
+ Expt  1: Renorm     0.9553  Constant = 0.0000  Chi**2/nq =   3654.    
+ Expt  2: Renorm     1.0236  Constant = 0.0000  Chi**2/nq =  0.5114E+05
+
+Total time in loop so far :   0.1790E+05 s
+Time per generated move is :   20.64     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  301.1 ,time limit ****** ,Last saved at  300.0
+
+ Moves accepted  :: 462958
+ Moves generated :: 870005
+ Moves tested    :: 870004
+
+ Chi^2/dof        =  0.3597E+05
+
+ Expt  1: Renorm     0.9555  Constant = 0.0000  Chi**2/nq =   6108.    
+ Expt  2: Renorm     1.0235  Constant = 0.0000  Chi**2/nq =  0.7672E+05
+
+ ---------------------------------------------------->
+ Time used  304.4 ,time limit ****** ,Last saved at  300.0
+
+ Moves accepted  :: 466002
+ Moves generated :: 880000
+ Moves tested    :: 879999
+
+ Chi^2/dof        =  0.2046E+05
+
+ Expt  1: Renorm     0.9558  Constant = 0.0000  Chi**2/nq =   3442.    
+ Expt  2: Renorm     1.0233  Constant = 0.0000  Chi**2/nq =  0.4367E+05
+
+ ---------------------------------------------------->
+ Time used  307.8 ,time limit ****** ,Last saved at  300.0
+
+ Moves accepted  :: 469181
+ Moves generated :: 890002
+ Moves tested    :: 890001
+
+ Chi^2/dof        =  0.2196E+05
+
+ Expt  1: Renorm     0.9559  Constant = 0.0000  Chi**2/nq =   3795.    
+ Expt  2: Renorm     1.0231  Constant = 0.0000  Chi**2/nq =  0.4675E+05
+
+Total time in loop so far :   0.1849E+05 s
+Time per generated move is :   20.63     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  311.2 ,time limit ****** ,Last saved at  310.0
+
+ Moves accepted  :: 472266
+ Moves generated :: 900002
+ Moves tested    :: 900001
+
+ Chi^2/dof        =  0.2253E+05
+
+ Expt  1: Renorm     0.9561  Constant = 0.0000  Chi**2/nq =   3595.    
+ Expt  2: Renorm     1.0230  Constant = 0.0000  Chi**2/nq =  0.4838E+05
+
+ ---------------------------------------------------->
+ Time used  314.6 ,time limit ****** ,Last saved at  310.0
+
+ Moves accepted  :: 475315
+ Moves generated :: 910005
+ Moves tested    :: 910004
+
+ Chi^2/dof        =  0.4288E+05
+
+ Expt  1: Renorm     0.9564  Constant = 0.0000  Chi**2/nq =   7023.    
+ Expt  2: Renorm     1.0228  Constant = 0.0000  Chi**2/nq =  0.9181E+05
+
+ ---------------------------------------------------->
+ Time used  318.0 ,time limit ****** ,Last saved at  310.0
+
+ Moves accepted  :: 478272
+ Moves generated :: 920015
+ Moves tested    :: 920014
+
+ Chi^2/dof        =  0.6785E+05
+
+ Expt  1: Renorm     0.9567  Constant = 0.0000  Chi**2/nq =   7931.    
+ Expt  2: Renorm     1.0227  Constant = 0.0000  Chi**2/nq =  0.1496E+06
+
+Total time in loop so far :   0.1909E+05 s
+Time per generated move is :   20.61     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  321.3 ,time limit ****** ,Last saved at  320.0
+
+ Moves accepted  :: 481302
+ Moves generated :: 930002
+ Moves tested    :: 930001
+
+ Chi^2/dof        =  0.2455E+05
+
+ Expt  1: Renorm     0.9571  Constant = 0.0000  Chi**2/nq =   3949.    
+ Expt  2: Renorm     1.0226  Constant = 0.0000  Chi**2/nq =  0.5265E+05
+
+ ---------------------------------------------------->
+ Time used  324.7 ,time limit ****** ,Last saved at  320.0
+
+ Moves accepted  :: 484353
+ Moves generated :: 940010
+ Moves tested    :: 940009
+
+ Chi^2/dof        =  0.2335E+05
+
+ Expt  1: Renorm     0.9572  Constant = 0.0000  Chi**2/nq =   4147.    
+ Expt  2: Renorm     1.0224  Constant = 0.0000  Chi**2/nq =  0.4956E+05
+
+ ---------------------------------------------------->
+ Time used  328.0 ,time limit ****** ,Last saved at  320.0
+
+ Moves accepted  :: 487465
+ Moves generated :: 950002
+ Moves tested    :: 950001
+
+ Chi^2/dof        =  0.2965E+05
+
+ Expt  1: Renorm     0.9575  Constant = 0.0000  Chi**2/nq =   5038.    
+ Expt  2: Renorm     1.0222  Constant = 0.0000  Chi**2/nq =  0.6324E+05
+
+Total time in loop so far :   0.1969E+05 s
+Time per generated move is :   20.59     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  331.1 ,time limit ****** ,Last saved at  330.0
+
+ Moves accepted  :: 490529
+ Moves generated :: 960014
+ Moves tested    :: 960013
+
+ Chi^2/dof        =  0.3508E+05
+
+ Expt  1: Renorm     0.9578  Constant = 0.0000  Chi**2/nq =   6575.    
+ Expt  2: Renorm     1.0221  Constant = 0.0000  Chi**2/nq =  0.7398E+05
+
+ ---------------------------------------------------->
+ Time used  334.0 ,time limit ****** ,Last saved at  330.0
+
+ Moves accepted  :: 493556
+ Moves generated :: 970019
+ Moves tested    :: 970018
+
+ Chi^2/dof        =  0.1463E+05
+
+ Expt  1: Renorm     0.9580  Constant = 0.0000  Chi**2/nq =   2812.    
+ Expt  2: Renorm     1.0220  Constant = 0.0000  Chi**2/nq =  0.3075E+05
+
+ ---------------------------------------------------->
+ Time used  336.8 ,time limit ****** ,Last saved at  330.0
+
+ Moves accepted  :: 496499
+ Moves generated :: 980002
+ Moves tested    :: 980001
+
+ Chi^2/dof        =  0.2586E+05
+
+ Expt  1: Renorm     0.9582  Constant = 0.0000  Chi**2/nq =   4931.    
+ Expt  2: Renorm     1.0218  Constant = 0.0000  Chi**2/nq =  0.5441E+05
+
+ ---------------------------------------------------->
+ Time used  339.6 ,time limit ****** ,Last saved at  330.0
+
+ Moves accepted  :: 499471
+ Moves generated :: 990003
+ Moves tested    :: 990002
+
+ Chi^2/dof        =  0.2408E+05
+
+ Expt  1: Renorm     0.9586  Constant = 0.0000  Chi**2/nq =   4547.    
+ Expt  2: Renorm     1.0217  Constant = 0.0000  Chi**2/nq =  0.5073E+05
+
+Total time in loop so far :   0.2029E+05 s
+Time per generated move is :   20.46     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  342.4 ,time limit ****** ,Last saved at  340.0
+
+ Moves accepted  :: 502408
+ Moves generated :: 1000003
+ Moves tested    :: 1000002
+
+ Chi^2/dof        =  0.1943E+05
+
+ Expt  1: Renorm     0.9590  Constant = 0.0000  Chi**2/nq =   3901.    
+ Expt  2: Renorm     1.0216  Constant = 0.0000  Chi**2/nq =  0.4063E+05
+
+ ---------------------------------------------------->
+ Time used  345.3 ,time limit ****** ,Last saved at  340.0
+
+ Moves accepted  :: 505334
+ Moves generated :: 1010002
+ Moves tested    :: 1010001
+
+ Chi^2/dof        =  0.2321E+05
+
+ Expt  1: Renorm     0.9593  Constant = 0.0000  Chi**2/nq =   4784.    
+ Expt  2: Renorm     1.0215  Constant = 0.0000  Chi**2/nq =  0.4835E+05
+
+ ---------------------------------------------------->
+ Time used  348.2 ,time limit ****** ,Last saved at  340.0
+
+ Moves accepted  :: 508230
+ Moves generated :: 1020003
+ Moves tested    :: 1020002
+
+ Chi^2/dof        =  0.1886E+05
+
+ Expt  1: Renorm     0.9594  Constant = 0.0000  Chi**2/nq =   3993.    
+ Expt  2: Renorm     1.0213  Constant = 0.0000  Chi**2/nq =  0.3915E+05
+
+Total time in loop so far :   0.2089E+05 s
+Time per generated move is :   20.35     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  351.1 ,time limit ****** ,Last saved at  350.0
+
+ Moves accepted  :: 511128
+ Moves generated :: 1030000
+ Moves tested    :: 1029999
+
+ Chi^2/dof        =  0.1605E+05
+
+ Expt  1: Renorm     0.9596  Constant = 0.0000  Chi**2/nq =   3372.    
+ Expt  2: Renorm     1.0211  Constant = 0.0000  Chi**2/nq =  0.3335E+05
+
+ ---------------------------------------------------->
+ Time used  353.9 ,time limit ****** ,Last saved at  350.0
+
+ Moves accepted  :: 514031
+ Moves generated :: 1040000
+ Moves tested    :: 1039999
+
+ Chi^2/dof        =  0.2819E+05
+
+ Expt  1: Renorm     0.9598  Constant = 0.0000  Chi**2/nq =   5867.    
+ Expt  2: Renorm     1.0209  Constant = 0.0000  Chi**2/nq =  0.5866E+05
+
+ ---------------------------------------------------->
+ Time used  356.8 ,time limit ****** ,Last saved at  350.0
+
+ Moves accepted  :: 516910
+ Moves generated :: 1050000
+ Moves tested    :: 1049999
+
+ Chi^2/dof        =  0.2906E+05
+
+ Expt  1: Renorm     0.9601  Constant = 0.0000  Chi**2/nq =   6213.    
+ Expt  2: Renorm     1.0208  Constant = 0.0000  Chi**2/nq =  0.6023E+05
+
+ ---------------------------------------------------->
+ Time used  359.6 ,time limit ****** ,Last saved at  350.0
+
+ Moves accepted  :: 519799
+ Moves generated :: 1060002
+ Moves tested    :: 1060001
+
+ Chi^2/dof        =  0.2231E+05
+
+ Expt  1: Renorm     0.9606  Constant = 0.0000  Chi**2/nq =   5241.    
+ Expt  2: Renorm     1.0207  Constant = 0.0000  Chi**2/nq =  0.4561E+05
+
+Total time in loop so far :   0.2149E+05 s
+Time per generated move is :   20.25     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  362.5 ,time limit ****** ,Last saved at  360.0
+
+ Moves accepted  :: 522576
+ Moves generated :: 1070000
+ Moves tested    :: 1069999
+
+ Chi^2/dof        =  0.2040E+05
+
+ Expt  1: Renorm     0.9606  Constant = 0.0000  Chi**2/nq =   4753.    
+ Expt  2: Renorm     1.0205  Constant = 0.0000  Chi**2/nq =  0.4175E+05
+
+ ---------------------------------------------------->
+ Time used  365.3 ,time limit ****** ,Last saved at  360.0
+
+ Moves accepted  :: 525418
+ Moves generated :: 1080002
+ Moves tested    :: 1080001
+
+ Chi^2/dof        =  0.2029E+05
+
+ Expt  1: Renorm     0.9609  Constant = 0.0000  Chi**2/nq =   4221.    
+ Expt  2: Renorm     1.0204  Constant = 0.0000  Chi**2/nq =  0.4221E+05
+
+ ---------------------------------------------------->
+ Time used  368.2 ,time limit ****** ,Last saved at  360.0
+
+ Moves accepted  :: 528167
+ Moves generated :: 1090008
+ Moves tested    :: 1090007
+
+ Chi^2/dof        =  0.3379E+05
+
+ Expt  1: Renorm     0.9611  Constant = 0.0000  Chi**2/nq =   8289.    
+ Expt  2: Renorm     1.0202  Constant = 0.0000  Chi**2/nq =  0.6860E+05
+
+Total time in loop so far :   0.2209E+05 s
+Time per generated move is :   20.15     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  371.1 ,time limit ****** ,Last saved at  370.0
+
+ Moves accepted  :: 530971
+ Moves generated :: 1100002
+ Moves tested    :: 1100001
+
+ Chi^2/dof        =  0.2296E+05
+
+ Expt  1: Renorm     0.9615  Constant = 0.0000  Chi**2/nq =   5393.    
+ Expt  2: Renorm     1.0202  Constant = 0.0000  Chi**2/nq =  0.4694E+05
+
+ ---------------------------------------------------->
+ Time used  374.0 ,time limit ****** ,Last saved at  370.0
+
+ Moves accepted  :: 533701
+ Moves generated :: 1110013
+ Moves tested    :: 1110012
+
+ Chi^2/dof        =  0.2139E+05
+
+ Expt  1: Renorm     0.9615  Constant = 0.0000  Chi**2/nq =   5338.    
+ Expt  2: Renorm     1.0199  Constant = 0.0000  Chi**2/nq =  0.4329E+05
+
+ ---------------------------------------------------->
+ Time used  376.8 ,time limit ****** ,Last saved at  370.0
+
+ Moves accepted  :: 536450
+ Moves generated :: 1120003
+ Moves tested    :: 1120002
+
+ Chi^2/dof        =  0.2163E+05
+
+ Expt  1: Renorm     0.9617  Constant = 0.0000  Chi**2/nq =   5354.    
+ Expt  2: Renorm     1.0198  Constant = 0.0000  Chi**2/nq =  0.4385E+05
+
+ ---------------------------------------------------->
+ Time used  379.6 ,time limit ****** ,Last saved at  370.0
+
+ Moves accepted  :: 539212
+ Moves generated :: 1130003
+ Moves tested    :: 1130002
+
+ Chi^2/dof        =  0.2370E+05
+
+ Expt  1: Renorm     0.9622  Constant = 0.0000  Chi**2/nq =   5817.    
+ Expt  2: Renorm     1.0197  Constant = 0.0000  Chi**2/nq =  0.4810E+05
+
+Total time in loop so far :   0.2269E+05 s
+Time per generated move is :   20.05     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  382.5 ,time limit ****** ,Last saved at  380.0
+
+ Moves accepted  :: 541983
+ Moves generated :: 1140002
+ Moves tested    :: 1140001
+
+ Chi^2/dof        =  0.1984E+05
+
+ Expt  1: Renorm     0.9623  Constant = 0.0000  Chi**2/nq =   5525.    
+ Expt  2: Renorm     1.0195  Constant = 0.0000  Chi**2/nq =  0.3938E+05
+
+ ---------------------------------------------------->
+ Time used  385.5 ,time limit ****** ,Last saved at  380.0
+
+ Moves accepted  :: 544724
+ Moves generated :: 1150002
+ Moves tested    :: 1150001
+
+ Chi^2/dof        =  0.2823E+05
+
+ Expt  1: Renorm     0.9626  Constant = 0.0000  Chi**2/nq =   6807.    
+ Expt  2: Renorm     1.0194  Constant = 0.0000  Chi**2/nq =  0.5746E+05
+
+ ---------------------------------------------------->
+ Time used  388.4 ,time limit ****** ,Last saved at  380.0
+
+ Moves accepted  :: 547451
+ Moves generated :: 1160000
+ Moves tested    :: 1159999
+
+ Chi^2/dof        =  0.2531E+05
+
+ Expt  1: Renorm     0.9627  Constant = 0.0000  Chi**2/nq =   6925.    
+ Expt  2: Renorm     1.0192  Constant = 0.0000  Chi**2/nq =  0.5039E+05
+
+Total time in loop so far :   0.2328E+05 s
+Time per generated move is :   19.97     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  391.3 ,time limit ****** ,Last saved at  390.0
+
+ Moves accepted  :: 550120
+ Moves generated :: 1170002
+ Moves tested    :: 1170001
+
+ Chi^2/dof        =  0.2230E+05
+
+ Expt  1: Renorm     0.9630  Constant = 0.0000  Chi**2/nq =   6053.    
+ Expt  2: Renorm     1.0191  Constant = 0.0000  Chi**2/nq =  0.4448E+05
+
+ ---------------------------------------------------->
+ Time used  394.2 ,time limit ****** ,Last saved at  390.0
+
+ Moves accepted  :: 552778
+ Moves generated :: 1180000
+ Moves tested    :: 1179999
+
+ Chi^2/dof        =  0.1954E+05
+
+ Expt  1: Renorm     0.9631  Constant = 0.0000  Chi**2/nq =   5444.    
+ Expt  2: Renorm     1.0190  Constant = 0.0000  Chi**2/nq =  0.3878E+05
+
+ ---------------------------------------------------->
+ Time used  397.1 ,time limit ****** ,Last saved at  390.0
+
+ Moves accepted  :: 555451
+ Moves generated :: 1190007
+ Moves tested    :: 1190006
+
+ Chi^2/dof        =  0.1984E+05
+
+ Expt  1: Renorm     0.9634  Constant = 0.0000  Chi**2/nq =   5302.    
+ Expt  2: Renorm     1.0189  Constant = 0.0000  Chi**2/nq =  0.3969E+05
+
+ ---------------------------------------------------->
+ Time used  399.9 ,time limit ****** ,Last saved at  390.0
+
+ Moves accepted  :: 558071
+ Moves generated :: 1200003
+ Moves tested    :: 1200002
+
+ Chi^2/dof        =  0.2811E+05
+
+ Expt  1: Renorm     0.9635  Constant = 0.0000  Chi**2/nq =   7447.    
+ Expt  2: Renorm     1.0187  Constant = 0.0000  Chi**2/nq =  0.5630E+05
+
+Total time in loop so far :   0.2388E+05 s
+Time per generated move is :   19.90     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  402.8 ,time limit ****** ,Last saved at  400.0
+
+ Moves accepted  :: 560748
+ Moves generated :: 1210003
+ Moves tested    :: 1210002
+
+ Chi^2/dof        =  0.1818E+05
+
+ Expt  1: Renorm     0.9639  Constant = 0.0000  Chi**2/nq =   5102.    
+ Expt  2: Renorm     1.0187  Constant = 0.0000  Chi**2/nq =  0.3602E+05
+
+ ---------------------------------------------------->
+ Time used  405.7 ,time limit ****** ,Last saved at  400.0
+
+ Moves accepted  :: 563293
+ Moves generated :: 1220020
+ Moves tested    :: 1220019
+
+ Chi^2/dof        =  0.1409E+05
+
+ Expt  1: Renorm     0.9641  Constant = 0.0000  Chi**2/nq =   4475.    
+ Expt  2: Renorm     1.0186  Constant = 0.0000  Chi**2/nq =  0.2722E+05
+
+ ---------------------------------------------------->
+ Time used  408.5 ,time limit ****** ,Last saved at  400.0
+
+ Moves accepted  :: 565928
+ Moves generated :: 1230004
+ Moves tested    :: 1230003
+
+ Chi^2/dof        =  0.2079E+05
+
+ Expt  1: Renorm     0.9643  Constant = 0.0000  Chi**2/nq =   6130.    
+ Expt  2: Renorm     1.0185  Constant = 0.0000  Chi**2/nq =  0.4079E+05
+
+Total time in loop so far :   0.2448E+05 s
+Time per generated move is :   19.82     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  411.4 ,time limit ****** ,Last saved at  410.0
+
+ Moves accepted  :: 568519
+ Moves generated :: 1240006
+ Moves tested    :: 1240005
+
+ Chi^2/dof        =  0.1798E+05
+
+ Expt  1: Renorm     0.9644  Constant = 0.0000  Chi**2/nq =   5436.    
+ Expt  2: Renorm     1.0183  Constant = 0.0000  Chi**2/nq =  0.3510E+05
+
+ ---------------------------------------------------->
+ Time used  414.3 ,time limit ****** ,Last saved at  410.0
+
+ Moves accepted  :: 571074
+ Moves generated :: 1250002
+ Moves tested    :: 1250001
+
+ Chi^2/dof        =  0.2035E+05
+
+ Expt  1: Renorm     0.9647  Constant = 0.0000  Chi**2/nq =   6312.    
+ Expt  2: Renorm     1.0182  Constant = 0.0000  Chi**2/nq =  0.3950E+05
+
+ ---------------------------------------------------->
+ Time used  417.1 ,time limit ****** ,Last saved at  410.0
+
+ Moves accepted  :: 573618
+ Moves generated :: 1260002
+ Moves tested    :: 1260001
+
+ Chi^2/dof        =  0.3003E+05
+
+ Expt  1: Renorm     0.9648  Constant = 0.0000  Chi**2/nq =   9250.    
+ Expt  2: Renorm     1.0180  Constant = 0.0000  Chi**2/nq =  0.5838E+05
+
+ ---------------------------------------------------->
+ Time used  420.0 ,time limit ****** ,Last saved at  410.0
+
+ Moves accepted  :: 576168
+ Moves generated :: 1270003
+ Moves tested    :: 1270002
+
+ Chi^2/dof        =  0.2781E+05
+
+ Expt  1: Renorm     0.9651  Constant = 0.0000  Chi**2/nq =   8240.    
+ Expt  2: Renorm     1.0179  Constant = 0.0000  Chi**2/nq =  0.5452E+05
+
+Total time in loop so far :   0.2508E+05 s
+Time per generated move is :   19.75     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  422.9 ,time limit ****** ,Last saved at  420.0
+
+ Moves accepted  :: 578722
+ Moves generated :: 1280002
+ Moves tested    :: 1280001
+
+ Chi^2/dof        =  0.2176E+05
+
+ Expt  1: Renorm     0.9653  Constant = 0.0000  Chi**2/nq =   6829.    
+ Expt  2: Renorm     1.0177  Constant = 0.0000  Chi**2/nq =  0.4214E+05
+
+ ---------------------------------------------------->
+ Time used  425.7 ,time limit ****** ,Last saved at  420.0
+
+ Moves accepted  :: 581217
+ Moves generated :: 1290000
+ Moves tested    :: 1289999
+
+ Chi^2/dof        =  0.2627E+05
+
+ Expt  1: Renorm     0.9655  Constant = 0.0000  Chi**2/nq =   7921.    
+ Expt  2: Renorm     1.0176  Constant = 0.0000  Chi**2/nq =  0.5131E+05
+
+ ---------------------------------------------------->
+ Time used  428.6 ,time limit ****** ,Last saved at  420.0
+
+ Moves accepted  :: 583652
+ Moves generated :: 1300000
+ Moves tested    :: 1299999
+
+ Chi^2/dof        =  0.1842E+05
+
+ Expt  1: Renorm     0.9656  Constant = 0.0000  Chi**2/nq =   5704.    
+ Expt  2: Renorm     1.0175  Constant = 0.0000  Chi**2/nq =  0.3578E+05
+
+Total time in loop so far :   0.2568E+05 s
+Time per generated move is :   19.68     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  431.6 ,time limit ****** ,Last saved at  430.0
+
+ Moves accepted  :: 586057
+ Moves generated :: 1310002
+ Moves tested    :: 1310001
+
+ Chi^2/dof        =  0.2342E+05
+
+ Expt  1: Renorm     0.9657  Constant = 0.0000  Chi**2/nq =   7438.    
+ Expt  2: Renorm     1.0173  Constant = 0.0000  Chi**2/nq =  0.4524E+05
+
+ ---------------------------------------------------->
+ Time used  434.4 ,time limit ****** ,Last saved at  430.0
+
+ Moves accepted  :: 588612
+ Moves generated :: 1320008
+ Moves tested    :: 1320007
+
+ Chi^2/dof        =  0.1850E+05
+
+ Expt  1: Renorm     0.9660  Constant = 0.0000  Chi**2/nq =   6016.    
+ Expt  2: Renorm     1.0173  Constant = 0.0000  Chi**2/nq =  0.3554E+05
+
+ ---------------------------------------------------->
+ Time used  437.2 ,time limit ****** ,Last saved at  430.0
+
+ Moves accepted  :: 590983
+ Moves generated :: 1330000
+ Moves tested    :: 1329999
+
+ Chi^2/dof        =  0.1918E+05
+
+ Expt  1: Renorm     0.9662  Constant = 0.0000  Chi**2/nq =   6606.    
+ Expt  2: Renorm     1.0172  Constant = 0.0000  Chi**2/nq =  0.3634E+05
+
+Total time in loop so far :   0.2628E+05 s
+Time per generated move is :   19.61     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  440.1 ,time limit ****** ,Last saved at  440.0
+
+ Moves accepted  :: 593487
+ Moves generated :: 1340006
+ Moves tested    :: 1340005
+
+ Chi^2/dof        =  0.2231E+05
+
+ Expt  1: Renorm     0.9663  Constant = 0.0000  Chi**2/nq =   7153.    
+ Expt  2: Renorm     1.0170  Constant = 0.0000  Chi**2/nq =  0.4299E+05
+
+ ---------------------------------------------------->
+ Time used  442.9 ,time limit ****** ,Last saved at  440.0
+
+ Moves accepted  :: 595897
+ Moves generated :: 1350000
+ Moves tested    :: 1349999
+
+ Chi^2/dof        =  0.2025E+05
+
+ Expt  1: Renorm     0.9665  Constant = 0.0000  Chi**2/nq =   6879.    
+ Expt  2: Renorm     1.0169  Constant = 0.0000  Chi**2/nq =  0.3850E+05
+
+ ---------------------------------------------------->
+ Time used  445.8 ,time limit ****** ,Last saved at  440.0
+
+ Moves accepted  :: 598323
+ Moves generated :: 1360002
+ Moves tested    :: 1360001
+
+ Chi^2/dof        =  0.1525E+05
+
+ Expt  1: Renorm     0.9665  Constant = 0.0000  Chi**2/nq =   4990.    
+ Expt  2: Renorm     1.0167  Constant = 0.0000  Chi**2/nq =  0.2926E+05
+
+ ---------------------------------------------------->
+ Time used  448.6 ,time limit ****** ,Last saved at  440.0
+
+ Moves accepted  :: 600830
+ Moves generated :: 1370002
+ Moves tested    :: 1370001
+
+ Chi^2/dof        =  0.2412E+05
+
+ Expt  1: Renorm     0.9666  Constant = 0.0000  Chi**2/nq =   8904.    
+ Expt  2: Renorm     1.0165  Constant = 0.0000  Chi**2/nq =  0.4488E+05
+
+Total time in loop so far :   0.2687E+05 s
+Time per generated move is :   19.55     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  451.5 ,time limit ****** ,Last saved at  450.0
+
+ Moves accepted  :: 603194
+ Moves generated :: 1380016
+ Moves tested    :: 1380015
+
+ Chi^2/dof        =  0.1996E+05
+
+ Expt  1: Renorm     0.9669  Constant = 0.0000  Chi**2/nq =   7318.    
+ Expt  2: Renorm     1.0165  Constant = 0.0000  Chi**2/nq =  0.3720E+05
+
+ ---------------------------------------------------->
+ Time used  454.4 ,time limit ****** ,Last saved at  450.0
+
+ Moves accepted  :: 605610
+ Moves generated :: 1390011
+ Moves tested    :: 1390010
+
+ Chi^2/dof        =  0.1846E+05
+
+ Expt  1: Renorm     0.9670  Constant = 0.0000  Chi**2/nq =   6318.    
+ Expt  2: Renorm     1.0163  Constant = 0.0000  Chi**2/nq =  0.3504E+05
+
+ ---------------------------------------------------->
+ Time used  457.2 ,time limit ****** ,Last saved at  450.0
+
+ Moves accepted  :: 608011
+ Moves generated :: 1400002
+ Moves tested    :: 1400001
+
+ Chi^2/dof        =  0.2165E+05
+
+ Expt  1: Renorm     0.9671  Constant = 0.0000  Chi**2/nq =   8096.    
+ Expt  2: Renorm     1.0162  Constant = 0.0000  Chi**2/nq =  0.4014E+05
+
+ ---------------------------------------------------->
+ Time used  460.0 ,time limit ****** ,Last saved at  450.0
+
+ Moves accepted  :: 610367
+ Moves generated :: 1410007
+ Moves tested    :: 1410006
+
+ Chi^2/dof        =  0.1502E+05
+
+ Expt  1: Renorm     0.9673  Constant = 0.0000  Chi**2/nq =   5579.    
+ Expt  2: Renorm     1.0160  Constant = 0.0000  Chi**2/nq =  0.2790E+05
+
+Total time in loop so far :   0.2747E+05 s
+Time per generated move is :   19.48     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  462.9 ,time limit ****** ,Last saved at  460.0
+
+ Moves accepted  :: 612730
+ Moves generated :: 1420002
+ Moves tested    :: 1420001
+
+ Chi^2/dof        =  0.2144E+05
+
+ Expt  1: Renorm     0.9674  Constant = 0.0000  Chi**2/nq =   8422.    
+ Expt  2: Renorm     1.0159  Constant = 0.0000  Chi**2/nq =  0.3919E+05
+
+ ---------------------------------------------------->
+ Time used  465.8 ,time limit ****** ,Last saved at  460.0
+
+ Moves accepted  :: 615027
+ Moves generated :: 1430003
+ Moves tested    :: 1430002
+
+ Chi^2/dof        =  0.1810E+05
+
+ Expt  1: Renorm     0.9675  Constant = 0.0000  Chi**2/nq =   7076.    
+ Expt  2: Renorm     1.0158  Constant = 0.0000  Chi**2/nq =  0.3314E+05
+
+ ---------------------------------------------------->
+ Time used  468.7 ,time limit ****** ,Last saved at  460.0
+
+ Moves accepted  :: 617314
+ Moves generated :: 1440003
+ Moves tested    :: 1440002
+
+ Chi^2/dof        =  0.1594E+05
+
+ Expt  1: Renorm     0.9676  Constant = 0.0000  Chi**2/nq =   6007.    
+ Expt  2: Renorm     1.0157  Constant = 0.0000  Chi**2/nq =  0.2949E+05
+
+Total time in loop so far :   0.2807E+05 s
+Time per generated move is :   19.43     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  471.5 ,time limit ****** ,Last saved at  470.0
+
+ Moves accepted  :: 619627
+ Moves generated :: 1450000
+ Moves tested    :: 1449999
+
+ Chi^2/dof        =  0.2375E+05
+
+ Expt  1: Renorm     0.9678  Constant = 0.0000  Chi**2/nq =   8908.    
+ Expt  2: Renorm     1.0155  Constant = 0.0000  Chi**2/nq =  0.4400E+05
+
+ ---------------------------------------------------->
+ Time used  474.3 ,time limit ****** ,Last saved at  470.0
+
+ Moves accepted  :: 621906
+ Moves generated :: 1460007
+ Moves tested    :: 1460006
+
+ Chi^2/dof        =  0.1845E+05
+
+ Expt  1: Renorm     0.9679  Constant = 0.0000  Chi**2/nq =   6887.    
+ Expt  2: Renorm     1.0154  Constant = 0.0000  Chi**2/nq =  0.3423E+05
+
+ ---------------------------------------------------->
+ Time used  477.2 ,time limit ****** ,Last saved at  470.0
+
+ Moves accepted  :: 624087
+ Moves generated :: 1470002
+ Moves tested    :: 1470001
+
+ Chi^2/dof        =  0.3896E+05
+
+ Expt  1: Renorm     0.9680  Constant = 0.0000  Chi**2/nq =  0.1492E+05
+ Expt  2: Renorm     1.0153  Constant = 0.0000  Chi**2/nq =  0.7177E+05
+
+Total time in loop so far :   0.2867E+05 s
+Time per generated move is :   19.37     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  480.0 ,time limit ****** ,Last saved at  480.0
+
+ Moves accepted  :: 626300
+ Moves generated :: 1480005
+ Moves tested    :: 1480004
+
+ Chi^2/dof        =  0.2610E+05
+
+ Expt  1: Renorm     0.9681  Constant = 0.0000  Chi**2/nq =  0.1025E+05
+ Expt  2: Renorm     1.0152  Constant = 0.0000  Chi**2/nq =  0.4772E+05
+
+ ---------------------------------------------------->
+ Time used  482.9 ,time limit ****** ,Last saved at  480.0
+
+ Moves accepted  :: 628558
+ Moves generated :: 1490000
+ Moves tested    :: 1489999
+
+ Chi^2/dof        =  0.2187E+05
+
+ Expt  1: Renorm     0.9682  Constant = 0.0000  Chi**2/nq =   8806.    
+ Expt  2: Renorm     1.0150  Constant = 0.0000  Chi**2/nq =  0.3969E+05
+
+ ---------------------------------------------------->
+ Time used  485.8 ,time limit ****** ,Last saved at  480.0
+
+ Moves accepted  :: 630712
+ Moves generated :: 1500002
+ Moves tested    :: 1500001
+
+ Chi^2/dof        =  0.2206E+05
+
+ Expt  1: Renorm     0.9683  Constant = 0.0000  Chi**2/nq =   8577.    
+ Expt  2: Renorm     1.0149  Constant = 0.0000  Chi**2/nq =  0.4045E+05
+
+ ---------------------------------------------------->
+ Time used  488.6 ,time limit ****** ,Last saved at  480.0
+
+ Moves accepted  :: 632886
+ Moves generated :: 1510002
+ Moves tested    :: 1510001
+
+ Chi^2/dof        =  0.2329E+05
+
+ Expt  1: Renorm     0.9685  Constant = 0.0000  Chi**2/nq =   9295.    
+ Expt  2: Renorm     1.0148  Constant = 0.0000  Chi**2/nq =  0.4238E+05
+
+Total time in loop so far :   0.2927E+05 s
+Time per generated move is :   19.32     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  491.5 ,time limit ****** ,Last saved at  490.0
+
+ Moves accepted  :: 635057
+ Moves generated :: 1520002
+ Moves tested    :: 1520001
+
+ Chi^2/dof        =  0.2901E+05
+
+ Expt  1: Renorm     0.9687  Constant = 0.0000  Chi**2/nq =  0.1084E+05
+ Expt  2: Renorm     1.0147  Constant = 0.0000  Chi**2/nq =  0.5381E+05
+
+ ---------------------------------------------------->
+ Time used  494.3 ,time limit ****** ,Last saved at  490.0
+
+ Moves accepted  :: 637250
+ Moves generated :: 1530002
+ Moves tested    :: 1530001
+
+ Chi^2/dof        =  0.2046E+05
+
+ Expt  1: Renorm     0.9688  Constant = 0.0000  Chi**2/nq =   7609.    
+ Expt  2: Renorm     1.0146  Constant = 0.0000  Chi**2/nq =  0.3800E+05
+
+ ---------------------------------------------------->
+ Time used  497.2 ,time limit ****** ,Last saved at  490.0
+
+ Moves accepted  :: 639379
+ Moves generated :: 1540014
+ Moves tested    :: 1540013
+
+ Chi^2/dof        =  0.2405E+05
+
+ Expt  1: Renorm     0.9688  Constant = 0.0000  Chi**2/nq =   9763.    
+ Expt  2: Renorm     1.0144  Constant = 0.0000  Chi**2/nq =  0.4354E+05
+
+Total time in loop so far :   0.2987E+05 s
+Time per generated move is :   19.27     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  500.0 ,time limit ****** ,Last saved at  500.0
+
+ Moves accepted  :: 641486
+ Moves generated :: 1550002
+ Moves tested    :: 1550001
+
+ Chi^2/dof        =  0.1678E+05
+
+ Expt  1: Renorm     0.9689  Constant = 0.0000  Chi**2/nq =   6985.    
+ Expt  2: Renorm     1.0144  Constant = 0.0000  Chi**2/nq =  0.3014E+05
+
+ ---------------------------------------------------->
+ Time used  502.9 ,time limit ****** ,Last saved at  500.0
+
+ Moves accepted  :: 643613
+ Moves generated :: 1560002
+ Moves tested    :: 1560001
+
+ Chi^2/dof        =  0.1181E+05
+
+ Expt  1: Renorm     0.9690  Constant = 0.0000  Chi**2/nq =   5046.    
+ Expt  2: Renorm     1.0142  Constant = 0.0000  Chi**2/nq =  0.2104E+05
+
+ ---------------------------------------------------->
+ Time used  505.7 ,time limit ****** ,Last saved at  500.0
+
+ Moves accepted  :: 645712
+ Moves generated :: 1570002
+ Moves tested    :: 1570001
+
+ Chi^2/dof        =  0.2361E+05
+
+ Expt  1: Renorm     0.9692  Constant = 0.0000  Chi**2/nq =   9179.    
+ Expt  2: Renorm     1.0141  Constant = 0.0000  Chi**2/nq =  0.4330E+05
+
+ ---------------------------------------------------->
+ Time used  508.6 ,time limit ****** ,Last saved at  500.0
+
+ Moves accepted  :: 647827
+ Moves generated :: 1580000
+ Moves tested    :: 1579999
+
+ Chi^2/dof        =  0.3517E+05
+
+ Expt  1: Renorm     0.9692  Constant = 0.0000  Chi**2/nq =  0.1362E+05
+ Expt  2: Renorm     1.0139  Constant = 0.0000  Chi**2/nq =  0.6458E+05
+
+Total time in loop so far :   0.3047E+05 s
+Time per generated move is :   19.22     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  511.4 ,time limit ****** ,Last saved at  510.0
+
+ Moves accepted  :: 649883
+ Moves generated :: 1590002
+ Moves tested    :: 1590001
+
+ Chi^2/dof        =  0.1908E+05
+
+ Expt  1: Renorm     0.9692  Constant = 0.0000  Chi**2/nq =   7817.    
+ Expt  2: Renorm     1.0138  Constant = 0.0000  Chi**2/nq =  0.3446E+05
+
+ ---------------------------------------------------->
+ Time used  514.3 ,time limit ****** ,Last saved at  510.0
+
+ Moves accepted  :: 651973
+ Moves generated :: 1600040
+ Moves tested    :: 1600039
+
+ Chi^2/dof        =  0.2122E+05
+
+ Expt  1: Renorm     0.9693  Constant = 0.0000  Chi**2/nq =   8920.    
+ Expt  2: Renorm     1.0137  Constant = 0.0000  Chi**2/nq =  0.3799E+05
+
+ ---------------------------------------------------->
+ Time used  517.1 ,time limit ****** ,Last saved at  510.0
+
+ Moves accepted  :: 654017
+ Moves generated :: 1610000
+ Moves tested    :: 1609999
+
+ Chi^2/dof        =  0.2700E+05
+
+ Expt  1: Renorm     0.9694  Constant = 0.0000  Chi**2/nq =  0.1236E+05
+ Expt  2: Renorm     1.0136  Constant = 0.0000  Chi**2/nq =  0.4697E+05
+
+ ---------------------------------------------------->
+ Time used  520.0 ,time limit ****** ,Last saved at  510.0
+
+ Moves accepted  :: 656018
+ Moves generated :: 1620002
+ Moves tested    :: 1620001
+
+ Chi^2/dof        =  0.2804E+05
+
+ Expt  1: Renorm     0.9695  Constant = 0.0000  Chi**2/nq =  0.1171E+05
+ Expt  2: Renorm     1.0135  Constant = 0.0000  Chi**2/nq =  0.5033E+05
+
+Total time in loop so far :   0.3107E+05 s
+Time per generated move is :   19.18     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  522.9 ,time limit ****** ,Last saved at  520.0
+
+ Moves accepted  :: 658033
+ Moves generated :: 1630002
+ Moves tested    :: 1630001
+
+ Chi^2/dof        =  0.3080E+05
+
+ Expt  1: Renorm     0.9695  Constant = 0.0000  Chi**2/nq =  0.1281E+05
+ Expt  2: Renorm     1.0134  Constant = 0.0000  Chi**2/nq =  0.5535E+05
+
+ ---------------------------------------------------->
+ Time used  525.7 ,time limit ****** ,Last saved at  520.0
+
+ Moves accepted  :: 659981
+ Moves generated :: 1640000
+ Moves tested    :: 1639999
+
+ Chi^2/dof        =  0.3995E+05
+
+ Expt  1: Renorm     0.9696  Constant = 0.0000  Chi**2/nq =  0.1705E+05
+ Expt  2: Renorm     1.0133  Constant = 0.0000  Chi**2/nq =  0.7120E+05
+
+ ---------------------------------------------------->
+ Time used  528.5 ,time limit ****** ,Last saved at  520.0
+
+ Moves accepted  :: 661982
+ Moves generated :: 1650002
+ Moves tested    :: 1650001
+
+ Chi^2/dof        =  0.1716E+05
+
+ Expt  1: Renorm     0.9699  Constant = 0.0000  Chi**2/nq =   7521.    
+ Expt  2: Renorm     1.0133  Constant = 0.0000  Chi**2/nq =  0.3032E+05
+
+Total time in loop so far :   0.3167E+05 s
+Time per generated move is :   19.13     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  531.4 ,time limit ****** ,Last saved at  530.0
+
+ Moves accepted  :: 663938
+ Moves generated :: 1660011
+ Moves tested    :: 1660010
+
+ Chi^2/dof        =  0.1878E+05
+
+ Expt  1: Renorm     0.9699  Constant = 0.0000  Chi**2/nq =   7955.    
+ Expt  2: Renorm     1.0132  Constant = 0.0000  Chi**2/nq =  0.3355E+05
+
+ ---------------------------------------------------->
+ Time used  534.3 ,time limit ****** ,Last saved at  530.0
+
+ Moves accepted  :: 665918
+ Moves generated :: 1670002
+ Moves tested    :: 1670001
+
+ Chi^2/dof        =  0.2248E+05
+
+ Expt  1: Renorm     0.9701  Constant = 0.0000  Chi**2/nq =   9773.    
+ Expt  2: Renorm     1.0131  Constant = 0.0000  Chi**2/nq =  0.3982E+05
+
+ ---------------------------------------------------->
+ Time used  537.1 ,time limit ****** ,Last saved at  530.0
+
+ Moves accepted  :: 667899
+ Moves generated :: 1680004
+ Moves tested    :: 1680003
+
+ Chi^2/dof        =  0.2654E+05
+
+ Expt  1: Renorm     0.9702  Constant = 0.0000  Chi**2/nq =  0.1151E+05
+ Expt  2: Renorm     1.0130  Constant = 0.0000  Chi**2/nq =  0.4706E+05
+
+Total time in loop so far :   0.3226E+05 s
+Time per generated move is :   19.09     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  540.0 ,time limit ****** ,Last saved at  540.0
+
+ Moves accepted  :: 669894
+ Moves generated :: 1690007
+ Moves tested    :: 1690006
+
+ Chi^2/dof        =  0.2135E+05
+
+ Expt  1: Renorm     0.9702  Constant = 0.0000  Chi**2/nq =   9227.    
+ Expt  2: Renorm     1.0129  Constant = 0.0000  Chi**2/nq =  0.3788E+05
+
+ ---------------------------------------------------->
+ Time used  543.0 ,time limit ****** ,Last saved at  540.0
+
+ Moves accepted  :: 671845
+ Moves generated :: 1700008
+ Moves tested    :: 1700007
+
+ Chi^2/dof        =  0.1691E+05
+
+ Expt  1: Renorm     0.9703  Constant = 0.0000  Chi**2/nq =   7282.    
+ Expt  2: Renorm     1.0128  Constant = 0.0000  Chi**2/nq =  0.3005E+05
+
+ ---------------------------------------------------->
+ Time used  545.8 ,time limit ****** ,Last saved at  540.0
+
+ Moves accepted  :: 673884
+ Moves generated :: 1710000
+ Moves tested    :: 1709999
+
+ Chi^2/dof        =  0.2257E+05
+
+ Expt  1: Renorm     0.9705  Constant = 0.0000  Chi**2/nq =   9690.    
+ Expt  2: Renorm     1.0127  Constant = 0.0000  Chi**2/nq =  0.4015E+05
+
+ ---------------------------------------------------->
+ Time used  548.7 ,time limit ****** ,Last saved at  540.0
+
+ Moves accepted  :: 675803
+ Moves generated :: 1720003
+ Moves tested    :: 1720002
+
+ Chi^2/dof        =  0.1981E+05
+
+ Expt  1: Renorm     0.9705  Constant = 0.0000  Chi**2/nq =   8734.    
+ Expt  2: Renorm     1.0126  Constant = 0.0000  Chi**2/nq =  0.3493E+05
+
+Total time in loop so far :   0.3286E+05 s
+Time per generated move is :   19.05     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  551.5 ,time limit ****** ,Last saved at  550.0
+
+ Moves accepted  :: 677802
+ Moves generated :: 1730009
+ Moves tested    :: 1730008
+
+ Chi^2/dof        =  0.2207E+05
+
+ Expt  1: Renorm     0.9706  Constant = 0.0000  Chi**2/nq =   9408.    
+ Expt  2: Renorm     1.0124  Constant = 0.0000  Chi**2/nq =  0.3934E+05
+
+ ---------------------------------------------------->
+ Time used  554.4 ,time limit ****** ,Last saved at  550.0
+
+ Moves accepted  :: 679695
+ Moves generated :: 1740000
+ Moves tested    :: 1739999
+
+ Chi^2/dof        =  0.2035E+05
+
+ Expt  1: Renorm     0.9705  Constant = 0.0000  Chi**2/nq =   9171.    
+ Expt  2: Renorm     1.0123  Constant = 0.0000  Chi**2/nq =  0.3559E+05
+
+ ---------------------------------------------------->
+ Time used  557.2 ,time limit ****** ,Last saved at  550.0
+
+ Moves accepted  :: 681625
+ Moves generated :: 1750002
+ Moves tested    :: 1750001
+
+ Chi^2/dof        =  0.2432E+05
+
+ Expt  1: Renorm     0.9707  Constant = 0.0000  Chi**2/nq =  0.1062E+05
+ Expt  2: Renorm     1.0122  Constant = 0.0000  Chi**2/nq =  0.4302E+05
+
+Total time in loop so far :   0.3346E+05 s
+Time per generated move is :   19.02     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  560.1 ,time limit ****** ,Last saved at  560.0
+
+ Moves accepted  :: 683463
+ Moves generated :: 1760003
+ Moves tested    :: 1760002
+
+ Chi^2/dof        =  0.3073E+05
+
+ Expt  1: Renorm     0.9708  Constant = 0.0000  Chi**2/nq =  0.1378E+05
+ Expt  2: Renorm     1.0121  Constant = 0.0000  Chi**2/nq =  0.5386E+05
+
+ ---------------------------------------------------->
+ Time used  562.9 ,time limit ****** ,Last saved at  560.0
+
+ Moves accepted  :: 685238
+ Moves generated :: 1770002
+ Moves tested    :: 1770001
+
+ Chi^2/dof        =   7335.    
+
+ Expt  1: Renorm     0.9708  Constant = 0.0000  Chi**2/nq =   3377.    
+ Expt  2: Renorm     1.0120  Constant = 0.0000  Chi**2/nq =  0.1274E+05
+
+ ---------------------------------------------------->
+ Time used  565.8 ,time limit ****** ,Last saved at  560.0
+
+ Moves accepted  :: 687043
+ Moves generated :: 1780002
+ Moves tested    :: 1780001
+
+ Chi^2/dof        =  0.2128E+05
+
+ Expt  1: Renorm     0.9709  Constant = 0.0000  Chi**2/nq =   9208.    
+ Expt  2: Renorm     1.0120  Constant = 0.0000  Chi**2/nq =  0.3774E+05
+
+ ---------------------------------------------------->
+ Time used  568.6 ,time limit ****** ,Last saved at  560.0
+
+ Moves accepted  :: 688887
+ Moves generated :: 1790008
+ Moves tested    :: 1790007
+
+ Chi^2/dof        =  0.1781E+05
+
+ Expt  1: Renorm     0.9709  Constant = 0.0000  Chi**2/nq =   7919.    
+ Expt  2: Renorm     1.0118  Constant = 0.0000  Chi**2/nq =  0.3131E+05
+
+Total time in loop so far :   0.3406E+05 s
+Time per generated move is :   18.98     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  571.5 ,time limit ****** ,Last saved at  570.0
+
+ Moves accepted  :: 690681
+ Moves generated :: 1800004
+ Moves tested    :: 1800003
+
+ Chi^2/dof        =  0.2072E+05
+
+ Expt  1: Renorm     0.9711  Constant = 0.0000  Chi**2/nq =   9192.    
+ Expt  2: Renorm     1.0117  Constant = 0.0000  Chi**2/nq =  0.3644E+05
+
+ ---------------------------------------------------->
+ Time used  574.4 ,time limit ****** ,Last saved at  570.0
+
+ Moves accepted  :: 692523
+ Moves generated :: 1810002
+ Moves tested    :: 1810001
+
+ Chi^2/dof        =  0.1889E+05
+
+ Expt  1: Renorm     0.9711  Constant = 0.0000  Chi**2/nq =   8358.    
+ Expt  2: Renorm     1.0116  Constant = 0.0000  Chi**2/nq =  0.3325E+05
+
+ ---------------------------------------------------->
+ Time used  577.2 ,time limit ****** ,Last saved at  570.0
+
+ Moves accepted  :: 694338
+ Moves generated :: 1820002
+ Moves tested    :: 1820001
+
+ Chi^2/dof        =  0.2538E+05
+
+ Expt  1: Renorm     0.9712  Constant = 0.0000  Chi**2/nq =  0.1120E+05
+ Expt  2: Renorm     1.0115  Constant = 0.0000  Chi**2/nq =  0.4473E+05
+
+Total time in loop so far :   0.3466E+05 s
+Time per generated move is :   18.94     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  580.0 ,time limit ****** ,Last saved at  580.0
+
+ Moves accepted  :: 696132
+ Moves generated :: 1830002
+ Moves tested    :: 1830001
+
+ Chi^2/dof        =  0.2859E+05
+
+ Expt  1: Renorm     0.9712  Constant = 0.0000  Chi**2/nq =  0.1259E+05
+ Expt  2: Renorm     1.0114  Constant = 0.0000  Chi**2/nq =  0.5043E+05
+
+ ---------------------------------------------------->
+ Time used  582.9 ,time limit ****** ,Last saved at  580.0
+
+ Moves accepted  :: 697944
+ Moves generated :: 1840006
+ Moves tested    :: 1840005
+
+ Chi^2/dof        =  0.2105E+05
+
+ Expt  1: Renorm     0.9713  Constant = 0.0000  Chi**2/nq =  0.1009E+05
+ Expt  2: Renorm     1.0113  Constant = 0.0000  Chi**2/nq =  0.3602E+05
+
+ ---------------------------------------------------->
+ Time used  585.8 ,time limit ****** ,Last saved at  580.0
+
+ Moves accepted  :: 699771
+ Moves generated :: 1850000
+ Moves tested    :: 1849999
+
+ Chi^2/dof        =  0.1617E+05
+
+ Expt  1: Renorm     0.9713  Constant = 0.0000  Chi**2/nq =   7292.    
+ Expt  2: Renorm     1.0112  Constant = 0.0000  Chi**2/nq =  0.2828E+05
+
+ ---------------------------------------------------->
+ Time used  588.6 ,time limit ****** ,Last saved at  580.0
+
+ Moves accepted  :: 701519
+ Moves generated :: 1860005
+ Moves tested    :: 1860004
+
+ Chi^2/dof        =   9526.    
+
+ Expt  1: Renorm     0.9713  Constant = 0.0000  Chi**2/nq =   4285.    
+ Expt  2: Renorm     1.0111  Constant = 0.0000  Chi**2/nq =  0.1668E+05
+
+Total time in loop so far :   0.3526E+05 s
+Time per generated move is :   18.91     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  591.5 ,time limit ****** ,Last saved at  590.0
+
+ Moves accepted  :: 703296
+ Moves generated :: 1870000
+ Moves tested    :: 1869999
+
+ Chi^2/dof        =  0.1378E+05
+
+ Expt  1: Renorm     0.9715  Constant = 0.0000  Chi**2/nq =   5831.    
+ Expt  2: Renorm     1.0110  Constant = 0.0000  Chi**2/nq =  0.2463E+05
+
+ ---------------------------------------------------->
+ Time used  594.4 ,time limit ****** ,Last saved at  590.0
+
+ Moves accepted  :: 705038
+ Moves generated :: 1880003
+ Moves tested    :: 1880002
+
+ Chi^2/dof        =  0.1761E+05
+
+ Expt  1: Renorm     0.9716  Constant = 0.0000  Chi**2/nq =   8362.    
+ Expt  2: Renorm     1.0110  Constant = 0.0000  Chi**2/nq =  0.3023E+05
+
+ ---------------------------------------------------->
+ Time used  597.2 ,time limit ****** ,Last saved at  590.0
+
+ Moves accepted  :: 706786
+ Moves generated :: 1890004
+ Moves tested    :: 1890003
+
+ Chi^2/dof        =  0.1169E+05
+
+ Expt  1: Renorm     0.9716  Constant = 0.0000  Chi**2/nq =   5378.    
+ Expt  2: Renorm     1.0108  Constant = 0.0000  Chi**2/nq =  0.2029E+05
+
+Total time in loop so far :   0.3586E+05 s
+Time per generated move is :   18.87     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  600.1 ,time limit ****** ,Last saved at  600.0
+
+ Moves accepted  :: 708543
+ Moves generated :: 1900000
+ Moves tested    :: 1899999
+
+ Chi^2/dof        =  0.1676E+05
+
+ Expt  1: Renorm     0.9716  Constant = 0.0000  Chi**2/nq =   7697.    
+ Expt  2: Renorm     1.0108  Constant = 0.0000  Chi**2/nq =  0.2913E+05
+
+ ---------------------------------------------------->
+ Time used  602.9 ,time limit ****** ,Last saved at  600.0
+
+ Moves accepted  :: 710297
+ Moves generated :: 1910000
+ Moves tested    :: 1909999
+
+ Chi^2/dof        =  0.2084E+05
+
+ Expt  1: Renorm     0.9717  Constant = 0.0000  Chi**2/nq =   9547.    
+ Expt  2: Renorm     1.0107  Constant = 0.0000  Chi**2/nq =  0.3624E+05
+
+ ---------------------------------------------------->
+ Time used  605.9 ,time limit ****** ,Last saved at  600.0
+
+ Moves accepted  :: 712009
+ Moves generated :: 1920007
+ Moves tested    :: 1920006
+
+ Chi^2/dof        =   8477.    
+
+ Expt  1: Renorm     0.9718  Constant = 0.0000  Chi**2/nq =   4108.    
+ Expt  2: Renorm     1.0106  Constant = 0.0000  Chi**2/nq =  0.1444E+05
+
+ ---------------------------------------------------->
+ Time used  608.9 ,time limit ****** ,Last saved at  600.0
+
+ Moves accepted  :: 713679
+ Moves generated :: 1930005
+ Moves tested    :: 1930004
+
+ Chi^2/dof        =   2690.    
+
+ Expt  1: Renorm     0.9717  Constant = 0.0000  Chi**2/nq =   1300.    
+ Expt  2: Renorm     1.0105  Constant = 0.0000  Chi**2/nq =   4586.    
+
+Total time in loop so far :   0.3646E+05 s
+Time per generated move is :   18.85     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  611.8 ,time limit ****** ,Last saved at  610.0
+
+ Moves accepted  :: 715401
+ Moves generated :: 1940003
+ Moves tested    :: 1940002
+
+ Chi^2/dof        =   6638.    
+
+ Expt  1: Renorm     0.9717  Constant = 0.0000  Chi**2/nq =   3111.    
+ Expt  2: Renorm     1.0104  Constant = 0.0000  Chi**2/nq =  0.1145E+05
+
+ ---------------------------------------------------->
+ Time used  614.6 ,time limit ****** ,Last saved at  610.0
+
+ Moves accepted  :: 717049
+ Moves generated :: 1950002
+ Moves tested    :: 1950001
+
+ Chi^2/dof        =   9344.    
+
+ Expt  1: Renorm     0.9719  Constant = 0.0000  Chi**2/nq =   4246.    
+ Expt  2: Renorm     1.0103  Constant = 0.0000  Chi**2/nq =  0.1630E+05
+
+ ---------------------------------------------------->
+ Time used  617.5 ,time limit ****** ,Last saved at  610.0
+
+ Moves accepted  :: 718739
+ Moves generated :: 1960000
+ Moves tested    :: 1959999
+
+ Chi^2/dof        =  0.1260E+05
+
+ Expt  1: Renorm     0.9718  Constant = 0.0000  Chi**2/nq =   5885.    
+ Expt  2: Renorm     1.0102  Constant = 0.0000  Chi**2/nq =  0.2177E+05
+
+Total time in loop so far :   0.3705E+05 s
+Time per generated move is :   18.82     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  620.4 ,time limit ****** ,Last saved at  620.0
+
+ Moves accepted  :: 720410
+ Moves generated :: 1970003
+ Moves tested    :: 1970002
+
+ Chi^2/dof        =   6353.    
+
+ Expt  1: Renorm     0.9719  Constant = 0.0000  Chi**2/nq =   2958.    
+ Expt  2: Renorm     1.0101  Constant = 0.0000  Chi**2/nq =  0.1098E+05
+
+ ---------------------------------------------------->
+ Time used  623.3 ,time limit ****** ,Last saved at  620.0
+
+ Moves accepted  :: 722041
+ Moves generated :: 1980000
+ Moves tested    :: 1979999
+
+ Chi^2/dof        =  0.1015E+05
+
+ Expt  1: Renorm     0.9721  Constant = 0.0000  Chi**2/nq =   4453.    
+ Expt  2: Renorm     1.0101  Constant = 0.0000  Chi**2/nq =  0.1792E+05
+
+ ---------------------------------------------------->
+ Time used  626.1 ,time limit ****** ,Last saved at  620.0
+
+ Moves accepted  :: 723779
+ Moves generated :: 1990002
+ Moves tested    :: 1990001
+
+ Chi^2/dof        =  0.1113E+05
+
+ Expt  1: Renorm     0.9720  Constant = 0.0000  Chi**2/nq =   5315.    
+ Expt  2: Renorm     1.0100  Constant = 0.0000  Chi**2/nq =  0.1905E+05
+
+ ---------------------------------------------------->
+ Time used  628.9 ,time limit ****** ,Last saved at  620.0
+
+ Moves accepted  :: 725413
+ Moves generated :: 2000004
+ Moves tested    :: 2000003
+
+ Chi^2/dof        =   4382.    
+
+ Expt  1: Renorm     0.9720  Constant = 0.0000  Chi**2/nq =   2149.    
+ Expt  2: Renorm     1.0099  Constant = 0.0000  Chi**2/nq =   7428.    
+
+Total time in loop so far :   0.3765E+05 s
+Time per generated move is :   18.79     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  631.8 ,time limit ****** ,Last saved at  630.0
+
+ Moves accepted  :: 727005
+ Moves generated :: 2010000
+ Moves tested    :: 2009999
+
+ Chi^2/dof        =   3639.    
+
+ Expt  1: Renorm     0.9721  Constant = 0.0000  Chi**2/nq =   1782.    
+ Expt  2: Renorm     1.0098  Constant = 0.0000  Chi**2/nq =   6173.    
+
+ ---------------------------------------------------->
+ Time used  634.7 ,time limit ****** ,Last saved at  630.0
+
+ Moves accepted  :: 728589
+ Moves generated :: 2020000
+ Moves tested    :: 2019999
+
+ Chi^2/dof        =   3137.    
+
+ Expt  1: Renorm     0.9722  Constant = 0.0000  Chi**2/nq =   1449.    
+ Expt  2: Renorm     1.0097  Constant = 0.0000  Chi**2/nq =   5440.    
+
+ ---------------------------------------------------->
+ Time used  637.6 ,time limit ****** ,Last saved at  630.0
+
+ Moves accepted  :: 730261
+ Moves generated :: 2030009
+ Moves tested    :: 2030008
+
+ Chi^2/dof        =   8101.    
+
+ Expt  1: Renorm     0.9722  Constant = 0.0000  Chi**2/nq =   3735.    
+ Expt  2: Renorm     1.0096  Constant = 0.0000  Chi**2/nq =  0.1406E+05
+
+Total time in loop so far :   0.3825E+05 s
+Time per generated move is :   18.77     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  640.5 ,time limit ****** ,Last saved at  640.0
+
+ Moves accepted  :: 731911
+ Moves generated :: 2040000
+ Moves tested    :: 2039999
+
+ Chi^2/dof        =   5521.    
+
+ Expt  1: Renorm     0.9722  Constant = 0.0000  Chi**2/nq =   2615.    
+ Expt  2: Renorm     1.0095  Constant = 0.0000  Chi**2/nq =   9487.    
+
+ ---------------------------------------------------->
+ Time used  643.3 ,time limit ****** ,Last saved at  640.0
+
+ Moves accepted  :: 733472
+ Moves generated :: 2050002
+ Moves tested    :: 2050001
+
+ Chi^2/dof        =   5236.    
+
+ Expt  1: Renorm     0.9723  Constant = 0.0000  Chi**2/nq =   2546.    
+ Expt  2: Renorm     1.0094  Constant = 0.0000  Chi**2/nq =   8906.    
+
+ ---------------------------------------------------->
+ Time used  646.2 ,time limit ****** ,Last saved at  640.0
+
+ Moves accepted  :: 735048
+ Moves generated :: 2060000
+ Moves tested    :: 2059999
+
+ Chi^2/dof        =   3433.    
+
+ Expt  1: Renorm     0.9723  Constant = 0.0000  Chi**2/nq =   1574.    
+ Expt  2: Renorm     1.0093  Constant = 0.0000  Chi**2/nq =   5970.    
+
+ ---------------------------------------------------->
+ Time used  649.0 ,time limit ****** ,Last saved at  640.0
+
+ Moves accepted  :: 736663
+ Moves generated :: 2070002
+ Moves tested    :: 2070001
+
+ Chi^2/dof        =   7181.    
+
+ Expt  1: Renorm     0.9723  Constant = 0.0000  Chi**2/nq =   3482.    
+ Expt  2: Renorm     1.0092  Constant = 0.0000  Chi**2/nq =  0.1223E+05
+
+Total time in loop so far :   0.3885E+05 s
+Time per generated move is :   18.74     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  651.9 ,time limit ****** ,Last saved at  650.0
+
+ Moves accepted  :: 738221
+ Moves generated :: 2080002
+ Moves tested    :: 2080001
+
+ Chi^2/dof        =   2712.    
+
+ Expt  1: Renorm     0.9724  Constant = 0.0000  Chi**2/nq =   1276.    
+ Expt  2: Renorm     1.0092  Constant = 0.0000  Chi**2/nq =   4673.    
+
+ ---------------------------------------------------->
+ Time used  654.8 ,time limit ****** ,Last saved at  650.0
+
+ Moves accepted  :: 739878
+ Moves generated :: 2090000
+ Moves tested    :: 2089999
+
+ Chi^2/dof        =   7348.    
+
+ Expt  1: Renorm     0.9724  Constant = 0.0000  Chi**2/nq =   3354.    
+ Expt  2: Renorm     1.0091  Constant = 0.0000  Chi**2/nq =  0.1280E+05
+
+ ---------------------------------------------------->
+ Time used  657.6 ,time limit ****** ,Last saved at  650.0
+
+ Moves accepted  :: 741490
+ Moves generated :: 2100002
+ Moves tested    :: 2100001
+
+ Chi^2/dof        =   3114.    
+
+ Expt  1: Renorm     0.9725  Constant = 0.0000  Chi**2/nq =   1503.    
+ Expt  2: Renorm     1.0090  Constant = 0.0000  Chi**2/nq =   5312.    
+
+Total time in loop so far :   0.3945E+05 s
+Time per generated move is :   18.71     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  660.6 ,time limit ****** ,Last saved at  660.0
+
+ Moves accepted  :: 743066
+ Moves generated :: 2110002
+ Moves tested    :: 2110001
+
+ Chi^2/dof        =   3473.    
+
+ Expt  1: Renorm     0.9725  Constant = 0.0000  Chi**2/nq =   1579.    
+ Expt  2: Renorm     1.0089  Constant = 0.0000  Chi**2/nq =   6057.    
+
+ ---------------------------------------------------->
+ Time used  663.6 ,time limit ****** ,Last saved at  660.0
+
+ Moves accepted  :: 744674
+ Moves generated :: 2120003
+ Moves tested    :: 2120002
+
+ Chi^2/dof        =   2466.    
+
+ Expt  1: Renorm     0.9726  Constant = 0.0000  Chi**2/nq =   1256.    
+ Expt  2: Renorm     1.0088  Constant = 0.0000  Chi**2/nq =   4117.    
+
+ ---------------------------------------------------->
+ Time used  666.7 ,time limit ****** ,Last saved at  660.0
+
+ Moves accepted  :: 746258
+ Moves generated :: 2130002
+ Moves tested    :: 2130001
+
+ Chi^2/dof        =   3052.    
+
+ Expt  1: Renorm     0.9725  Constant = 0.0000  Chi**2/nq =   1466.    
+ Expt  2: Renorm     1.0087  Constant = 0.0000  Chi**2/nq =   5216.    
+
+ ---------------------------------------------------->
+ Time used  669.7 ,time limit ****** ,Last saved at  660.0
+
+ Moves accepted  :: 747842
+ Moves generated :: 2140003
+ Moves tested    :: 2140002
+
+ Chi^2/dof        =   5429.    
+
+ Expt  1: Renorm     0.9725  Constant = 0.0000  Chi**2/nq =   2605.    
+ Expt  2: Renorm     1.0086  Constant = 0.0000  Chi**2/nq =   9282.    
+
+Total time in loop so far :   0.4005E+05 s
+Time per generated move is :   18.71     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  672.7 ,time limit ****** ,Last saved at  670.0
+
+ Moves accepted  :: 749407
+ Moves generated :: 2150002
+ Moves tested    :: 2150001
+
+ Chi^2/dof        =   2061.    
+
+ Expt  1: Renorm     0.9726  Constant = 0.0000  Chi**2/nq =   1046.    
+ Expt  2: Renorm     1.0085  Constant = 0.0000  Chi**2/nq =   3448.    
+
+ ---------------------------------------------------->
+ Time used  675.6 ,time limit ****** ,Last saved at  670.0
+
+ Moves accepted  :: 750989
+ Moves generated :: 2160003
+ Moves tested    :: 2160002
+
+ Chi^2/dof        =   4057.    
+
+ Expt  1: Renorm     0.9725  Constant = 0.0000  Chi**2/nq =   2054.    
+ Expt  2: Renorm     1.0084  Constant = 0.0000  Chi**2/nq =   6790.    
+
+ ---------------------------------------------------->
+ Time used  678.4 ,time limit ****** ,Last saved at  670.0
+
+ Moves accepted  :: 752478
+ Moves generated :: 2170000
+ Moves tested    :: 2169999
+
+ Chi^2/dof        =   2350.    
+
+ Expt  1: Renorm     0.9726  Constant = 0.0000  Chi**2/nq =   1156.    
+ Expt  2: Renorm     1.0083  Constant = 0.0000  Chi**2/nq =   3981.    
+
+Total time in loop so far :   0.4065E+05 s
+Time per generated move is :   18.68     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  681.3 ,time limit ****** ,Last saved at  680.0
+
+ Moves accepted  :: 754007
+ Moves generated :: 2180002
+ Moves tested    :: 2180001
+
+ Chi^2/dof        =   2654.    
+
+ Expt  1: Renorm     0.9727  Constant = 0.0000  Chi**2/nq =   1267.    
+ Expt  2: Renorm     1.0083  Constant = 0.0000  Chi**2/nq =   4548.    
+
+ ---------------------------------------------------->
+ Time used  684.1 ,time limit ****** ,Last saved at  680.0
+
+ Moves accepted  :: 755544
+ Moves generated :: 2190015
+ Moves tested    :: 2190014
+
+ Chi^2/dof        =   4778.    
+
+ Expt  1: Renorm     0.9727  Constant = 0.0000  Chi**2/nq =   2408.    
+ Expt  2: Renorm     1.0082  Constant = 0.0000  Chi**2/nq =   8011.    
+
+ ---------------------------------------------------->
+ Time used  687.0 ,time limit ****** ,Last saved at  680.0
+
+ Moves accepted  :: 757058
+ Moves generated :: 2200010
+ Moves tested    :: 2200009
+
+ Chi^2/dof        =   1920.    
+
+ Expt  1: Renorm     0.9728  Constant = 0.0000  Chi**2/nq =   966.7    
+ Expt  2: Renorm     1.0081  Constant = 0.0000  Chi**2/nq =   3221.    
+
+ ---------------------------------------------------->
+ Time used  689.8 ,time limit ****** ,Last saved at  680.0
+
+ Moves accepted  :: 758622
+ Moves generated :: 2210002
+ Moves tested    :: 2210001
+
+ Chi^2/dof        =   3726.    
+
+ Expt  1: Renorm     0.9728  Constant = 0.0000  Chi**2/nq =   1873.    
+ Expt  2: Renorm     1.0079  Constant = 0.0000  Chi**2/nq =   6254.    
+
+Total time in loop so far :   0.4125E+05 s
+Time per generated move is :   18.66     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  692.7 ,time limit ****** ,Last saved at  690.0
+
+ Moves accepted  :: 760138
+ Moves generated :: 2220002
+ Moves tested    :: 2220001
+
+ Chi^2/dof        =   2422.    
+
+ Expt  1: Renorm     0.9727  Constant = 0.0000  Chi**2/nq =   1250.    
+ Expt  2: Renorm     1.0079  Constant = 0.0000  Chi**2/nq =   4022.    
+
+ ---------------------------------------------------->
+ Time used  695.5 ,time limit ****** ,Last saved at  690.0
+
+ Moves accepted  :: 761607
+ Moves generated :: 2230002
+ Moves tested    :: 2230001
+
+ Chi^2/dof        =   2660.    
+
+ Expt  1: Renorm     0.9728  Constant = 0.0000  Chi**2/nq =   1334.    
+ Expt  2: Renorm     1.0078  Constant = 0.0000  Chi**2/nq =   4470.    
+
+ ---------------------------------------------------->
+ Time used  698.4 ,time limit ****** ,Last saved at  690.0
+
+ Moves accepted  :: 763108
+ Moves generated :: 2240002
+ Moves tested    :: 2240001
+
+ Chi^2/dof        =   2422.    
+
+ Expt  1: Renorm     0.9728  Constant = 0.0000  Chi**2/nq =   1146.    
+ Expt  2: Renorm     1.0077  Constant = 0.0000  Chi**2/nq =   4164.    
+
+Total time in loop so far :   0.4184E+05 s
+Time per generated move is :   18.63     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  701.3 ,time limit ****** ,Last saved at  700.0
+
+ Moves accepted  :: 764573
+ Moves generated :: 2250004
+ Moves tested    :: 2250003
+
+ Chi^2/dof        =   2101.    
+
+ Expt  1: Renorm     0.9728  Constant = 0.0000  Chi**2/nq =   1051.    
+ Expt  2: Renorm     1.0076  Constant = 0.0000  Chi**2/nq =   3535.    
+
+ ---------------------------------------------------->
+ Time used  704.2 ,time limit ****** ,Last saved at  700.0
+
+ Moves accepted  :: 765999
+ Moves generated :: 2260003
+ Moves tested    :: 2260002
+
+ Chi^2/dof        =   3040.    
+
+ Expt  1: Renorm     0.9728  Constant = 0.0000  Chi**2/nq =   1476.    
+ Expt  2: Renorm     1.0076  Constant = 0.0000  Chi**2/nq =   5173.    
+
+ ---------------------------------------------------->
+ Time used  707.1 ,time limit ****** ,Last saved at  700.0
+
+ Moves accepted  :: 767484
+ Moves generated :: 2270002
+ Moves tested    :: 2270001
+
+ Chi^2/dof        =   1948.    
+
+ Expt  1: Renorm     0.9728  Constant = 0.0000  Chi**2/nq =   999.8    
+ Expt  2: Renorm     1.0075  Constant = 0.0000  Chi**2/nq =   3242.    
+
+ ---------------------------------------------------->
+ Time used  710.0 ,time limit ****** ,Last saved at  700.0
+
+ Moves accepted  :: 769023
+ Moves generated :: 2280002
+ Moves tested    :: 2280001
+
+ Chi^2/dof        =   2401.    
+
+ Expt  1: Renorm     0.9729  Constant = 0.0000  Chi**2/nq =   1197.    
+ Expt  2: Renorm     1.0074  Constant = 0.0000  Chi**2/nq =   4044.    
+
+Total time in loop so far :   0.4244E+05 s
+Time per generated move is :   18.61     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  712.9 ,time limit ****** ,Last saved at  710.0
+
+ Moves accepted  :: 770508
+ Moves generated :: 2290006
+ Moves tested    :: 2290005
+
+ Chi^2/dof        =   2242.    
+
+ Expt  1: Renorm     0.9729  Constant = 0.0000  Chi**2/nq =   1085.    
+ Expt  2: Renorm     1.0073  Constant = 0.0000  Chi**2/nq =   3821.    
+
+ ---------------------------------------------------->
+ Time used  715.7 ,time limit ****** ,Last saved at  710.0
+
+ Moves accepted  :: 772017
+ Moves generated :: 2300003
+ Moves tested    :: 2300002
+
+ Chi^2/dof        =   2179.    
+
+ Expt  1: Renorm     0.9729  Constant = 0.0000  Chi**2/nq =   1084.    
+ Expt  2: Renorm     1.0072  Constant = 0.0000  Chi**2/nq =   3673.    
+
+ ---------------------------------------------------->
+ Time used  718.7 ,time limit ****** ,Last saved at  710.0
+
+ Moves accepted  :: 773517
+ Moves generated :: 2310005
+ Moves tested    :: 2310004
+
+ Chi^2/dof        =   2428.    
+
+ Expt  1: Renorm     0.9729  Constant = 0.0000  Chi**2/nq =   1173.    
+ Expt  2: Renorm     1.0071  Constant = 0.0000  Chi**2/nq =   4142.    
+
+Total time in loop so far :   0.4304E+05 s
+Time per generated move is :   18.60     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  721.7 ,time limit ****** ,Last saved at  720.0
+
+ Moves accepted  :: 774930
+ Moves generated :: 2320002
+ Moves tested    :: 2320001
+
+ Chi^2/dof        =   1784.    
+
+ Expt  1: Renorm     0.9729  Constant = 0.0000  Chi**2/nq =   910.3    
+ Expt  2: Renorm     1.0071  Constant = 0.0000  Chi**2/nq =   2976.    
+
+ ---------------------------------------------------->
+ Time used  724.7 ,time limit ****** ,Last saved at  720.0
+
+ Moves accepted  :: 776386
+ Moves generated :: 2330000
+ Moves tested    :: 2329999
+
+ Chi^2/dof        =   3116.    
+
+ Expt  1: Renorm     0.9730  Constant = 0.0000  Chi**2/nq =   1589.    
+ Expt  2: Renorm     1.0070  Constant = 0.0000  Chi**2/nq =   5201.    
+
+ ---------------------------------------------------->
+ Time used  727.6 ,time limit ****** ,Last saved at  720.0
+
+ Moves accepted  :: 777876
+ Moves generated :: 2340002
+ Moves tested    :: 2340001
+
+ Chi^2/dof        =   1814.    
+
+ Expt  1: Renorm     0.9730  Constant = 0.0000  Chi**2/nq =   923.9    
+ Expt  2: Renorm     1.0069  Constant = 0.0000  Chi**2/nq =   3028.    
+
+Total time in loop so far :   0.4364E+05 s
+Time per generated move is :   18.59     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  730.6 ,time limit ****** ,Last saved at  730.0
+
+ Moves accepted  :: 779318
+ Moves generated :: 2350004
+ Moves tested    :: 2350003
+
+ Chi^2/dof        =   2270.    
+
+ Expt  1: Renorm     0.9731  Constant = 0.0000  Chi**2/nq =   1061.    
+ Expt  2: Renorm     1.0068  Constant = 0.0000  Chi**2/nq =   3920.    
+
+ ---------------------------------------------------->
+ Time used  733.5 ,time limit ****** ,Last saved at  730.0
+
+ Moves accepted  :: 780780
+ Moves generated :: 2360002
+ Moves tested    :: 2360001
+
+ Chi^2/dof        =   2660.    
+
+ Expt  1: Renorm     0.9731  Constant = 0.0000  Chi**2/nq =   1354.    
+ Expt  2: Renorm     1.0068  Constant = 0.0000  Chi**2/nq =   4443.    
+
+ ---------------------------------------------------->
+ Time used  736.5 ,time limit ****** ,Last saved at  730.0
+
+ Moves accepted  :: 782245
+ Moves generated :: 2370005
+ Moves tested    :: 2370004
+
+ Chi^2/dof        =   2166.    
+
+ Expt  1: Renorm     0.9732  Constant = 0.0000  Chi**2/nq =   1101.    
+ Expt  2: Renorm     1.0067  Constant = 0.0000  Chi**2/nq =   3620.    
+
+ ---------------------------------------------------->
+ Time used  739.4 ,time limit ****** ,Last saved at  730.0
+
+ Moves accepted  :: 783710
+ Moves generated :: 2380015
+ Moves tested    :: 2380014
+
+ Chi^2/dof        =   2492.    
+
+ Expt  1: Renorm     0.9732  Constant = 0.0000  Chi**2/nq =   1196.    
+ Expt  2: Renorm     1.0066  Constant = 0.0000  Chi**2/nq =   4260.    
+
+Total time in loop so far :   0.4424E+05 s
+Time per generated move is :   18.57     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  742.3 ,time limit ****** ,Last saved at  740.0
+
+ Moves accepted  :: 785174
+ Moves generated :: 2390005
+ Moves tested    :: 2390004
+
+ Chi^2/dof        =   2323.    
+
+ Expt  1: Renorm     0.9732  Constant = 0.0000  Chi**2/nq =   1212.    
+ Expt  2: Renorm     1.0066  Constant = 0.0000  Chi**2/nq =   3839.    
+
+ ---------------------------------------------------->
+ Time used  745.2 ,time limit ****** ,Last saved at  740.0
+
+ Moves accepted  :: 786618
+ Moves generated :: 2400000
+ Moves tested    :: 2399999
+
+ Chi^2/dof        =   2023.    
+
+ Expt  1: Renorm     0.9732  Constant = 0.0000  Chi**2/nq =   997.8    
+ Expt  2: Renorm     1.0065  Constant = 0.0000  Chi**2/nq =   3423.    
+
+ ---------------------------------------------------->
+ Time used  748.1 ,time limit ****** ,Last saved at  740.0
+
+ Moves accepted  :: 788053
+ Moves generated :: 2410004
+ Moves tested    :: 2410003
+
+ Chi^2/dof        =   2469.    
+
+ Expt  1: Renorm     0.9733  Constant = 0.0000  Chi**2/nq =   1216.    
+ Expt  2: Renorm     1.0064  Constant = 0.0000  Chi**2/nq =   4178.    
+
+Total time in loop so far :   0.4484E+05 s
+Time per generated move is :   18.55     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  750.9 ,time limit ****** ,Last saved at  750.0
+
+ Moves accepted  :: 789477
+ Moves generated :: 2420002
+ Moves tested    :: 2420001
+
+ Chi^2/dof        =   2036.    
+
+ Expt  1: Renorm     0.9732  Constant = 0.0000  Chi**2/nq =   1002.    
+ Expt  2: Renorm     1.0063  Constant = 0.0000  Chi**2/nq =   3447.    
+
+ ---------------------------------------------------->
+ Time used  753.8 ,time limit ****** ,Last saved at  750.0
+
+ Moves accepted  :: 790914
+ Moves generated :: 2430003
+ Moves tested    :: 2430002
+
+ Chi^2/dof        =   1882.    
+
+ Expt  1: Renorm     0.9732  Constant = 0.0000  Chi**2/nq =   924.9    
+ Expt  2: Renorm     1.0062  Constant = 0.0000  Chi**2/nq =   3188.    
+
+ ---------------------------------------------------->
+ Time used  756.6 ,time limit ****** ,Last saved at  750.0
+
+ Moves accepted  :: 792357
+ Moves generated :: 2440002
+ Moves tested    :: 2440001
+
+ Chi^2/dof        =   1909.    
+
+ Expt  1: Renorm     0.9733  Constant = 0.0000  Chi**2/nq =   911.9    
+ Expt  2: Renorm     1.0061  Constant = 0.0000  Chi**2/nq =   3270.    
+
+ ---------------------------------------------------->
+ Time used  759.5 ,time limit ****** ,Last saved at  750.0
+
+ Moves accepted  :: 793786
+ Moves generated :: 2450002
+ Moves tested    :: 2450001
+
+ Chi^2/dof        =   1834.    
+
+ Expt  1: Renorm     0.9733  Constant = 0.0000  Chi**2/nq =   926.2    
+ Expt  2: Renorm     1.0060  Constant = 0.0000  Chi**2/nq =   3072.    
+
+Total time in loop so far :   0.4544E+05 s
+Time per generated move is :   18.53     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  762.4 ,time limit ****** ,Last saved at  760.0
+
+ Moves accepted  :: 795170
+ Moves generated :: 2460002
+ Moves tested    :: 2460001
+
+ Chi^2/dof        =   1304.    
+
+ Expt  1: Renorm     0.9733  Constant = 0.0000  Chi**2/nq =   676.6    
+ Expt  2: Renorm     1.0060  Constant = 0.0000  Chi**2/nq =   2160.    
+
+ ---------------------------------------------------->
+ Time used  765.3 ,time limit ****** ,Last saved at  760.0
+
+ Moves accepted  :: 796504
+ Moves generated :: 2470004
+ Moves tested    :: 2470003
+
+ Chi^2/dof        =   1575.    
+
+ Expt  1: Renorm     0.9733  Constant = 0.0000  Chi**2/nq =   794.9    
+ Expt  2: Renorm     1.0059  Constant = 0.0000  Chi**2/nq =   2640.    
+
+ ---------------------------------------------------->
+ Time used  768.1 ,time limit ****** ,Last saved at  760.0
+
+ Moves accepted  :: 797936
+ Moves generated :: 2480002
+ Moves tested    :: 2480001
+
+ Chi^2/dof        =   1924.    
+
+ Expt  1: Renorm     0.9734  Constant = 0.0000  Chi**2/nq =   942.4    
+ Expt  2: Renorm     1.0058  Constant = 0.0000  Chi**2/nq =   3262.    
+
+Total time in loop so far :   0.4604E+05 s
+Time per generated move is :   18.51     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  771.0 ,time limit ****** ,Last saved at  770.0
+
+ Moves accepted  :: 799371
+ Moves generated :: 2490002
+ Moves tested    :: 2490001
+
+ Chi^2/dof        =   2694.    
+
+ Expt  1: Renorm     0.9734  Constant = 0.0000  Chi**2/nq =   1356.    
+ Expt  2: Renorm     1.0057  Constant = 0.0000  Chi**2/nq =   4520.    
+
+ ---------------------------------------------------->
+ Time used  773.9 ,time limit ****** ,Last saved at  770.0
+
+ Moves accepted  :: 800764
+ Moves generated :: 2500003
+ Moves tested    :: 2500002
+
+ Chi^2/dof        =   1810.    
+
+ Expt  1: Renorm     0.9733  Constant = 0.0000  Chi**2/nq =   936.7    
+ Expt  2: Renorm     1.0056  Constant = 0.0000  Chi**2/nq =   3001.    
+
+ ---------------------------------------------------->
+ Time used  776.7 ,time limit ****** ,Last saved at  770.0
+
+ Moves accepted  :: 802148
+ Moves generated :: 2510013
+ Moves tested    :: 2510012
+
+ Chi^2/dof        =   1500.    
+
+ Expt  1: Renorm     0.9733  Constant = 0.0000  Chi**2/nq =   775.8    
+ Expt  2: Renorm     1.0055  Constant = 0.0000  Chi**2/nq =   2488.    
+
+ ---------------------------------------------------->
+ Time used  779.6 ,time limit ****** ,Last saved at  770.0
+
+ Moves accepted  :: 803512
+ Moves generated :: 2520002
+ Moves tested    :: 2520001
+
+ Chi^2/dof        =   1431.    
+
+ Expt  1: Renorm     0.9733  Constant = 0.0000  Chi**2/nq =   739.9    
+ Expt  2: Renorm     1.0054  Constant = 0.0000  Chi**2/nq =   2375.    
+
+Total time in loop so far :   0.4664E+05 s
+Time per generated move is :   18.50     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  782.5 ,time limit ****** ,Last saved at  780.0
+
+ Moves accepted  :: 804929
+ Moves generated :: 2530000
+ Moves tested    :: 2529999
+
+ Chi^2/dof        =   1774.    
+
+ Expt  1: Renorm     0.9734  Constant = 0.0000  Chi**2/nq =   891.3    
+ Expt  2: Renorm     1.0053  Constant = 0.0000  Chi**2/nq =   2978.    
+
+ ---------------------------------------------------->
+ Time used  785.3 ,time limit ****** ,Last saved at  780.0
+
+ Moves accepted  :: 806350
+ Moves generated :: 2540002
+ Moves tested    :: 2540001
+
+ Chi^2/dof        =   1833.    
+
+ Expt  1: Renorm     0.9734  Constant = 0.0000  Chi**2/nq =   869.4    
+ Expt  2: Renorm     1.0053  Constant = 0.0000  Chi**2/nq =   3147.    
+
+ ---------------------------------------------------->
+ Time used  788.2 ,time limit ****** ,Last saved at  780.0
+
+ Moves accepted  :: 807756
+ Moves generated :: 2550039
+ Moves tested    :: 2550038
+
+ Chi^2/dof        =   1590.    
+
+ Expt  1: Renorm     0.9734  Constant = 0.0000  Chi**2/nq =   775.5    
+ Expt  2: Renorm     1.0052  Constant = 0.0000  Chi**2/nq =   2702.    
+
+Total time in loop so far :   0.4723E+05 s
+Time per generated move is :   18.48     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  791.1 ,time limit ****** ,Last saved at  790.0
+
+ Moves accepted  :: 809142
+ Moves generated :: 2560005
+ Moves tested    :: 2560004
+
+ Chi^2/dof        =   1423.    
+
+ Expt  1: Renorm     0.9734  Constant = 0.0000  Chi**2/nq =   753.8    
+ Expt  2: Renorm     1.0052  Constant = 0.0000  Chi**2/nq =   2335.    
+
+ ---------------------------------------------------->
+ Time used  794.0 ,time limit ****** ,Last saved at  790.0
+
+ Moves accepted  :: 810574
+ Moves generated :: 2570012
+ Moves tested    :: 2570011
+
+ Chi^2/dof        =   1429.    
+
+ Expt  1: Renorm     0.9734  Constant = 0.0000  Chi**2/nq =   696.1    
+ Expt  2: Renorm     1.0051  Constant = 0.0000  Chi**2/nq =   2430.    
+
+ ---------------------------------------------------->
+ Time used  796.8 ,time limit ****** ,Last saved at  790.0
+
+ Moves accepted  :: 811932
+ Moves generated :: 2580002
+ Moves tested    :: 2580001
+
+ Chi^2/dof        =   1460.    
+
+ Expt  1: Renorm     0.9734  Constant = 0.0000  Chi**2/nq =   772.7    
+ Expt  2: Renorm     1.0050  Constant = 0.0000  Chi**2/nq =   2397.    
+
+ ---------------------------------------------------->
+ Time used  799.6 ,time limit ****** ,Last saved at  790.0
+
+ Moves accepted  :: 813246
+ Moves generated :: 2590003
+ Moves tested    :: 2590002
+
+ Chi^2/dof        =   834.7    
+
+ Expt  1: Renorm     0.9734  Constant = 0.0000  Chi**2/nq =   405.9    
+ Expt  2: Renorm     1.0049  Constant = 0.0000  Chi**2/nq =   1420.    
+
+Total time in loop so far :   0.4783E+05 s
+Time per generated move is :   18.46     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  802.5 ,time limit ****** ,Last saved at  800.0
+
+ Moves accepted  :: 814650
+ Moves generated :: 2600002
+ Moves tested    :: 2600001
+
+ Chi^2/dof        =   1152.    
+
+ Expt  1: Renorm     0.9734  Constant = 0.0000  Chi**2/nq =   609.1    
+ Expt  2: Renorm     1.0048  Constant = 0.0000  Chi**2/nq =   1893.    
+
+ ---------------------------------------------------->
+ Time used  805.4 ,time limit ****** ,Last saved at  800.0
+
+ Moves accepted  :: 815974
+ Moves generated :: 2610002
+ Moves tested    :: 2610001
+
+ Chi^2/dof        =   1208.    
+
+ Expt  1: Renorm     0.9734  Constant = 0.0000  Chi**2/nq =   603.4    
+ Expt  2: Renorm     1.0047  Constant = 0.0000  Chi**2/nq =   2033.    
+
+ ---------------------------------------------------->
+ Time used  808.2 ,time limit ****** ,Last saved at  800.0
+
+ Moves accepted  :: 817315
+ Moves generated :: 2620000
+ Moves tested    :: 2619999
+
+ Chi^2/dof        =   1674.    
+
+ Expt  1: Renorm     0.9735  Constant = 0.0000  Chi**2/nq =   907.9    
+ Expt  2: Renorm     1.0047  Constant = 0.0000  Chi**2/nq =   2719.    
+
+Total time in loop so far :   0.4843E+05 s
+Time per generated move is :   18.44     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  811.1 ,time limit ****** ,Last saved at  810.0
+
+ Moves accepted  :: 818665
+ Moves generated :: 2630002
+ Moves tested    :: 2630001
+
+ Chi^2/dof        =   1102.    
+
+ Expt  1: Renorm     0.9736  Constant = 0.0000  Chi**2/nq =   581.3    
+ Expt  2: Renorm     1.0046  Constant = 0.0000  Chi**2/nq =   1812.    
+
+ ---------------------------------------------------->
+ Time used  813.9 ,time limit ****** ,Last saved at  810.0
+
+ Moves accepted  :: 819989
+ Moves generated :: 2640002
+ Moves tested    :: 2640001
+
+ Chi^2/dof        =   1865.    
+
+ Expt  1: Renorm     0.9736  Constant = 0.0000  Chi**2/nq =   903.6    
+ Expt  2: Renorm     1.0045  Constant = 0.0000  Chi**2/nq =   3176.    
+
+ ---------------------------------------------------->
+ Time used  816.8 ,time limit ****** ,Last saved at  810.0
+
+ Moves accepted  :: 821386
+ Moves generated :: 2650002
+ Moves tested    :: 2650001
+
+ Chi^2/dof        =   1396.    
+
+ Expt  1: Renorm     0.9735  Constant = 0.0000  Chi**2/nq =   715.4    
+ Expt  2: Renorm     1.0045  Constant = 0.0000  Chi**2/nq =   2325.    
+
+ ---------------------------------------------------->
+ Time used  819.6 ,time limit ****** ,Last saved at  810.0
+
+ Moves accepted  :: 822665
+ Moves generated :: 2660002
+ Moves tested    :: 2660001
+
+ Chi^2/dof        =   1037.    
+
+ Expt  1: Renorm     0.9735  Constant = 0.0000  Chi**2/nq =   531.2    
+ Expt  2: Renorm     1.0044  Constant = 0.0000  Chi**2/nq =   1728.    
+
+Total time in loop so far :   0.4903E+05 s
+Time per generated move is :   18.42     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  822.5 ,time limit ****** ,Last saved at  820.0
+
+ Moves accepted  :: 823987
+ Moves generated :: 2670002
+ Moves tested    :: 2670001
+
+ Chi^2/dof        =   1409.    
+
+ Expt  1: Renorm     0.9735  Constant = 0.0000  Chi**2/nq =   701.4    
+ Expt  2: Renorm     1.0043  Constant = 0.0000  Chi**2/nq =   2374.    
+
+ ---------------------------------------------------->
+ Time used  825.4 ,time limit ****** ,Last saved at  820.0
+
+ Moves accepted  :: 825357
+ Moves generated :: 2680002
+ Moves tested    :: 2680001
+
+ Chi^2/dof        =   1001.    
+
+ Expt  1: Renorm     0.9736  Constant = 0.0000  Chi**2/nq =   512.2    
+ Expt  2: Renorm     1.0043  Constant = 0.0000  Chi**2/nq =   1667.    
+
+ ---------------------------------------------------->
+ Time used  828.3 ,time limit ****** ,Last saved at  820.0
+
+ Moves accepted  :: 826729
+ Moves generated :: 2690002
+ Moves tested    :: 2690001
+
+ Chi^2/dof        =   1388.    
+
+ Expt  1: Renorm     0.9736  Constant = 0.0000  Chi**2/nq =   671.1    
+ Expt  2: Renorm     1.0042  Constant = 0.0000  Chi**2/nq =   2367.    
+
+Total time in loop so far :   0.4963E+05 s
+Time per generated move is :   18.41     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  831.2 ,time limit ****** ,Last saved at  830.0
+
+ Moves accepted  :: 828100
+ Moves generated :: 2700004
+ Moves tested    :: 2700003
+
+ Chi^2/dof        =   1660.    
+
+ Expt  1: Renorm     0.9736  Constant = 0.0000  Chi**2/nq =   848.5    
+ Expt  2: Renorm     1.0041  Constant = 0.0000  Chi**2/nq =   2768.    
+
+ ---------------------------------------------------->
+ Time used  834.0 ,time limit ****** ,Last saved at  830.0
+
+ Moves accepted  :: 829406
+ Moves generated :: 2710017
+ Moves tested    :: 2710016
+
+ Chi^2/dof        =   1480.    
+
+ Expt  1: Renorm     0.9736  Constant = 0.0000  Chi**2/nq =   735.0    
+ Expt  2: Renorm     1.0040  Constant = 0.0000  Chi**2/nq =   2498.    
+
+ ---------------------------------------------------->
+ Time used  836.9 ,time limit ****** ,Last saved at  830.0
+
+ Moves accepted  :: 830733
+ Moves generated :: 2720006
+ Moves tested    :: 2720005
+
+ Chi^2/dof        =   1383.    
+
+ Expt  1: Renorm     0.9735  Constant = 0.0000  Chi**2/nq =   765.9    
+ Expt  2: Renorm     1.0039  Constant = 0.0000  Chi**2/nq =   2224.    
+
+ ---------------------------------------------------->
+ Time used  839.8 ,time limit ****** ,Last saved at  830.0
+
+ Moves accepted  :: 831987
+ Moves generated :: 2730000
+ Moves tested    :: 2729999
+
+ Chi^2/dof        =   789.0    
+
+ Expt  1: Renorm     0.9736  Constant = 0.0000  Chi**2/nq =   413.6    
+ Expt  2: Renorm     1.0039  Constant = 0.0000  Chi**2/nq =   1301.    
+
+Total time in loop so far :   0.5023E+05 s
+Time per generated move is :   18.39     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  842.7 ,time limit ****** ,Last saved at  840.0
+
+ Moves accepted  :: 833289
+ Moves generated :: 2740005
+ Moves tested    :: 2740004
+
+ Chi^2/dof        =   1350.    
+
+ Expt  1: Renorm     0.9736  Constant = 0.0000  Chi**2/nq =   688.4    
+ Expt  2: Renorm     1.0038  Constant = 0.0000  Chi**2/nq =   2253.    
+
+ ---------------------------------------------------->
+ Time used  845.5 ,time limit ****** ,Last saved at  840.0
+
+ Moves accepted  :: 834611
+ Moves generated :: 2750002
+ Moves tested    :: 2750001
+
+ Chi^2/dof        =   1399.    
+
+ Expt  1: Renorm     0.9736  Constant = 0.0000  Chi**2/nq =   673.7    
+ Expt  2: Renorm     1.0037  Constant = 0.0000  Chi**2/nq =   2388.    
+
+ ---------------------------------------------------->
+ Time used  848.4 ,time limit ****** ,Last saved at  840.0
+
+ Moves accepted  :: 835899
+ Moves generated :: 2760002
+ Moves tested    :: 2760001
+
+ Chi^2/dof        =   564.9    
+
+ Expt  1: Renorm     0.9736  Constant = 0.0000  Chi**2/nq =   295.8    
+ Expt  2: Renorm     1.0036  Constant = 0.0000  Chi**2/nq =   932.1    
+
+Total time in loop so far :   0.5083E+05 s
+Time per generated move is :   18.38     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  851.2 ,time limit ****** ,Last saved at  850.0
+
+ Moves accepted  :: 837163
+ Moves generated :: 2770002
+ Moves tested    :: 2770001
+
+ Chi^2/dof        =   930.2    
+
+ Expt  1: Renorm     0.9736  Constant = 0.0000  Chi**2/nq =   500.2    
+ Expt  2: Renorm     1.0036  Constant = 0.0000  Chi**2/nq =   1517.    
+
+ ---------------------------------------------------->
+ Time used  854.1 ,time limit ****** ,Last saved at  850.0
+
+ Moves accepted  :: 838454
+ Moves generated :: 2780012
+ Moves tested    :: 2780011
+
+ Chi^2/dof        =   888.1    
+
+ Expt  1: Renorm     0.9737  Constant = 0.0000  Chi**2/nq =   464.6    
+ Expt  2: Renorm     1.0035  Constant = 0.0000  Chi**2/nq =   1466.    
+
+ ---------------------------------------------------->
+ Time used  856.9 ,time limit ****** ,Last saved at  850.0
+
+ Moves accepted  :: 839798
+ Moves generated :: 2790019
+ Moves tested    :: 2790018
+
+ Chi^2/dof        =   1315.    
+
+ Expt  1: Renorm     0.9737  Constant = 0.0000  Chi**2/nq =   687.8    
+ Expt  2: Renorm     1.0035  Constant = 0.0000  Chi**2/nq =   2171.    
+
+ ---------------------------------------------------->
+ Time used  859.9 ,time limit ****** ,Last saved at  850.0
+
+ Moves accepted  :: 841141
+ Moves generated :: 2800005
+ Moves tested    :: 2800004
+
+ Chi^2/dof        =   1561.    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   771.9    
+ Expt  2: Renorm     1.0034  Constant = 0.0000  Chi**2/nq =   2639.    
+
+Total time in loop so far :   0.5143E+05 s
+Time per generated move is :   18.36     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  862.7 ,time limit ****** ,Last saved at  860.0
+
+ Moves accepted  :: 842507
+ Moves generated :: 2810002
+ Moves tested    :: 2810001
+
+ Chi^2/dof        =   1364.    
+
+ Expt  1: Renorm     0.9737  Constant = 0.0000  Chi**2/nq =   693.2    
+ Expt  2: Renorm     1.0033  Constant = 0.0000  Chi**2/nq =   2280.    
+
+ ---------------------------------------------------->
+ Time used  865.6 ,time limit ****** ,Last saved at  860.0
+
+ Moves accepted  :: 843759
+ Moves generated :: 2820004
+ Moves tested    :: 2820003
+
+ Chi^2/dof        =   943.9    
+
+ Expt  1: Renorm     0.9737  Constant = 0.0000  Chi**2/nq =   479.4    
+ Expt  2: Renorm     1.0033  Constant = 0.0000  Chi**2/nq =   1578.    
+
+ ---------------------------------------------------->
+ Time used  868.5 ,time limit ****** ,Last saved at  860.0
+
+ Moves accepted  :: 845045
+ Moves generated :: 2830002
+ Moves tested    :: 2830001
+
+ Chi^2/dof        =   1140.    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   595.1    
+ Expt  2: Renorm     1.0032  Constant = 0.0000  Chi**2/nq =   1884.    
+
+Total time in loop so far :   0.5203E+05 s
+Time per generated move is :   18.35     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  871.4 ,time limit ****** ,Last saved at  870.0
+
+ Moves accepted  :: 846302
+ Moves generated :: 2840002
+ Moves tested    :: 2840001
+
+ Chi^2/dof        =   1086.    
+
+ Expt  1: Renorm     0.9737  Constant = 0.0000  Chi**2/nq =   550.7    
+ Expt  2: Renorm     1.0031  Constant = 0.0000  Chi**2/nq =   1816.    
+
+ ---------------------------------------------------->
+ Time used  874.2 ,time limit ****** ,Last saved at  870.0
+
+ Moves accepted  :: 847593
+ Moves generated :: 2850006
+ Moves tested    :: 2850005
+
+ Chi^2/dof        =   1206.    
+
+ Expt  1: Renorm     0.9737  Constant = 0.0000  Chi**2/nq =   594.6    
+ Expt  2: Renorm     1.0030  Constant = 0.0000  Chi**2/nq =   2039.    
+
+ ---------------------------------------------------->
+ Time used  877.1 ,time limit ****** ,Last saved at  870.0
+
+ Moves accepted  :: 848896
+ Moves generated :: 2860000
+ Moves tested    :: 2859999
+
+ Chi^2/dof        =   776.5    
+
+ Expt  1: Renorm     0.9737  Constant = 0.0000  Chi**2/nq =   405.0    
+ Expt  2: Renorm     1.0029  Constant = 0.0000  Chi**2/nq =   1284.    
+
+ ---------------------------------------------------->
+ Time used  880.0 ,time limit ****** ,Last saved at  870.0
+
+ Moves accepted  :: 850121
+ Moves generated :: 2870003
+ Moves tested    :: 2870002
+
+ Chi^2/dof        =   743.9    
+
+ Expt  1: Renorm     0.9737  Constant = 0.0000  Chi**2/nq =   398.6    
+ Expt  2: Renorm     1.0029  Constant = 0.0000  Chi**2/nq =   1215.    
+
+Total time in loop so far :   0.5262E+05 s
+Time per generated move is :   18.34     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  882.8 ,time limit ****** ,Last saved at  880.0
+
+ Moves accepted  :: 851414
+ Moves generated :: 2880002
+ Moves tested    :: 2880001
+
+ Chi^2/dof        =   1085.    
+
+ Expt  1: Renorm     0.9737  Constant = 0.0000  Chi**2/nq =   565.3    
+ Expt  2: Renorm     1.0028  Constant = 0.0000  Chi**2/nq =   1794.    
+
+ ---------------------------------------------------->
+ Time used  885.7 ,time limit ****** ,Last saved at  880.0
+
+ Moves accepted  :: 852666
+ Moves generated :: 2890002
+ Moves tested    :: 2890001
+
+ Chi^2/dof        =   966.5    
+
+ Expt  1: Renorm     0.9737  Constant = 0.0000  Chi**2/nq =   503.5    
+ Expt  2: Renorm     1.0027  Constant = 0.0000  Chi**2/nq =   1598.    
+
+ ---------------------------------------------------->
+ Time used  888.5 ,time limit ****** ,Last saved at  880.0
+
+ Moves accepted  :: 853991
+ Moves generated :: 2900000
+ Moves tested    :: 2899999
+
+ Chi^2/dof        =   1251.    
+
+ Expt  1: Renorm     0.9737  Constant = 0.0000  Chi**2/nq =   616.2    
+ Expt  2: Renorm     1.0026  Constant = 0.0000  Chi**2/nq =   2117.    
+
+Total time in loop so far :   0.5322E+05 s
+Time per generated move is :   18.32     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  891.4 ,time limit ****** ,Last saved at  890.0
+
+ Moves accepted  :: 855257
+ Moves generated :: 2910002
+ Moves tested    :: 2910001
+
+ Chi^2/dof        =   1284.    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   632.4    
+ Expt  2: Renorm     1.0026  Constant = 0.0000  Chi**2/nq =   2173.    
+
+ ---------------------------------------------------->
+ Time used  894.2 ,time limit ****** ,Last saved at  890.0
+
+ Moves accepted  :: 856532
+ Moves generated :: 2920002
+ Moves tested    :: 2920001
+
+ Chi^2/dof        =   1038.    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   525.4    
+ Expt  2: Renorm     1.0025  Constant = 0.0000  Chi**2/nq =   1737.    
+
+ ---------------------------------------------------->
+ Time used  897.1 ,time limit ****** ,Last saved at  890.0
+
+ Moves accepted  :: 857826
+ Moves generated :: 2930006
+ Moves tested    :: 2930005
+
+ Chi^2/dof        =   1010.    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   540.4    
+ Expt  2: Renorm     1.0024  Constant = 0.0000  Chi**2/nq =   1651.    
+
+ ---------------------------------------------------->
+ Time used  899.9 ,time limit ****** ,Last saved at  890.0
+
+ Moves accepted  :: 859094
+ Moves generated :: 2940002
+ Moves tested    :: 2940001
+
+ Chi^2/dof        =   1167.    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   557.9    
+ Expt  2: Renorm     1.0023  Constant = 0.0000  Chi**2/nq =   1999.    
+
+Total time in loop so far :   0.5382E+05 s
+Time per generated move is :   18.30     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  902.8 ,time limit ****** ,Last saved at  900.0
+
+ Moves accepted  :: 860374
+ Moves generated :: 2950002
+ Moves tested    :: 2950001
+
+ Chi^2/dof        =   1250.    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   650.2    
+ Expt  2: Renorm     1.0023  Constant = 0.0000  Chi**2/nq =   2069.    
+
+ ---------------------------------------------------->
+ Time used  905.6 ,time limit ****** ,Last saved at  900.0
+
+ Moves accepted  :: 861592
+ Moves generated :: 2960009
+ Moves tested    :: 2960008
+
+ Chi^2/dof        =   1249.    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   631.8    
+ Expt  2: Renorm     1.0022  Constant = 0.0000  Chi**2/nq =   2092.    
+
+ ---------------------------------------------------->
+ Time used  908.5 ,time limit ****** ,Last saved at  900.0
+
+ Moves accepted  :: 862860
+ Moves generated :: 2970002
+ Moves tested    :: 2970001
+
+ Chi^2/dof        =   1031.    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   550.5    
+ Expt  2: Renorm     1.0021  Constant = 0.0000  Chi**2/nq =   1686.    
+
+Total time in loop so far :   0.5442E+05 s
+Time per generated move is :   18.29     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  911.4 ,time limit ****** ,Last saved at  910.0
+
+ Moves accepted  :: 864112
+ Moves generated :: 2980003
+ Moves tested    :: 2980002
+
+ Chi^2/dof        =   1117.    
+
+ Expt  1: Renorm     0.9737  Constant = 0.0000  Chi**2/nq =   579.7    
+ Expt  2: Renorm     1.0020  Constant = 0.0000  Chi**2/nq =   1849.    
+
+ ---------------------------------------------------->
+ Time used  914.3 ,time limit ****** ,Last saved at  910.0
+
+ Moves accepted  :: 865361
+ Moves generated :: 2990002
+ Moves tested    :: 2990001
+
+ Chi^2/dof        =   1256.    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   652.0    
+ Expt  2: Renorm     1.0020  Constant = 0.0000  Chi**2/nq =   2080.    
+
+ ---------------------------------------------------->
+ Time used  917.1 ,time limit ****** ,Last saved at  910.0
+
+ Moves accepted  :: 866606
+ Moves generated :: 3000000
+ Moves tested    :: 2999999
+
+ Chi^2/dof        =   1056.    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   563.0    
+ Expt  2: Renorm     1.0019  Constant = 0.0000  Chi**2/nq =   1728.    
+
+ ---------------------------------------------------->
+ Time used  920.0 ,time limit ****** ,Last saved at  910.0
+
+ Moves accepted  :: 867818
+ Moves generated :: 3010002
+ Moves tested    :: 3010001
+
+ Chi^2/dof        =   879.6    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   443.6    
+ Expt  2: Renorm     1.0019  Constant = 0.0000  Chi**2/nq =   1474.    
+
+Total time in loop so far :   0.5502E+05 s
+Time per generated move is :   18.28     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  922.9 ,time limit ****** ,Last saved at  920.0
+
+ Moves accepted  :: 869089
+ Moves generated :: 3020002
+ Moves tested    :: 3020001
+
+ Chi^2/dof        =   1129.    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   569.4    
+ Expt  2: Renorm     1.0018  Constant = 0.0000  Chi**2/nq =   1892.    
+
+ ---------------------------------------------------->
+ Time used  925.8 ,time limit ****** ,Last saved at  920.0
+
+ Moves accepted  :: 870303
+ Moves generated :: 3030000
+ Moves tested    :: 3029999
+
+ Chi^2/dof        =   1024.    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   531.1    
+ Expt  2: Renorm     1.0017  Constant = 0.0000  Chi**2/nq =   1697.    
+
+ ---------------------------------------------------->
+ Time used  928.6 ,time limit ****** ,Last saved at  920.0
+
+ Moves accepted  :: 871532
+ Moves generated :: 3040007
+ Moves tested    :: 3040006
+
+ Chi^2/dof        =   1072.    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   540.1    
+ Expt  2: Renorm     1.0017  Constant = 0.0000  Chi**2/nq =   1797.    
+
+Total time in loop so far :   0.5562E+05 s
+Time per generated move is :   18.27     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  931.6 ,time limit ****** ,Last saved at  930.0
+
+ Moves accepted  :: 872758
+ Moves generated :: 3050000
+ Moves tested    :: 3049999
+
+ Chi^2/dof        =   1264.    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   601.7    
+ Expt  2: Renorm     1.0017  Constant = 0.0000  Chi**2/nq =   2168.    
+
+ ---------------------------------------------------->
+ Time used  934.4 ,time limit ****** ,Last saved at  930.0
+
+ Moves accepted  :: 874028
+ Moves generated :: 3060002
+ Moves tested    :: 3060001
+
+ Chi^2/dof        =   1154.    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   581.1    
+ Expt  2: Renorm     1.0016  Constant = 0.0000  Chi**2/nq =   1936.    
+
+ ---------------------------------------------------->
+ Time used  937.2 ,time limit ****** ,Last saved at  930.0
+
+ Moves accepted  :: 875272
+ Moves generated :: 3070002
+ Moves tested    :: 3070001
+
+ Chi^2/dof        =   1081.    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   559.8    
+ Expt  2: Renorm     1.0015  Constant = 0.0000  Chi**2/nq =   1792.    
+
+Total time in loop so far :   0.5622E+05 s
+Time per generated move is :   18.25     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  940.1 ,time limit ****** ,Last saved at  940.0
+
+ Moves accepted  :: 876535
+ Moves generated :: 3080002
+ Moves tested    :: 3080001
+
+ Chi^2/dof        =   1002.    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   504.3    
+ Expt  2: Renorm     1.0014  Constant = 0.0000  Chi**2/nq =   1681.    
+
+ ---------------------------------------------------->
+ Time used  943.0 ,time limit ****** ,Last saved at  940.0
+
+ Moves accepted  :: 877765
+ Moves generated :: 3090002
+ Moves tested    :: 3090001
+
+ Chi^2/dof        =   864.5    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   447.7    
+ Expt  2: Renorm     1.0014  Constant = 0.0000  Chi**2/nq =   1433.    
+
+ ---------------------------------------------------->
+ Time used  945.8 ,time limit ****** ,Last saved at  940.0
+
+ Moves accepted  :: 878977
+ Moves generated :: 3100003
+ Moves tested    :: 3100002
+
+ Chi^2/dof        =   704.5    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   374.9    
+ Expt  2: Renorm     1.0013  Constant = 0.0000  Chi**2/nq =   1154.    
+
+ ---------------------------------------------------->
+ Time used  948.6 ,time limit ****** ,Last saved at  940.0
+
+ Moves accepted  :: 880204
+ Moves generated :: 3110000
+ Moves tested    :: 3109999
+
+ Chi^2/dof        =   912.3    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   472.3    
+ Expt  2: Renorm     1.0012  Constant = 0.0000  Chi**2/nq =   1513.    
+
+Total time in loop so far :   0.5682E+05 s
+Time per generated move is :   18.24     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  951.5 ,time limit ****** ,Last saved at  950.0
+
+ Moves accepted  :: 881442
+ Moves generated :: 3120002
+ Moves tested    :: 3120001
+
+ Chi^2/dof        =   969.0    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   487.6    
+ Expt  2: Renorm     1.0012  Constant = 0.0000  Chi**2/nq =   1626.    
+
+ ---------------------------------------------------->
+ Time used  954.4 ,time limit ****** ,Last saved at  950.0
+
+ Moves accepted  :: 882699
+ Moves generated :: 3130002
+ Moves tested    :: 3130001
+
+ Chi^2/dof        =   1083.    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   560.1    
+ Expt  2: Renorm     1.0011  Constant = 0.0000  Chi**2/nq =   1796.    
+
+ ---------------------------------------------------->
+ Time used  957.2 ,time limit ****** ,Last saved at  950.0
+
+ Moves accepted  :: 883919
+ Moves generated :: 3140003
+ Moves tested    :: 3140002
+
+ Chi^2/dof        =   736.4    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   391.3    
+ Expt  2: Renorm     1.0010  Constant = 0.0000  Chi**2/nq =   1207.    
+
+Total time in loop so far :   0.5741E+05 s
+Time per generated move is :   18.23     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  960.1 ,time limit ****** ,Last saved at  960.0
+
+ Moves accepted  :: 885130
+ Moves generated :: 3150008
+ Moves tested    :: 3150007
+
+ Chi^2/dof        =   962.9    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   484.0    
+ Expt  2: Renorm     1.0009  Constant = 0.0000  Chi**2/nq =   1616.    
+
+ ---------------------------------------------------->
+ Time used  963.0 ,time limit ****** ,Last saved at  960.0
+
+ Moves accepted  :: 886337
+ Moves generated :: 3160002
+ Moves tested    :: 3160001
+
+ Chi^2/dof        =   961.0    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   482.9    
+ Expt  2: Renorm     1.0009  Constant = 0.0000  Chi**2/nq =   1613.    
+
+ ---------------------------------------------------->
+ Time used  965.9 ,time limit ****** ,Last saved at  960.0
+
+ Moves accepted  :: 887520
+ Moves generated :: 3170003
+ Moves tested    :: 3170002
+
+ Chi^2/dof        =   835.7    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   419.9    
+ Expt  2: Renorm     1.0008  Constant = 0.0000  Chi**2/nq =   1403.    
+
+ ---------------------------------------------------->
+ Time used  968.8 ,time limit ****** ,Last saved at  960.0
+
+ Moves accepted  :: 888719
+ Moves generated :: 3180000
+ Moves tested    :: 3179999
+
+ Chi^2/dof        =   657.8    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   349.2    
+ Expt  2: Renorm     1.0008  Constant = 0.0000  Chi**2/nq =   1079.    
+
+Total time in loop so far :   0.5801E+05 s
+Time per generated move is :   18.22     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  971.7 ,time limit ****** ,Last saved at  970.0
+
+ Moves accepted  :: 889957
+ Moves generated :: 3190003
+ Moves tested    :: 3190002
+
+ Chi^2/dof        =   1085.    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   544.8    
+ Expt  2: Renorm     1.0008  Constant = 0.0000  Chi**2/nq =   1823.    
+
+ ---------------------------------------------------->
+ Time used  974.5 ,time limit ****** ,Last saved at  970.0
+
+ Moves accepted  :: 891195
+ Moves generated :: 3200002
+ Moves tested    :: 3200001
+
+ Chi^2/dof        =   1184.    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   561.4    
+ Expt  2: Renorm     1.0007  Constant = 0.0000  Chi**2/nq =   2034.    
+
+ ---------------------------------------------------->
+ Time used  977.4 ,time limit ****** ,Last saved at  970.0
+
+ Moves accepted  :: 892394
+ Moves generated :: 3210004
+ Moves tested    :: 3210003
+
+ Chi^2/dof        =   933.9    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   455.8    
+ Expt  2: Renorm     1.0006  Constant = 0.0000  Chi**2/nq =   1586.    
+
+Total time in loop so far :   0.5861E+05 s
+Time per generated move is :   18.21     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  980.2 ,time limit ****** ,Last saved at  980.0
+
+ Moves accepted  :: 893636
+ Moves generated :: 3220003
+ Moves tested    :: 3220002
+
+ Chi^2/dof        =   974.1    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   488.9    
+ Expt  2: Renorm     1.0006  Constant = 0.0000  Chi**2/nq =   1636.    
+
+ ---------------------------------------------------->
+ Time used  983.1 ,time limit ****** ,Last saved at  980.0
+
+ Moves accepted  :: 894874
+ Moves generated :: 3230008
+ Moves tested    :: 3230007
+
+ Chi^2/dof        =   731.4    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   388.0    
+ Expt  2: Renorm     1.0004  Constant = 0.0000  Chi**2/nq =   1200.    
+
+ ---------------------------------------------------->
+ Time used  985.9 ,time limit ****** ,Last saved at  980.0
+
+ Moves accepted  :: 896114
+ Moves generated :: 3240002
+ Moves tested    :: 3240001
+
+ Chi^2/dof        =   1113.    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   590.4    
+ Expt  2: Renorm     1.0003  Constant = 0.0000  Chi**2/nq =   1826.    
+
+ ---------------------------------------------------->
+ Time used  988.8 ,time limit ****** ,Last saved at  980.0
+
+ Moves accepted  :: 897304
+ Moves generated :: 3250002
+ Moves tested    :: 3250001
+
+ Chi^2/dof        =   910.7    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   482.9    
+ Expt  2: Renorm     1.0003  Constant = 0.0000  Chi**2/nq =   1495.    
+
+Total time in loop so far :   0.5921E+05 s
+Time per generated move is :   18.20     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used  991.7 ,time limit ****** ,Last saved at  990.0
+
+ Moves accepted  :: 898487
+ Moves generated :: 3260003
+ Moves tested    :: 3260002
+
+ Chi^2/dof        =   696.6    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   369.4    
+ Expt  2: Renorm     1.0002  Constant = 0.0000  Chi**2/nq =   1143.    
+
+ ---------------------------------------------------->
+ Time used  994.5 ,time limit ****** ,Last saved at  990.0
+
+ Moves accepted  :: 899593
+ Moves generated :: 3270000
+ Moves tested    :: 3269999
+
+ Chi^2/dof        =   561.8    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   298.0    
+ Expt  2: Renorm     1.0001  Constant = 0.0000  Chi**2/nq =   921.8    
+
+ ---------------------------------------------------->
+ Time used  997.4 ,time limit ****** ,Last saved at  990.0
+
+ Moves accepted  :: 900749
+ Moves generated :: 3280002
+ Moves tested    :: 3280001
+
+ Chi^2/dof        =   748.1    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   407.9    
+ Expt  2: Renorm     1.0000  Constant = 0.0000  Chi**2/nq =   1212.    
+
+Total time in loop so far :   0.5981E+05 s
+Time per generated move is :   18.18     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1000.3 ,time limit ****** ,Last saved at 1000.0
+
+ Moves accepted  :: 901914
+ Moves generated :: 3290003
+ Moves tested    :: 3290002
+
+ Chi^2/dof        =   581.3    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   316.8    
+ Expt  2: Renorm     0.9999  Constant = 0.0000  Chi**2/nq =   942.2    
+
+ ---------------------------------------------------->
+ Time used 1003.1 ,time limit ****** ,Last saved at 1000.0
+
+ Moves accepted  :: 903070
+ Moves generated :: 3300002
+ Moves tested    :: 3300001
+
+ Chi^2/dof        =   542.6    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   303.7    
+ Expt  2: Renorm     0.9998  Constant = 0.0000  Chi**2/nq =   868.5    
+
+ ---------------------------------------------------->
+ Time used 1006.0 ,time limit ****** ,Last saved at 1000.0
+
+ Moves accepted  :: 904228
+ Moves generated :: 3310002
+ Moves tested    :: 3310001
+
+ Chi^2/dof        =   576.6    
+
+ Expt  1: Renorm     0.9738  Constant = 0.0000  Chi**2/nq =   331.3    
+ Expt  2: Renorm     0.9997  Constant = 0.0000  Chi**2/nq =   911.4    
+
+ ---------------------------------------------------->
+ Time used 1008.9 ,time limit ****** ,Last saved at 1000.0
+
+ Moves accepted  :: 905352
+ Moves generated :: 3320000
+ Moves tested    :: 3319999
+
+ Chi^2/dof        =   522.4    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   292.1    
+ Expt  2: Renorm     0.9997  Constant = 0.0000  Chi**2/nq =   836.6    
+
+Total time in loop so far :   0.6041E+05 s
+Time per generated move is :   18.17     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1011.8 ,time limit ****** ,Last saved at 1010.0
+
+ Moves accepted  :: 906434
+ Moves generated :: 3330000
+ Moves tested    :: 3329999
+
+ Chi^2/dof        =   710.5    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   407.8    
+ Expt  2: Renorm     0.9997  Constant = 0.0000  Chi**2/nq =   1124.    
+
+ ---------------------------------------------------->
+ Time used 1014.7 ,time limit ****** ,Last saved at 1010.0
+
+ Moves accepted  :: 907542
+ Moves generated :: 3340004
+ Moves tested    :: 3340003
+
+ Chi^2/dof        =   588.8    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   329.0    
+ Expt  2: Renorm     0.9996  Constant = 0.0000  Chi**2/nq =   943.3    
+
+ ---------------------------------------------------->
+ Time used 1017.5 ,time limit ****** ,Last saved at 1010.0
+
+ Moves accepted  :: 908676
+ Moves generated :: 3350003
+ Moves tested    :: 3350002
+
+ Chi^2/dof        =   583.5    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   308.7    
+ Expt  2: Renorm     0.9996  Constant = 0.0000  Chi**2/nq =   958.5    
+
+Total time in loop so far :   0.6101E+05 s
+Time per generated move is :   18.16     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1020.3 ,time limit ****** ,Last saved at 1020.0
+
+ Moves accepted  :: 909808
+ Moves generated :: 3360002
+ Moves tested    :: 3360001
+
+ Chi^2/dof        =   550.5    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   307.4    
+ Expt  2: Renorm     0.9995  Constant = 0.0000  Chi**2/nq =   882.4    
+
+ ---------------------------------------------------->
+ Time used 1023.2 ,time limit ****** ,Last saved at 1020.0
+
+ Moves accepted  :: 910883
+ Moves generated :: 3370002
+ Moves tested    :: 3370001
+
+ Chi^2/dof        =   578.2    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   314.1    
+ Expt  2: Renorm     0.9995  Constant = 0.0000  Chi**2/nq =   938.6    
+
+ ---------------------------------------------------->
+ Time used 1026.0 ,time limit ****** ,Last saved at 1020.0
+
+ Moves accepted  :: 912015
+ Moves generated :: 3380004
+ Moves tested    :: 3380003
+
+ Chi^2/dof        =   535.8    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   307.1    
+ Expt  2: Renorm     0.9994  Constant = 0.0000  Chi**2/nq =   847.8    
+
+ ---------------------------------------------------->
+ Time used 1028.9 ,time limit ****** ,Last saved at 1020.0
+
+ Moves accepted  :: 913172
+ Moves generated :: 3390026
+ Moves tested    :: 3390025
+
+ Chi^2/dof        =   1008.    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   518.4    
+ Expt  2: Renorm     0.9993  Constant = 0.0000  Chi**2/nq =   1677.    
+
+Total time in loop so far :   0.6161E+05 s
+Time per generated move is :   18.15     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1031.7 ,time limit ****** ,Last saved at 1030.0
+
+ Moves accepted  :: 914283
+ Moves generated :: 3400000
+ Moves tested    :: 3399999
+
+ Chi^2/dof        =   714.5    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   388.1    
+ Expt  2: Renorm     0.9993  Constant = 0.0000  Chi**2/nq =   1160.    
+
+ ---------------------------------------------------->
+ Time used 1034.6 ,time limit ****** ,Last saved at 1030.0
+
+ Moves accepted  :: 915423
+ Moves generated :: 3410002
+ Moves tested    :: 3410001
+
+ Chi^2/dof        =   579.7    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   314.8    
+ Expt  2: Renorm     0.9992  Constant = 0.0000  Chi**2/nq =   941.3    
+
+ ---------------------------------------------------->
+ Time used 1037.5 ,time limit ****** ,Last saved at 1030.0
+
+ Moves accepted  :: 916604
+ Moves generated :: 3420002
+ Moves tested    :: 3420001
+
+ Chi^2/dof        =   747.4    
+
+ Expt  1: Renorm     0.9739  Constant = 0.0000  Chi**2/nq =   405.8    
+ Expt  2: Renorm     0.9991  Constant = 0.0000  Chi**2/nq =   1214.    
+
+Total time in loop so far :   0.6221E+05 s
+Time per generated move is :   18.14     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1040.4 ,time limit ****** ,Last saved at 1040.0
+
+ Moves accepted  :: 917687
+ Moves generated :: 3430002
+ Moves tested    :: 3430001
+
+ Chi^2/dof        =   634.3    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   335.1    
+ Expt  2: Renorm     0.9991  Constant = 0.0000  Chi**2/nq =   1043.    
+
+ ---------------------------------------------------->
+ Time used 1043.3 ,time limit ****** ,Last saved at 1040.0
+
+ Moves accepted  :: 918867
+ Moves generated :: 3440002
+ Moves tested    :: 3440001
+
+ Chi^2/dof        =   694.7    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   367.0    
+ Expt  2: Renorm     0.9990  Constant = 0.0000  Chi**2/nq =   1142.    
+
+ ---------------------------------------------------->
+ Time used 1046.1 ,time limit ****** ,Last saved at 1040.0
+
+ Moves accepted  :: 920017
+ Moves generated :: 3450002
+ Moves tested    :: 3450001
+
+ Chi^2/dof        =   683.9    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   371.2    
+ Expt  2: Renorm     0.9990  Constant = 0.0000  Chi**2/nq =   1111.    
+
+ ---------------------------------------------------->
+ Time used 1048.9 ,time limit ****** ,Last saved at 1040.0
+
+ Moves accepted  :: 921182
+ Moves generated :: 3460002
+ Moves tested    :: 3460001
+
+ Chi^2/dof        =   755.5    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   388.1    
+ Expt  2: Renorm     0.9989  Constant = 0.0000  Chi**2/nq =   1257.    
+
+Total time in loop so far :   0.6280E+05 s
+Time per generated move is :   18.13     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1051.8 ,time limit ****** ,Last saved at 1050.0
+
+ Moves accepted  :: 922315
+ Moves generated :: 3470003
+ Moves tested    :: 3470002
+
+ Chi^2/dof        =   676.7    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   367.5    
+ Expt  2: Renorm     0.9989  Constant = 0.0000  Chi**2/nq =   1099.    
+
+ ---------------------------------------------------->
+ Time used 1054.7 ,time limit ****** ,Last saved at 1050.0
+
+ Moves accepted  :: 923483
+ Moves generated :: 3480003
+ Moves tested    :: 3480002
+
+ Chi^2/dof        =   689.0    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   384.5    
+ Expt  2: Renorm     0.9988  Constant = 0.0000  Chi**2/nq =   1105.    
+
+ ---------------------------------------------------->
+ Time used 1057.6 ,time limit ****** ,Last saved at 1050.0
+
+ Moves accepted  :: 924579
+ Moves generated :: 3490000
+ Moves tested    :: 3489999
+
+ Chi^2/dof        =   522.2    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   268.5    
+ Expt  2: Renorm     0.9988  Constant = 0.0000  Chi**2/nq =   868.4    
+
+Total time in loop so far :   0.6340E+05 s
+Time per generated move is :   18.12     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1060.4 ,time limit ****** ,Last saved at 1060.0
+
+ Moves accepted  :: 925789
+ Moves generated :: 3500002
+ Moves tested    :: 3500001
+
+ Chi^2/dof        =   871.8    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   473.5    
+ Expt  2: Renorm     0.9987  Constant = 0.0000  Chi**2/nq =   1415.    
+
+ ---------------------------------------------------->
+ Time used 1063.3 ,time limit ****** ,Last saved at 1060.0
+
+ Moves accepted  :: 926889
+ Moves generated :: 3510002
+ Moves tested    :: 3510001
+
+ Chi^2/dof        =   562.9    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   305.7    
+ Expt  2: Renorm     0.9986  Constant = 0.0000  Chi**2/nq =   914.0    
+
+ ---------------------------------------------------->
+ Time used 1066.2 ,time limit ****** ,Last saved at 1060.0
+
+ Moves accepted  :: 927991
+ Moves generated :: 3520002
+ Moves tested    :: 3520001
+
+ Chi^2/dof        =   808.3    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   415.2    
+ Expt  2: Renorm     0.9986  Constant = 0.0000  Chi**2/nq =   1345.    
+
+ ---------------------------------------------------->
+ Time used 1069.0 ,time limit ****** ,Last saved at 1060.0
+
+ Moves accepted  :: 929118
+ Moves generated :: 3530004
+ Moves tested    :: 3530003
+
+ Chi^2/dof        =   731.2    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   375.6    
+ Expt  2: Renorm     0.9985  Constant = 0.0000  Chi**2/nq =   1216.    
+
+Total time in loop so far :   0.6400E+05 s
+Time per generated move is :   18.11     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1071.9 ,time limit ****** ,Last saved at 1070.0
+
+ Moves accepted  :: 930239
+ Moves generated :: 3540000
+ Moves tested    :: 3539999
+
+ Chi^2/dof        =   697.2    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   348.2    
+ Expt  2: Renorm     0.9985  Constant = 0.0000  Chi**2/nq =   1173.    
+
+ ---------------------------------------------------->
+ Time used 1074.8 ,time limit ****** ,Last saved at 1070.0
+
+ Moves accepted  :: 931349
+ Moves generated :: 3550002
+ Moves tested    :: 3550001
+
+ Chi^2/dof        =   653.4    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   335.7    
+ Expt  2: Renorm     0.9984  Constant = 0.0000  Chi**2/nq =   1087.    
+
+ ---------------------------------------------------->
+ Time used 1077.6 ,time limit ****** ,Last saved at 1070.0
+
+ Moves accepted  :: 932534
+ Moves generated :: 3560009
+ Moves tested    :: 3560008
+
+ Chi^2/dof        =   718.6    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   379.6    
+ Expt  2: Renorm     0.9984  Constant = 0.0000  Chi**2/nq =   1181.    
+
+Total time in loop so far :   0.6460E+05 s
+Time per generated move is :   18.10     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1080.5 ,time limit ****** ,Last saved at 1080.0
+
+ Moves accepted  :: 933644
+ Moves generated :: 3570002
+ Moves tested    :: 3570001
+
+ Chi^2/dof        =   649.6    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   333.7    
+ Expt  2: Renorm     0.9983  Constant = 0.0000  Chi**2/nq =   1081.    
+
+ ---------------------------------------------------->
+ Time used 1083.4 ,time limit ****** ,Last saved at 1080.0
+
+ Moves accepted  :: 934775
+ Moves generated :: 3580006
+ Moves tested    :: 3580005
+
+ Chi^2/dof        =   529.5    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   279.5    
+ Expt  2: Renorm     0.9982  Constant = 0.0000  Chi**2/nq =   870.6    
+
+ ---------------------------------------------------->
+ Time used 1086.3 ,time limit ****** ,Last saved at 1080.0
+
+ Moves accepted  :: 935916
+ Moves generated :: 3590006
+ Moves tested    :: 3590005
+
+ Chi^2/dof        =   645.4    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   340.8    
+ Expt  2: Renorm     0.9982  Constant = 0.0000  Chi**2/nq =   1061.    
+
+ ---------------------------------------------------->
+ Time used 1089.1 ,time limit ****** ,Last saved at 1080.0
+
+ Moves accepted  :: 937049
+ Moves generated :: 3600002
+ Moves tested    :: 3600001
+
+ Chi^2/dof        =   651.5    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   334.8    
+ Expt  2: Renorm     0.9981  Constant = 0.0000  Chi**2/nq =   1084.    
+
+Total time in loop so far :   0.6520E+05 s
+Time per generated move is :   18.10     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1092.0 ,time limit ****** ,Last saved at 1090.0
+
+ Moves accepted  :: 938156
+ Moves generated :: 3610003
+ Moves tested    :: 3610002
+
+ Chi^2/dof        =   543.6    
+
+ Expt  1: Renorm     0.9742  Constant = 0.0000  Chi**2/nq =   279.4    
+ Expt  2: Renorm     0.9981  Constant = 0.0000  Chi**2/nq =   904.1    
+
+ ---------------------------------------------------->
+ Time used 1094.9 ,time limit ****** ,Last saved at 1090.0
+
+ Moves accepted  :: 939258
+ Moves generated :: 3620002
+ Moves tested    :: 3620001
+
+ Chi^2/dof        =   636.6    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   336.3    
+ Expt  2: Renorm     0.9980  Constant = 0.0000  Chi**2/nq =   1046.    
+
+ ---------------------------------------------------->
+ Time used 1097.7 ,time limit ****** ,Last saved at 1090.0
+
+ Moves accepted  :: 940441
+ Moves generated :: 3630002
+ Moves tested    :: 3630001
+
+ Chi^2/dof        =   856.0    
+
+ Expt  1: Renorm     0.9742  Constant = 0.0000  Chi**2/nq =   440.2    
+ Expt  2: Renorm     0.9980  Constant = 0.0000  Chi**2/nq =   1423.    
+
+Total time in loop so far :   0.6580E+05 s
+Time per generated move is :   18.09     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1100.6 ,time limit ****** ,Last saved at 1100.0
+
+ Moves accepted  :: 941545
+ Moves generated :: 3640003
+ Moves tested    :: 3640002
+
+ Chi^2/dof        =   538.9    
+
+ Expt  1: Renorm     0.9742  Constant = 0.0000  Chi**2/nq =   285.0    
+ Expt  2: Renorm     0.9979  Constant = 0.0000  Chi**2/nq =   885.4    
+
+ ---------------------------------------------------->
+ Time used 1103.5 ,time limit ****** ,Last saved at 1100.0
+
+ Moves accepted  :: 942662
+ Moves generated :: 3650002
+ Moves tested    :: 3650001
+
+ Chi^2/dof        =   623.1    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   338.5    
+ Expt  2: Renorm     0.9978  Constant = 0.0000  Chi**2/nq =   1012.    
+
+ ---------------------------------------------------->
+ Time used 1106.4 ,time limit ****** ,Last saved at 1100.0
+
+ Moves accepted  :: 943764
+ Moves generated :: 3660005
+ Moves tested    :: 3660004
+
+ Chi^2/dof        =   527.0    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   294.2    
+ Expt  2: Renorm     0.9977  Constant = 0.0000  Chi**2/nq =   844.8    
+
+ ---------------------------------------------------->
+ Time used 1109.3 ,time limit ****** ,Last saved at 1100.0
+
+ Moves accepted  :: 944878
+ Moves generated :: 3670002
+ Moves tested    :: 3670001
+
+ Chi^2/dof        =   671.7    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   364.9    
+ Expt  2: Renorm     0.9977  Constant = 0.0000  Chi**2/nq =   1090.    
+
+Total time in loop so far :   0.6640E+05 s
+Time per generated move is :   18.08     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1112.2 ,time limit ****** ,Last saved at 1110.0
+
+ Moves accepted  :: 945955
+ Moves generated :: 3680002
+ Moves tested    :: 3680001
+
+ Chi^2/dof        =   814.1    
+
+ Expt  1: Renorm     0.9740  Constant = 0.0000  Chi**2/nq =   430.2    
+ Expt  2: Renorm     0.9976  Constant = 0.0000  Chi**2/nq =   1338.    
+
+ ---------------------------------------------------->
+ Time used 1115.1 ,time limit ****** ,Last saved at 1110.0
+
+ Moves accepted  :: 947067
+ Moves generated :: 3690000
+ Moves tested    :: 3689999
+
+ Chi^2/dof        =   566.4    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   291.3    
+ Expt  2: Renorm     0.9976  Constant = 0.0000  Chi**2/nq =   941.8    
+
+ ---------------------------------------------------->
+ Time used 1117.9 ,time limit ****** ,Last saved at 1110.0
+
+ Moves accepted  :: 948175
+ Moves generated :: 3700003
+ Moves tested    :: 3700002
+
+ Chi^2/dof        =   611.0    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   323.1    
+ Expt  2: Renorm     0.9975  Constant = 0.0000  Chi**2/nq =   1004.    
+
+Total time in loop so far :   0.6700E+05 s
+Time per generated move is :   18.07     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1120.8 ,time limit ****** ,Last saved at 1120.0
+
+ Moves accepted  :: 949282
+ Moves generated :: 3710003
+ Moves tested    :: 3710002
+
+ Chi^2/dof        =   748.6    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   385.1    
+ Expt  2: Renorm     0.9974  Constant = 0.0000  Chi**2/nq =   1245.    
+
+ ---------------------------------------------------->
+ Time used 1123.6 ,time limit ****** ,Last saved at 1120.0
+
+ Moves accepted  :: 950416
+ Moves generated :: 3720002
+ Moves tested    :: 3720001
+
+ Chi^2/dof        =   805.0    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   402.6    
+ Expt  2: Renorm     0.9974  Constant = 0.0000  Chi**2/nq =   1354.    
+
+ ---------------------------------------------------->
+ Time used 1126.5 ,time limit ****** ,Last saved at 1120.0
+
+ Moves accepted  :: 951547
+ Moves generated :: 3730003
+ Moves tested    :: 3730002
+
+ Chi^2/dof        =   606.0    
+
+ Expt  1: Renorm     0.9742  Constant = 0.0000  Chi**2/nq =   311.9    
+ Expt  2: Renorm     0.9974  Constant = 0.0000  Chi**2/nq =   1007.    
+
+ ---------------------------------------------------->
+ Time used 1129.4 ,time limit ****** ,Last saved at 1120.0
+
+ Moves accepted  :: 952680
+ Moves generated :: 3740003
+ Moves tested    :: 3740001
+
+ Chi^2/dof        =   724.6    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   352.4    
+ Expt  2: Renorm     0.9973  Constant = 0.0000  Chi**2/nq =   1232.    
+
+Total time in loop so far :   0.6760E+05 s
+Time per generated move is :   18.06     ms
+
+ Saving configuration and results to disk
+ *** DO NOT INTERRUPT UNTIL SAVING IS COMPLETED ***
+ Saving has been completed
+
+
+ ---------------------------------------------------->
+ Time used 1132.3 ,time limit ****** ,Last saved at 1130.0
+
+ Moves accepted  :: 953792
+ Moves generated :: 3750006
+ Moves tested    :: 3750004
+
+ Chi^2/dof        =   538.9    
+
+ Expt  1: Renorm     0.9741  Constant = 0.0000  Chi**2/nq =   277.3    
+ Expt  2: Renorm     0.9972  Constant = 0.0000  Chi**2/nq =   895.8    
+
+ ---------------------------------------------------->
+ Time used 1135.1 ,time limit ****** ,Last saved at 1130.0
+
+ Moves accepted  :: 954905
+ Moves generated :: 3760001
+ Moves tested    :: 3759999
+
+ Chi^2/dof        =   719.1    
+
+ Expt  1: Renorm     0.9742  Constant = 0.0000  Chi**2/nq =   360.1    
+ Expt  2: Renorm     0.9972  Constant = 0.0000  Chi**2/nq =   1209.    
+
