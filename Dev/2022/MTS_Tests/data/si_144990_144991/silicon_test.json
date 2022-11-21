@@ -1,0 +1,30 @@
+{
+    "Facility": "SNS",
+    "Instrument": "NOM",
+    "Title" : "Silicon",
+    "Sample": { "Runs" : "144990, 144991",
+             "Background" : { "Runs" : "144975",
+                              "Background" : { "Runs" : "144977" }
+                            },
+             "Material" : "Si1",
+             "MassDensity" : 2.32,
+             "PackingFraction" : 0.7,
+             "Geometry" : {"Radius" : 0.3,
+                           "Height" : 1.8 }
+            },
+    "Normalization": { "Runs" : "144976",
+                  "Background" : { "Runs" : "144977"},
+                  "Material" : "V",
+                  "MassDensity" : 6.11,
+                  "PackingFraction" : 1.0,
+                  "Geometry" : {"Radius" : 0.2925,
+                                "Height" : 1.8 },
+                  "AbsorptionCorrection" : { "Type" : "SampleOnly" }
+                },
+    "Calibration":{"Filename":"./NOMAD_144974_2020-06-04_shifter.h5"},
+    "AlignAndFocusArgs" : { "TMin" : 300.0, "TMax" : 16667.0 },
+    "Merging":{"QBinning": [0.0, 0.005, 40.0],
+               "SumBanks": [3]
+              },
+    "OutputDir" : "./output_cap"
+}

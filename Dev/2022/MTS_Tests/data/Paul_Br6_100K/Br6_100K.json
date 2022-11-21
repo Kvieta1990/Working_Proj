@@ -1,0 +1,31 @@
+{
+    "Facility": "SNS",
+    "Instrument": "NOM",
+    "Title" : "Br6_100K",
+    "Sample": { "Runs" : "147520,147521,147522,147523",
+             "Background" : { "Runs" : "144880",
+                              "Background" : { "Runs" : "144977" }
+                            },
+             "Material" : "Li3 Y1 Br6",
+             "MassDensity" : 3.67,
+             "PackingFraction" : 0.7,
+             "Geometry" : {"Radius" : 0.15,
+                           "Height" : 1.8 },
+             "AbsorptionCorrection" : { "Type" : "SampleOnly" }
+            },
+    "Normalization": { "Runs" : "144976",
+                  "Background" : { "Runs" : "144977"},
+                  "Material" : "V",
+                  "MassDensity" : 6.11,
+                  "PackingFraction" : 1.0,
+                  "Geometry" : {"Radius" : 0.2925,
+                                "Height" : 1.8 },
+                  "AbsorptionCorrection" : { "Type" : "SampleOnly" }
+                },
+    "Calibration":{"Filename":"./NOMAD_144974_2020-06-04_shifter.h5"},
+    "AlignAndFocusArgs" : { "TMin" : 300.0, "TMax" : 16667.0 },
+    "Merging":{"QBinning": [0.0, 0.005, 40.0],
+               "SumBanks": [3]
+              },
+    "OutputDir" : "./output_cap"
+}
