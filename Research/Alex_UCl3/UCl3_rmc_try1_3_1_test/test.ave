@@ -1,0 +1,17 @@
+ Bond data
+  Type1 Type2 Numbonds Ave-distance Sigsqr Avsqr
+           1           1       43218   4.57781553       9.55696106E-02   21.0519638    
+           1           2      955540   3.60211563      0.636959076       13.6121960    
+           2           2     2371342   3.96327829      0.296400070       16.0039749    
+ b           1           1           1
+ Sum   21609.0000     Average theta   101.745834     StndDev   30.4039059    
+ b           1           2           1
+ Sum   106448.000     Average theta   105.313629     StndDev   27.7278881    
+ b           2           1           1
+ Sum   209187.000     Average theta   90.0618591     StndDev   38.5456352    
+ b           2           1           2
+ Sum   371322.000     Average theta   95.6210327     StndDev   34.6125298    
+ b           2           2           1
+ Sum   825729.000     Average theta   90.4554977     StndDev   38.0873184    
+ b           2           2           2
+ Sum   1185671.00     Average theta   95.6797867     StndDev   34.6335526    
