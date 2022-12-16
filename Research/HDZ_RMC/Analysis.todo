@@ -25,3 +25,11 @@
     - Yb atoms distribution - local distortion of Yb pyrochlore sublattice.
     
     - Ti atoms distribution
+    
+3. Oxygen distortion analysis.
+
+4. Allow swapping between Ti and Sn and redo all the analysis.
+
+5. Local symmetry analysis.
+
+6. Check the new RMC result with Sn-O tail constraint.
