@@ -43,3 +43,7 @@
             > See the reference, https://www.nature.com/articles/s41524-018-0144-1
 
 6. Check the new RMC result with Sn-O tail constraint.
+
+7. Gaussian peak fitting for triplet analysis.
+
+    | https://stackoverflow.com/questions/26902283/fit-multiple-gaussians-to-the-data-in-python
