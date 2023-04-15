@@ -1,0 +1,6 @@
+# In _config.yml
+title: Powder Diffraction at ORNL
+author: Yuanpeng Zhang
+logo: ornl_logo.png
+execute:
+  execute_notebooks: force
