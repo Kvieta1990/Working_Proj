@@ -1,0 +1,24 @@
+digraph G {
+ {node[color=red]; "Sample & Container absorption processing"} -> {node[color=green];"group_wksp = None"};
+ {node[color=green];"group_wksp = None"} -> "Absorption correction?";
+ "Absorption correction?" -> {node[color=red]; "Data loader"} [label=" No"];
+ "Absorption correction?" -> "Regen group or cache not found?" [label="   Yes"];
+ "Regen group or cache not found?" -> {node[color=red];"Create absorption workspace"} [label="  Yes"];
+ {node[color=red];"Create absorption workspace"} -> {node[label="Regen group = False"];"regen_group_f_2"};
+ {node[label="Regen group = False"];"regen_group_f_2"} -> "Save absorption wksp";
+ "Save absorption wksp" -> {node[color=red]; "Data loader"};
+ "Regen group or cache not found?" -> "Load cache to abs_ws" [label="  No"];
+ "Load cache to abs_ws" -> {node[label="Group file exists?"];"gf_exists_1"};
+ {node[label="Group file exists?"];"gf_exists_1"} -> "abs_ws focused?" [label="  No"];
+ "abs_ws focused?" -> "Raise error" [label="  Yes"];
+ "abs_ws focused?" -> {node[label="group_wksp = None";color=green];"group_wksp_none_1"} [label="  No"];
+ {node[label="group_wksp = None";color=green];"group_wksp_none_1"} -> {node[color=red]; "Data loader"};
+ {node[label="Group file exists?"];"gf_exists_1"} -> {node[color=green];"Load group to group_wksp"};
+ {node[color=green];"Load group to group_wksp"} -> "abs_ws == group_wksp in # of spec?";
+ "abs_ws == group_wksp in # of spec?" -> "Regen group = False" [label="  Yes"];
+ "Regen group = False" -> {node[color=red]; "Data loader"};
+ "abs_ws == group_wksp in # of spec?" -> {node[label="abs_ws focused?"];"abs_ws_focused_1"} [label="  No"];
+ {node[label="abs_ws focused?"];"abs_ws_focused_1"} -> {node[label="Raise error"];"raise_err_1"} [label="  Yes"];
+ {node[label="abs_ws focused?"];"abs_ws_focused_1"} -> {node[label="group_wksp = None";color=green];"group_wksp_none_2"} [label="  No"];
+ {node[label="group_wksp = None";color=green];"group_wksp_none_2"} -> {node[color=red]; "Data loader"};
+}
