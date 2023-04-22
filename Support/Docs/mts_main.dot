@@ -1,0 +1,24 @@
+digraph G {
+    {node[color=red];"Total scattering data reduction"} -> "Load input params";
+    "Load input params" -> {node[color=red];"Sample & Container absorption processing"};
+    {node[color=red];"Sample & Container absorption processing"} -> {node[color=green]; "Sample abs wksp", "Container abs wksp", "Group wksp"};
+    {node[color=green]; "Sample abs wksp", "Container abs wksp", "Group wksp"} -> {node[color=red,label="Data loader"];"data_loader_sc"};
+    {node[color=green];"Sample & container runs"} -> {node[color=red,label="Data loader"];"data_loader_sc"};
+    {node[color=red,label="Data loader"];"data_loader_sc"} -> {node[color=red];"Vanadium absorption processing"};
+    {node[color=red];"Vanadium absorption processing"} -> {node[color=green];"Vanadium abs wksp"};
+    {node[color=red];"Vanadium absorption processing"} -> {node[color=green;label="Group wksp for vanadium"];"group_wksp_van"};
+    {node[color=green];"Vanadium abs wksp"} -> {node[color=red,label="Data loader"];"data_loader_van"};
+    {node[color=green;label="Group wksp for vanadium"];"group_wksp_van"} -> {node[color=red,label="Data loader"];"data_loader_van"};
+    {node[color=green];"Vanadium runs"} -> {node[color=red,label="Data loader"];"data_loader_van"};
+    {node[color=red,label="Data loader"];"data_loader_van"} -> {node[color=red,label="Data loader"];"data_loader_bkg"};
+    {node[color=green];"Empty container & empty instrument runs"} -> {node[color=red,label="Data loader"];"data_loader_bkg"};
+    {node[color=red,label="Data loader"];"data_loader_bkg"} -> "Background subtraction";
+    "Background subtraction" -> "Strip vanadium peaks and smooth";
+    "Strip vanadium peaks and smooth" -> "Inelastic correction for vanadium";
+    "Inelastic correction for vanadium" -> "Normalization over vanadium";
+    "Normalization over vanadium" -> "Normalization over total number of atoms";
+    "Normalization over total number of atoms" -> "Wrapping final factors";
+    "Wrapping final factors" -> "Inelasctic correction for sample";
+    "Inelasctic correction for sample" -> "Prepare normalized S(Q)";
+    "Prepare normalized S(Q)" -> "Output";
+}

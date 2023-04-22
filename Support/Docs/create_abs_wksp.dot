@@ -1,0 +1,14 @@
+digraph G {
+ {node[color=red];"Create absorption workspace"} -> "Pixel by pixel absorption calculation";
+ "Pixel by pixel absorption calculation" -> "Group file exists?";
+ "Group file exists?" -> {node[label="Regen group?"];"regen_g_1"} [label="  Yes"];
+ {node[label="Regen group?"];"regen_g_1"} -> "Regenerate Groups" [label="  Yes"];
+ "Regenerate Groups" -> "Group detectors, save detector grouping, etc.";
+ "Group detectors, save detector grouping, etc." -> {node[color=green];"Return absorption and group wksp"};
+ {node[label="Regen group?"];"regen_g_1"} -> "Group detectors" [label="  No"];
+ "Group detectors" -> "Return absorption and group wksp";
+ "Group file exists?" -> {node[label="Regen group?"];"regen_g_2"} [label="  No"];
+ {node[label="Regen group?"];"regen_g_2"} -> "Regenerate Groups" [label="  Yes"];
+ {node[label="Regen group?"];"regen_g_2"} -> "Stay with pixel by pixel abs scheme" [label="  No"];
+ "Stay with pixel by pixel abs scheme" -> {node[color=green];"Return absorption and group wksp"};
+}

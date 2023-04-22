@@ -1,0 +1,19 @@
+digraph G {
+    {node[color=red]; "Vanadium absorption processing"} -> {node[color=green];"group_wksp_van = None"};
+    {node[color=green];"group_wksp_van = None"} -> "Absorption correction?";
+    "Absorption correction?" -> {node[color=red];"Data loader"} [label="  No"];
+    "Absorption correction?" -> {node[color=green];"group_wksp is None?"} [label="  Yes"];
+    {node[color=green];"group_wksp is None?"} -> {node[color=green];"group_wksp_van = group_wksp"} [label="  No"];
+    {node[color=green];"group_wksp_van = group_wksp"} -> "v_abs_cache_fn = focused V abs cache file";
+    "v_abs_cache_fn = focused V abs cache file" -> "v_abs_cache_fn exists?";
+    {node[color=green];"group_wksp is None?"} -> "Group file exists?" [label="  Yes"];
+    "Group file exists?" -> {node[color=green];"Load group file to group_wksp_van"} [label="  Yes"];
+    {node[color=green];"Load group file to group_wksp_van"} -> "v_abs_cache_fn = focused V abs cache file";
+    "Group file exists?" -> "v_abs_cache_fn = pixel by pixel V abs cache file" [label="  No"];
+    "v_abs_cache_fn = pixel by pixel V abs cache file" -> "v_abs_cache_fn exists?";
+    "v_abs_cache_fn exists?" -> "Load V abs cache file to v_abs_ws" [label="   Yes"];
+    "Load V abs cache file to v_abs_ws" -> {node[color=red];"Data loader"};
+    "v_abs_cache_fn exists?" -> {node[color=red];"Create absorption workspace"} [label="  No"];
+    {node[color=red];"Create absorption workspace"} -> "Save absorption wksp";
+    "Save absorption wksp" -> {node[color=red];"Data loader"};
+}
