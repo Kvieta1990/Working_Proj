@@ -1,0 +1,76 @@
+<Reduction>
+  <instrument_name>PG3</instrument_name>
+  <timestamp>Mon Jul  3 12:13:15 2023</timestamp>
+  <python_version>3.8.15 | packaged by conda-forge | (default, Nov 22 2022, 08:46:39) 
+[GCC 10.4.0]</python_version>
+  <platform>Linux</platform>
+  <architecture>('64bit', 'ELF')</architecture>
+  <mantid_version>0.0.0+uncommitted</mantid_version>
+<RunSetup>
+  <runnumber>53601</runnumber>
+  <sum>1</sum>
+  <calibrationfile>/SNS/PG3/shared/CALIBRATION/2022-1_11A_CAL/PG3_51865_2022-01-05_PAC.h5</calibrationfile>
+  <groupingfile></groupingfile>
+  <characterizationrunsfile>/SNS/users/y8z/Temp/PG3_char_2022_01_09_PAC_limit_1.4MW.txt,/SNS/users/y8z/Temp/PG3_char_2022_05_28-HighRes_PAC_1.4 MW.txt</characterizationrunsfile>
+  <expinifilename></expinifilename>
+  <binning>-0.0008000</binning>
+  <resamplex></resamplex>
+  <binindspace>1</binindspace>
+  <saveas>gsas and fullprof and pdfgetn and topas</saveas>
+  <outputdirectory>/SNS/users/y8z/Temp</outputdirectory>
+  <finaldataunits>MomentumTransfer</finaldataunits>
+  <backgroundnumber></backgroundnumber>
+  <vanadiumnumber></vanadiumnumber>
+  <vanadiumnoisenumber></vanadiumnoisenumber>
+  <vanadiumbackgroundnumber></vanadiumbackgroundnumber>
+  <disablebackgroundcorrection>0</disablebackgroundcorrection>
+  <disablevanadiumcorrection>0</disablevanadiumcorrection>
+  <disablevanadiumbackgroundcorrection>0</disablevanadiumbackgroundcorrection>
+  <doresamplex>0</doresamplex>
+</RunSetup>
+<AdvancedSetup>
+<unwrapref></unwrapref>
+<lowresref></lowresref>
+<cropwavelengthmin></cropwavelengthmin>
+<cropwavelengthmax></cropwavelengthmax>
+<removepromptpulsewidth>50.0</removepromptpulsewidth>
+<maxchunksize></maxchunksize>
+<filterbadpulses>10.0</filterbadpulses>
+<backgroundsmoothparams>5,2</backgroundsmoothparams>
+<pushdatapositive>None</pushdatapositive>
+<stripvanadiumpeaks>1</stripvanadiumpeaks>
+<vanadiumfwhm></vanadiumfwhm>
+<vanadiumpeaktol></vanadiumpeaktol>
+<vanadiumsmoothparams></vanadiumsmoothparams>
+<vanadiumradius>0.3175</vanadiumradius>
+<preserveevents>1</preserveevents>
+<outputfileprefix>Tranditional</outputfileprefix>
+<scaledata>100.0</scaledata>
+<typeofcorrection>None</typeofcorrection>
+<sampleformula>Yb20-Ti20-O70</sampleformula>
+<measuredmassdensity>6.0</measuredmassdensity>
+<samplegeometry>{'Height': 2.9}</samplegeometry>
+<samplenumberdensity>0.08766424593805723</samplenumberdensity>
+<containershape>PAC08</containershape>
+<cachedir>/SNS/users/y8z/Temp/,,</cachedir>
+<cleancache>0</cleancache>
+</AdvancedSetup>
+<FilterSetup>
+  <titleofsplitters></titleofsplitters>
+  <filterbytimemin></filterbytimemin>
+  <filterbytimemax></filterbytimemax>
+  <filtertype>ByTime</filtertype>
+  <lengthoftimeinterval>3600.0</lengthoftimeinterval>
+  <numberoftimeinterval>None</numberoftimeinterval>
+  <unitoftime>Seconds</unitoftime>
+  <logname>SampleTemp</logname>
+  <minimumlogvalue>0.0</minimumlogvalue>
+  <maximumlogvalue>370.0</maximumlogvalue>
+  <logvalueinterval>5.0</logvalueinterval>
+  <filterlogvaluebychangingdirection>Both</filterlogvaluebychangingdirection>
+  <timetolerance>1000.0</timetolerance>
+  <logboundary>Centre</logboundary>
+  <logvaluetolerance>10.0</logvaluetolerance>
+  <logvaluetimesections>1</logvaluetimesections>
+</FilterSetup>
+</Reduction>
