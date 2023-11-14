@@ -1,0 +1,37 @@
+strict digraph G {
+    {node[color=green];"Input Params"} -> "Expand wksp's";
+    "Expand wksp's" -> "wksp in wksp's";
+    "wksp in wksp's" -> "Mask angle?";
+    "Mask angle?" -> "Integration" [label=" No"];
+    "Mask angle?" -> {node[color=blue];"Merge masks"} [label=" Yes"];
+    {node[color=blue];"Merge masks"} -> "Integration";
+    "Integration" -> "Filtered input?";
+    "Filtered input?" -> "Convert unit" [label=" No"];
+    "Filtered input?" -> {node[color=blue];"Merge duplicates"} [label=" Yes"];
+    {node[color=blue];"Merge duplicates"} -> "Convert unit";
+    "Convert unit" -> "Done for all wksp's?";
+    "Done for all wksp's?" -> "wksp in wksp's" [label=" No"];
+    "Done for all wksp's?" -> "Figure out axis limit" [label=" Yes"];
+    "Figure out axis limit" -> {node[color=blue;label="Filtered input?"];"fi_1"};
+    {node[color=blue;label="Filtered input?"];"fi_1"} -> "Created shared mask" [label=" Yes"];
+    "Created shared mask" -> "Resample calib & masking";
+    "Resample calib & masking" -> "Resample bkg & masking";
+    "Resample bkg & masking" -> {node[label="wksp in wksp's"];"ww_1"};
+    {node[color=blue;label="Filtered input?"];"fi_1"} -> {node[label="wksp in wksp's"];"ww_1"} [label=" No"];
+    {node[label="wksp in wksp's"];"ww_1"} -> "Resample data";
+    "Resample data" -> {node[color=blue;label="Filtered input?"];"fi_2"};
+    {node[color=blue;label="Filtered input?"];"fi_2"} -> {node[label="Resample calib & mask"];"rcm_1"} [label=" No"];
+    {node[label="Resample calib & mask"];"rcm_1"} -> "Divide data by calib";
+    {node[label="Filtered input?"];"fi_2"} -> "Divide data by calib" [label=" Yes"];
+    "Divide data by calib" -> "Scale data";
+    "Scale data" -> {node[color=blue;label="Filtered input?"];"fi_3"};
+    {node[label="color=blue;Filtered input?"];"fi_3"} -> {node[label="Resample bkg & mask"];"rbm_1"} [label=" No"];
+    {node[label="Resample bkg & mask"];"rbm_1"} -> "Subtract bkg";
+    {node[label="Filtered input?"];"fi_3"} -> "Subtract bkg" [label=" Yes"];
+    "Subtract bkg" -> {node[label="Done for all wksp's?"];"da_1"};
+    {node[label="Done for all wksp's?"];"da_1"} -> "Sum wksp's?" [label=" Yes"];
+    {node[label="Done for all wksp's?"];"da_1"} -> {node[label="wksp in wksp's"];"ww_1"};
+    "Sum wksp's?" -> "Sum wksp's" [label=" Yes"];
+    "Sum wksp's" -> "Done";
+    "Sum wksp's?" -> "Done" [label=" No"];
+}
