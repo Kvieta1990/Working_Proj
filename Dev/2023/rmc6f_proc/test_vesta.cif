@@ -1,0 +1,45 @@
+
+#======================================================================
+# CRYSTAL DATA
+#----------------------------------------------------------------------
+data_VESTA_phase_1
+
+_chemical_name_common                  'Fe2 O3'
+_cell_length_a                         5.430000
+_cell_length_b                         5.430000
+_cell_length_c                         5.430000
+_cell_angle_alpha                      55.279999
+_cell_angle_beta                       55.279999
+_cell_angle_gamma                      55.279999
+_cell_volume                           100.791618
+_space_group_name_H-M_alt              'R -3 c'
+_space_group_IT_number                 167
+
+loop_
+   _atom_site_label
+   _atom_site_occupancy
+   _atom_site_fract_x
+   _atom_site_fract_y
+   _atom_site_fract_z
+   _atom_site_adp_type
+   _atom_site_U_iso_or_equiv
+   _atom_site_type_symbol
+   Fe1        0.6000  0.1050(10)   0.1050(10)   0.1050(10)  Uiso  ? Fe
+   Fe1        0.3000  0.1050(10)   0.1050(10)   0.1050(10)  Uiso  ? Ge
+   O1         0.5000  0.292(7)    -0.292(7)     0.000000    Uiso  ? O
+
+loop_
+_space_group_symop_operation_xyz
+   'x, y, z'
+   '-x, -y, -z'
+   'z, x, y'
+   '-z, -x, -y'
+   'y, z, x'
+   '-y, -z, -x'
+   '-y+1/2, -x+1/2, -z+1/2'
+   'y+1/2, x+1/2, z+1/2'
+   '-x+1/2, -z+1/2, -y+1/2'
+   'x+1/2, z+1/2, y+1/2'
+   '-z+1/2, -y+1/2, -x+1/2'
+   'z+1/2, y+1/2, x+1/2'
+
