@@ -28,7 +28,12 @@ def sort_two_lists(list1, list2):
     return sorted_list1, sorted_list2
 
 
-def finalize_rmc6f(file_in, site_dict, alt_name, sep_atoms_in, out_name):
+def finalize_rmc6f(file_in,
+                   site_dict,
+                   alt_name,
+                   sep_atoms_in,
+                   out_name,
+                   unique_label_used):
     """Finalizing the RMC6F configuration by replacing those temporary
     elements to the true elements.
     """
@@ -45,6 +50,35 @@ def finalize_rmc6f(file_in, site_dict, alt_name, sep_atoms_in, out_name):
                 atom_types_line = i
             if "Number of types of atoms:" in line:
                 num_atoms_line = i
+            if "Atom types present:" in line:
+                atoms_order = line.strip().split(":")[1].split()
+                atoms_order = " ".join(atoms_order)
+    
+    subprocess.run([
+        data2config,
+        "-noannotate",
+        f"-order [{atoms_order}]",
+        "-supercell [1 1 1]",
+        "-cif",
+        file_in
+    ])
+
+    with open(file_in.split(".")[0] + ".cif", "r") as f:
+        lines = f.readlines()
+
+    for i, line in enumerate(lines):
+        if "loop_" in line:
+            atom_block = False
+            j = i + 1
+            while j < len(lines) and "loop_" not in lines[j]:
+                if "_atom" in lines[j]:
+                    atom_block = True
+                j += 1
+
+            if atom_block:
+                start_line = i
+                stop_line = j - 1
+                
     if sep_atoms_in:
         atom_types_str = "Atom types present:         "
         for key, item in site_dict.items():
@@ -63,7 +97,15 @@ def finalize_rmc6f(file_in, site_dict, alt_name, sep_atoms_in, out_name):
                 sed_cli.append(f'{atom_line_start},$s/{item_e[1]}/{true_name}/')
                 sed_cli.append(file_in)
                 _ = subprocess.check_call(sed_cli)
+                sed_cli = ["sed"]
+                sed_cli.append("-i")
+                sed_cli.append("-e")
+                sed_cli.append(f'{start_line},$s/{item_e[1]}/{true_name}/g')
+                sed_cli.append(file_in.split(".")[0] + ".cif")
+                _ = subprocess.check_call(sed_cli)
         os.rename(file_in, out_name)
+        os.rename(file_in.split(".")[0] + ".cif",
+                  out_name.split(".")[0] + ".cif")
     else:
         viz_ele = list()
         true_ele = list()
@@ -122,7 +164,17 @@ def finalize_rmc6f(file_in, site_dict, alt_name, sep_atoms_in, out_name):
                 sed_cli.append(f'{atom_line_start},$s/{item_e[1]}/{true_name}/')
                 sed_cli.append(file_to_proc)
                 _ = subprocess.check_call(sed_cli)
+                sed_cli = ["sed"]
+                sed_cli.append("-i")
+                sed_cli.append("-e")
+                sed_cli.append(f'{start_line},$s/{item_e[1]}/{true_name}/g')
+                sed_cli.append(file_in.split(".")[0] + ".cif")
+                _ = subprocess.check_call(sed_cli)
         os.rename(file_to_proc, out_name)
+        os.rename(file_in.split(".")[0] + ".cif",
+                  out_name.split(".")[0] + ".cif")
+
+    os.remove(file_in)
 
 
 def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
@@ -159,11 +211,17 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
 
     atom_lines = [line_tmp for line_tmp in atom_lines if len(line_tmp) > 0]
 
-    occ_index = atom_loop_labels.index("occupancy")
+    if "occupancy" in atom_loop_labels:
+        occ_index = atom_loop_labels.index("occupancy")
+    else:
+        occ_index = -1
     fracx_index = atom_loop_labels.index("fract_x")
     fracy_index = atom_loop_labels.index("fract_y")
     fracz_index = atom_loop_labels.index("fract_z")
-    symbol_index = atom_loop_labels.index("type_symbol")
+    if "type_symbol" in atom_loop_labels:
+        symbol_index = atom_loop_labels.index("type_symbol")
+    else:
+        symbol_index = atom_loop_labels.index("label")        
 
     keep_atom_lines = list()
     unique_label_all = list()
@@ -191,7 +249,10 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
 
         if site_key not in site_dict:
             keep_atom_lines.append(atom_line)
-            val_tmp = atom_line.split()[occ_index]
+            if occ_index == -1:
+                val_tmp = 1.
+            else:
+                val_tmp = atom_line.split()[occ_index]
             site_dict[site_key] = {
                 atom_line.split()[symbol_index]: [float(val_tmp), ele]
             }
@@ -199,7 +260,10 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
             unique_label_all.append(atom_line.split()[symbol_index])
         else:
             key_tmp = atom_line.split()[symbol_index]
-            val_tmp = atom_line.split()[occ_index]
+            if occ_index == -1:
+                val_tmp = 1.
+            else:
+                val_tmp = atom_line.split()[occ_index]
             site_dict[site_key][key_tmp] = [float(val_tmp), ele]
 
     for key, item in site_dict.items():
@@ -267,7 +331,7 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
         i += 1
 
     out_cif_file_tmp = input_file.split(".")[0] + "_tmp.cif"
-    out_rmc6f_file_tmp = input_file.split(".")[0] + "_tmp.rmc6f"
+    out_cif_file = input_file.split(".")[0] + "_tmp"
     with open(out_cif_file_tmp, "w") as f:
         for line in lines_tmp:
             f.write(line)
@@ -312,11 +376,26 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
 
     out_name_append = "_new" * run_times
     out_file_stage = f"{out_cif_file}{out_name_append}.rmc6f"
+    os.remove(out_cif_file_tmp)
+    for i in range(run_times):
+        out_name_append = "_new" * i
+        os.remove(f"{out_cif_file}{out_name_append}.rmc6f")
 
     finalize_rmc6f(
         out_file_stage,
         site_dict,
         label_reverse_map,
         sep_atoms,
-        out_file
+        out_file,
+        unique_label_used
     )
+
+
+if __name__ == "__main__":
+    input_file = "Si.cif"
+    super_dim = "1 1 1"
+    out_file = "test_vesta_out.rmc6f"
+    out_info_file = out_file.split(".")[0] + ".info"
+    sep_atoms = False
+
+    proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms)
