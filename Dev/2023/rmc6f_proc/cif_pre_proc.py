@@ -256,8 +256,10 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
             site_dict[site_key] = {
                 atom_line.split()[symbol_index]: [float(val_tmp), ele]
             }
-            unique_label_used.append(atom_line.split()[symbol_index])
-            unique_label_all.append(atom_line.split()[symbol_index])
+            # unique_label_used.append(atom_line.split()[symbol_index])
+            unique_label_used.append(ele)
+            # unique_label_all.append(atom_line.split()[symbol_index])
+            unique_label_all.append(ele)
         else:
             key_tmp = atom_line.split()[symbol_index]
             if occ_index == -1:
@@ -265,7 +267,7 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
             else:
                 val_tmp = atom_line.split()[occ_index]
             site_dict[site_key][key_tmp] = [float(val_tmp), ele]
-
+            
     for key, item in site_dict.items():
         occ_val = 0.
         for key_i in item:
@@ -356,22 +358,23 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
         for item in entry:
             start_pos += 1
             if item != unique_label_used[i]:
-                pos += 1
-                unique_label_used_final.insert(pos, entry[item][1])
-                data2config_cli = [data2config]
-                data2config_cli.append("-noannotate")
-                data2config_cli.append("-order")
-                atoms_all = " ".join(unique_label_used_final)
-                data2config_cli.append(f"[{atoms_all}]")
-                data2config_cli.append("-replace")
-                data2config_cli.append(f"[{unique_label_used[i]} {entry[item][0]} {entry[item][1]}]")
-                data2config_cli.append("-supercell")
-                data2config_cli.append("[1 1 1]")
-                data2config_cli.append("-rmc6f")
-                out_name_append = "_new" * run_times
-                data2config_cli.append(f"{out_cif_file}{out_name_append}.rmc6f")
-                _ = subprocess.check_call(data2config_cli)
-                run_times += 1
+                if entry[item][0] < 1. and unique_label_used[i] != entry[item][1]:
+                    pos += 1
+                    unique_label_used_final.insert(pos, entry[item][1])
+                    data2config_cli = [data2config]
+                    data2config_cli.append("-noannotate")
+                    data2config_cli.append("-order")
+                    atoms_all = " ".join(unique_label_used_final)
+                    data2config_cli.append(f"[{atoms_all}]")
+                    data2config_cli.append("-replace")
+                    data2config_cli.append(f"[{unique_label_used[i]} {entry[item][0]} {entry[item][1]}]")
+                    data2config_cli.append("-supercell")
+                    data2config_cli.append("[1 1 1]")
+                    data2config_cli.append("-rmc6f")
+                    out_name_append = "_new" * run_times
+                    data2config_cli.append(f"{out_cif_file}{out_name_append}.rmc6f")
+                    _ = subprocess.check_call(data2config_cli)
+                    run_times += 1
         i += 1
 
     out_name_append = "_new" * run_times
@@ -392,10 +395,13 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
 
 
 if __name__ == "__main__":
-    input_file = "Si.cif"
+    input_file = "dddd.cif"
     super_dim = "1 1 1"
     out_file = "test_vesta_out.rmc6f"
     out_info_file = out_file.split(".")[0] + ".info"
     sep_atoms = False
 
-    proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms)
+    try:
+        proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms)
+    except subprocess.CalledProcessError:
+        print("Error")
