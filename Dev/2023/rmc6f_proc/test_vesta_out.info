@@ -1,0 +1,45 @@
+{
+    "Site-1": {
+        "FracCoordinate": [
+            0.0,
+            0.0,
+            0.0
+        ],
+        "IndexInRMC6F": [
+            1
+        ]
+    },
+    "Site-2": {
+        "FracCoordinate": [
+            0.0,
+            0.5,
+            0.5
+        ],
+        "IndexInRMC6F": [
+            2,
+            3,
+            4
+        ]
+    },
+    "Site-3": {
+        "FracCoordinate": [
+            0.5,
+            0.5,
+            0.0
+        ],
+        "IndexInRMC6F": [
+            5
+        ]
+    },
+    "Site-4": {
+        "FracCoordinate": [
+            0.75,
+            0.25,
+            0.75
+        ],
+        "IndexInRMC6F": [
+            6,
+            7
+        ]
+    }
+}

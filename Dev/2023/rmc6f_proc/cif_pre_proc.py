@@ -50,6 +50,8 @@ def finalize_rmc6f(file_in,
                 atom_types_line = i
             if "Number of types of atoms:" in line:
                 num_atoms_line = i
+            if "Number of each atom type:" in line:
+                num_each_type_line = i
             if "Atom types present:" in line:
                 atoms_order = line.strip().split(":")[1].split()
                 atoms_order = " ".join(atoms_order)
@@ -62,7 +64,7 @@ def finalize_rmc6f(file_in,
         "-cif",
         file_in
     ])
-
+    
     with open(file_in.split(".")[0] + ".cif", "r") as f:
         lines = f.readlines()
 
@@ -137,15 +139,44 @@ def finalize_rmc6f(file_in,
         
         file_to_proc = file_in.split(".")[0] + "_new.rmc6f"
         atom_types_str = "Atom types present:         "
+        num_each_type_str = "Number of each atom type:   "
         included = list()
         for item in true_ele_sorted:
             if item not in included:
                 included.append(item)
                 atom_types_str += f" {item}"
+        with open(file_to_proc, "r") as f:
+            flines = f.readlines()
+        for line in flines:
+            type_present_found = False
+            each_type_num_found = False
+            if "Number of each atom type:" in line:
+                line_tmp_eat = line
+                each_type_num_found = True
+            if "Atom types present:" in line:
+                line_tmp_atp = line
+                type_present_found = True
+            if type_present_found and each_type_num_found:
+                break
+
+        at_num = dict()
+        for i, at in enumerate(line_tmp_atp.split(":")[1].split()):
+            at_num[alt_name[at]] = line_tmp_eat.split(":")[1].split()[i]
+        
+        for item in included:
+            num_each_type_str += (" " + at_num[item])
+        num_each_type_str += "\n"
+        
         sed_cli = ["sed"]
         sed_cli.append("-i")
         sed_cli.append("-e")
         sed_cli.append(f'{atom_types_line}c{atom_types_str}\n')
+        sed_cli.append(file_to_proc)
+        _ = subprocess.check_call(sed_cli)
+        sed_cli = ["sed"]
+        sed_cli.append("-i")
+        sed_cli.append("-e")
+        sed_cli.append(f'{num_each_type_line}c{num_each_type_str}\n')
         sed_cli.append(file_to_proc)
         _ = subprocess.check_call(sed_cli)
         num_atoms_str = f"Number of types of atoms:   {len(included)}"
@@ -174,7 +205,7 @@ def finalize_rmc6f(file_in,
         os.rename(file_in.split(".")[0] + ".cif",
                   out_name.split(".")[0] + ".cif")
 
-    os.remove(file_in)
+        os.remove(file_in)
 
 
 def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
@@ -285,8 +316,6 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
                         break
             site_dict[key]["Va"] = [1. - occ_val, ele]
             label_reverse_map[ele] = "Va"
-
-    print(site_dict)
             
     if sep_atoms:
         i = 1
@@ -350,8 +379,6 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
     data2config_cli.append("-rmc6f")
     data2config_cli.append(out_cif_file_tmp)
     _ = subprocess.check_call(data2config_cli)
-
-    print(data2config_cli)
     
     unique_label_used_final = [item for item in unique_label_used]
     start_pos = 0
@@ -377,7 +404,6 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
                     data2config_cli.append("-rmc6f")
                     out_name_append = "_new" * run_times
                     data2config_cli.append(f"{out_cif_file}{out_name_append}.rmc6f")
-                    print(data2config_cli)
                     _ = subprocess.check_call(data2config_cli)
                     run_times += 1
         i += 1
