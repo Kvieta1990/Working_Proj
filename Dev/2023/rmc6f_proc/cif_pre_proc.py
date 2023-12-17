@@ -286,6 +286,8 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
             site_dict[key]["Va"] = [1. - occ_val, ele]
             label_reverse_map[ele] = "Va"
 
+    print(site_dict)
+            
     if sep_atoms:
         i = 1
         existing_num = 0
@@ -349,6 +351,8 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
     data2config_cli.append(out_cif_file_tmp)
     _ = subprocess.check_call(data2config_cli)
 
+    print(data2config_cli)
+    
     unique_label_used_final = [item for item in unique_label_used]
     start_pos = 0
     i = 0
@@ -373,6 +377,7 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
                     data2config_cli.append("-rmc6f")
                     out_name_append = "_new" * run_times
                     data2config_cli.append(f"{out_cif_file}{out_name_append}.rmc6f")
+                    print(data2config_cli)
                     _ = subprocess.check_call(data2config_cli)
                     run_times += 1
         i += 1
@@ -395,8 +400,8 @@ def proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms):
 
 
 if __name__ == "__main__":
-    input_file = "dddd.cif"
-    super_dim = "1 1 1"
+    input_file = "test_3.cif"
+    super_dim = "5 5 5"
     out_file = "test_vesta_out.rmc6f"
     out_info_file = out_file.split(".")[0] + ".info"
     sep_atoms = False
