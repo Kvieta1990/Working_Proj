@@ -48,10 +48,13 @@ def finalize_rmc6f(file_in,
                 i += 1
             if "Atom types present:" in line:
                 atom_types_line = i
+                atoms_order_init = line.strip().split(":")[1].strip().split()
             if "Number of types of atoms:" in line:
                 num_atoms_line = i
             if "Number of each atom type:" in line:
                 num_each_type_line = i
+                each_type_num_init = line.strip().split(":")[1].strip().split()
+                each_type_num_init = [int(item) for item in each_type_num_init]
             if "Atom types present:" in line:
                 atoms_order = line.strip().split(":")[1].split()
                 atoms_order = " ".join(atoms_order)
@@ -82,29 +85,46 @@ def finalize_rmc6f(file_in,
                 stop_line = j - 1
                 
     if sep_atoms_in:
+        accum_num = atom_line_start
         atom_types_str = "Atom types present:         "
-        for key, item in site_dict.items():
-            for _, item_e in item.items():
-                true_name = alt_name[item_e[1]]
-                atom_types_str += f" {true_name}"
-                sed_cli = ["sed"]
-                sed_cli.append("-i")
-                sed_cli.append("-e")
-                sed_cli.append(f'{atom_types_line}c{atom_types_str}\n')
-                sed_cli.append(file_in)
-                _ = subprocess.check_call(sed_cli)
-                sed_cli = ["sed"]
-                sed_cli.append("-i")
-                sed_cli.append("-e")
-                sed_cli.append(f'{atom_line_start},$s/{item_e[1]}/{true_name}/')
-                sed_cli.append(file_in)
-                _ = subprocess.check_call(sed_cli)
-                sed_cli = ["sed"]
-                sed_cli.append("-i")
-                sed_cli.append("-e")
-                sed_cli.append(f'{start_line},$s/{item_e[1]}/{true_name}/g')
-                sed_cli.append(file_in.split(".")[0] + ".cif")
-                _ = subprocess.check_call(sed_cli)
+        num_each_type_str = "Number of each atom type:   "
+        for i, item in enumerate(atoms_order_init):
+            true_name = alt_name[item]
+            atom_types_str += f" {true_name}"
+            num_each_type_str += f" {each_type_num_init[i]}"
+
+            line_start = accum_num + 1
+            line_stop = line_start + each_type_num_init[i] - 1
+
+            accum_num = accum_num + each_type_num_init[i]
+            print(line_start, line_stop, accum_num)
+            
+            sed_cli = ["sed"]
+            sed_cli.append("-i")
+            sed_cli.append("-e")
+            sed_cli.append(f'{line_start},{line_stop}s/{item}/{true_name}/')
+            sed_cli.append(file_in)
+            _ = subprocess.check_call(sed_cli)
+            sed_cli = ["sed"]
+            sed_cli.append("-i")
+            sed_cli.append("-e")
+            sed_cli.append(f'{start_line},$s/{item}/{true_name}/g')
+            sed_cli.append(file_in.split(".")[0] + ".cif")
+            _ = subprocess.check_call(sed_cli)
+                
+        sed_cli = ["sed"]
+        sed_cli.append("-i")
+        sed_cli.append("-e")
+        sed_cli.append(f'{atom_types_line}c{atom_types_str}\n')
+        sed_cli.append(file_in)
+        _ = subprocess.check_call(sed_cli)
+        sed_cli = ["sed"]
+        sed_cli.append("-i")
+        sed_cli.append("-e")
+        sed_cli.append(f'{num_each_type_line}c{num_each_type_str}\n')
+        sed_cli.append(file_in)
+        _ = subprocess.check_call(sed_cli)
+
         os.rename(file_in, out_name)
         os.rename(file_in.split(".")[0] + ".cif",
                   out_name.split(".")[0] + ".cif")
@@ -430,7 +450,7 @@ if __name__ == "__main__":
     super_dim = "5 5 5"
     out_file = "test_vesta_out.rmc6f"
     out_info_file = out_file.split(".")[0] + ".info"
-    sep_atoms = False
+    sep_atoms = True
 
     try:
         proc_super(input_file, super_dim, out_file, out_info_file, sep_atoms)
