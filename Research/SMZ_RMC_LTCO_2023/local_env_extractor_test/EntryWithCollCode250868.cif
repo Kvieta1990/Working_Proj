@@ -1,0 +1,99 @@
+
+#(C) 2023 by FIZ Karlsruhe - Leibniz Institute for Information Infrastructure.  All rights reserved.
+data_250868-ICSD
+_database_code_ICSD 250868
+_audit_creation_date 2015-02-01
+_chemical_name_common 'Lithium gallium bis(selenate(IV))'
+_chemical_formula_structural 'Li Ga (Se O3)2'
+_chemical_formula_sum 'Ga1 Li1 O6 Se2'
+_chemical_name_structure_type LiFe(SeO3)2
+_exptl_crystal_density_diffrn 4.02
+_diffrn_ambient_temperature 173.
+_citation_title
+
+;
+New alkali-metal gallium selenites, AGa(SeO3)2 (A = Li, Na, K, and Cs). Effect
+of cation size on the framework structures and macroscopic centricities
+;
+loop_
+_citation_id
+_citation_journal_full
+_citation_year
+_citation_journal_volume
+_citation_page_first
+_citation_page_last
+_citation_journal_id_ASTM
+primary 'Inorganic Chemistry' 2013 52 5176 5184 INOCAJ
+loop_
+_citation_author_citation_id
+_citation_author_name
+primary 'Lee, Dong Woo'
+primary 'Ok, Kang Min'
+_cell_length_a 10.5402(15)
+_cell_length_b 10.5402(15)
+_cell_length_c 9.828(2)
+_cell_angle_alpha 90
+_cell_angle_beta 90
+_cell_angle_gamma 90
+_cell_volume 1091.84
+_cell_formula_units_Z 8
+_space_group_name_H-M_alt 'I -4 2 d'
+_space_group_IT_number 122
+loop_
+_space_group_symop_id
+_space_group_symop_operation_xyz
+1 '-y, -x+1/2, z+1/4'
+2 'y, -x, -z'
+3 'y, x+1/2, z+1/4'
+4 '-y, x, -z'
+5 'x, -y+1/2, -z+1/4'
+6 '-x, -y, z'
+7 '-x, y+1/2, -z+1/4'
+8 'x, y, z'
+9 '-y+1/2, -x, z+3/4'
+10 'y+1/2, -x+1/2, -z+1/2'
+11 'y+1/2, x, z+3/4'
+12 '-y+1/2, x+1/2, -z+1/2'
+13 'x+1/2, -y, -z+3/4'
+14 '-x+1/2, -y+1/2, z+1/2'
+15 '-x+1/2, y, -z+3/4'
+16 'x+1/2, y+1/2, z+1/2'
+loop_
+_atom_type_symbol
+_atom_type_oxidation_number
+Se 4
+Ga 3
+O -2
+Li 1
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_symmetry_multiplicity
+_atom_site_Wyckoff_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_occupancy
+Se Se 16 e 0.44653(4) 0.22561(4) -0.15954(4) 0.00737(14) 1
+Ga Ga 8 d 0.28795(6) 0.25 0.125 0.00634(17) 1
+O O 16 e 0.4266(3) 0.2941(3) -0.0041(3) 0.0109(6) 1
+O O 16 e 0.3417(3) 0.3165(3) -0.2489(3) 0.0102(6) 1
+O O 16 e 0.5824(3) 0.2949(3) -0.2099(3) 0.0120(6) 1
+Li Li 8 d 0.5640(13) 0.25 0.125 0.026(3) 1
+loop_
+_atom_site_aniso_label
+_atom_site_aniso_type_symbol
+_atom_site_aniso_U_11
+_atom_site_aniso_U_22
+_atom_site_aniso_U_33
+_atom_site_aniso_U_12
+_atom_site_aniso_U_13
+_atom_site_aniso_U_23
+Se1 Se 0.0069(2) 0.0087(2) 0.00654(19) 0.00017(16) 0.00014(16) -0.00026(14)
+Ga1 Ga 0.0069(3) 0.0067(3) 0.0054(3) 0 0 0.0005(2)
+O1 O 0.0102(15) 0.0133(16) 0.0090(13) -0.0022(13) 0.0033(11) -0.0012(11)
+O2 O 0.0096(15) 0.0107(16) 0.0104(14) 0.0007(12) -0.0034(11) -0.0016(12)
+O3 O 0.0063(14) 0.0201(17) 0.0096(13) -0.0025(14) -0.0013(11) 0.0029(12)
+Li1 Li 0.018(6) 0.043(8) 0.017(6) 0 0 -0.011(5)
+#End of TTdata_250868-ICSD
