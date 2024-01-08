@@ -1,0 +1,28 @@
+Structure file path : lcto_init.cif
+List of environment information
+Species : Li
+Envtype : both
+Site index 0: {'frac_coords': array([0.850754, 0.409793, 0.175108]), 'type': 'tet', 'csm': 10.580731427015674, 'volume': 6.9301466285602356}
+Site index 1: {'frac_coords': array([0.648034, 0.290298, 0.878939]), 'type': 'tet', 'csm': 5.635039966114533, 'volume': 9.169981242020295}
+Site index 2: {'frac_coords': array([0.159218, 0.663267, 0.871579]), 'type': 'tribip', 'csm': 4.882172030887051, 'volume': 17.264869709260438}
+Site index 3: {'frac_coords': array([0.348017, 0.573968, 0.129492]), 'type': 'tet', 'csm': 8.454977154167754, 'volume': 8.043183403861441}
+Site index 4: {'frac_coords': array([0.331848, 0.882325, 0.632397]), 'type': 'tet', 'csm': 3.466445881141085, 'volume': 7.697976943178773}
+Site index 5: {'frac_coords': array([0.155621, 0.948067, 0.375353]), 'type': 'tet', 'csm': 5.306264139303963, 'volume': 6.265664055336674}
+Site index 6: {'frac_coords': array([0.662529, 0.930324, 0.363301]), 'type': 'tribip', 'csm': 12.798799012674783, 'volume': 16.685992377120602}
+Site index 7: {'frac_coords': array([0.840385, 0.105628, 0.649156]), 'type': 'tet', 'csm': 3.2633196287745942, 'volume': 8.461111409094542}
+Site index 8: {'frac_coords': array([0.69458 , 0.30202 , 0.236321]), 'type': 'tet', 'csm': 16.277390824794008, 'volume': 4.271296976328809}
+Site index 9: {'frac_coords': array([0.805712, 0.355725, 0.769477]), 'type': 'tribip', 'csm': 8.219077643785736, 'volume': 9.402025831624819}
+Site index 10: {'frac_coords': array([0.268861, 0.630164, 0.702187]), 'type': 'tet', 'csm': 8.165995638630347, 'volume': 5.365656268017792}
+Site index 11: {'frac_coords': array([0.240322, 0.57434 , 0.226188]), 'type': 'tribip', 'csm': 14.4409391499101, 'volume': 8.322818663862924}
+Site index 12: {'frac_coords': array([0.196968, 0.869128, 0.732643]), 'type': 'tribip', 'csm': 7.071012632224193, 'volume': 10.731845872709384}
+Site index 13: {'frac_coords': array([0.322659, 0.800588, 0.264923]), 'type': 'tribip', 'csm': 12.356555693801658, 'volume': 9.148989446395621}
+Site index 14: {'frac_coords': array([0.8081  , 0.132203, 0.261085]), 'type': 'tet', 'csm': 8.207763103112242, 'volume': 3.6842269081545624}
+Site index 15: {'frac_coords': array([0.694322, 0.157787, 0.73395 ]), 'type': 'tribip', 'csm': 7.811768759440355, 'volume': 12.780775907413071}
+Site index 16: {'frac_coords': array([0.496795, 0.358227, 0.205172]), 'type': 'tet', 'csm': 1.686947602934071, 'volume': 6.091788724172973}
+Site index 17: {'frac_coords': array([0.009036, 0.373014, 0.789005]), 'type': 'tribip', 'csm': 5.570868767491385, 'volume': 9.717188695637853}
+Site index 18: {'frac_coords': array([0.491755, 0.614013, 0.791361]), 'type': 'tribip', 'csm': 4.55010762702182, 'volume': 10.449224943955851}
+Site index 19: {'frac_coords': array([0.019626, 0.636828, 0.211797]), 'type': 'tribip', 'csm': 4.166410667987215, 'volume': 10.405129564980431}
+Site index 20: {'frac_coords': array([0.993206, 0.874916, 0.70148 ]), 'type': 'tribip', 'csm': 3.6635099887863904, 'volume': 11.09216491228416}
+Site index 21: {'frac_coords': array([0.488651, 0.883114, 0.27924 ]), 'type': 'tribip', 'csm': 4.09392031546853, 'volume': 14.918252151352904}
+Site index 22: {'frac_coords': array([2.40000e-04, 1.44589e-01, 2.99071e-01]), 'type': 'tribip', 'csm': 4.905337319572125, 'volume': 12.468156445498902}
+Site index 23: {'frac_coords': array([0.537782, 0.183387, 0.73553 ]), 'type': 'tribip', 'csm': 6.835648732612273, 'volume': 11.825925276925823}
