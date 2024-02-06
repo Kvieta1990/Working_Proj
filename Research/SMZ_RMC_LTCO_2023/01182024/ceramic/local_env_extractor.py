@@ -105,7 +105,7 @@ def site_env(coord, struct, sp="Li", envtype='both'):
 
     tet_oct_competition = []
     if envtype == 'both' or envtype == 'tet':
-        for dist in np.linspace(1, 4, 601):
+        for dist in np.linspace(1.0, 4.0, 601):
             neigh = with_li.get_neighbors(with_li.sites[0], dist)
             if len(neigh) < 4:
                 continue
