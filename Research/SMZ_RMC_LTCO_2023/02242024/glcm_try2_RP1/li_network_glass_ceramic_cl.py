@@ -20,7 +20,7 @@ import copy
 # + tags=[]
 rmc6f_file_name = "glass_ceramic.rmc6f"
 lili_ul = 5.0
-licl_ul = 2.06
+licl_ul = 2.1
 
 input_rmc_config = rmc6f_stuff.RMC6FReader(rmc6f_file_name)
 
