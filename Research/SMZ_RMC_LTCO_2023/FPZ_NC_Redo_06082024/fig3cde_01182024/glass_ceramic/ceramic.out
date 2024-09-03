@@ -1,4 +1,0 @@
-/home/cloud/.local/lib/python3.10/site-packages/pymatgen/io/cif.py:1186: UserWarning: The default value of primitive was changed from True to False in https://github.com/materialsproject/pymatgen/pull/3419. CifParser now returns the cell in the CIF file as is. If you want the primitive cell, please set primitive=True explicitly.
-  warnings.warn(
-/home/cloud/.local/lib/python3.10/site-packages/pymatgen/io/cif.py:1219: UserWarning: Issues encountered while parsing CIF: 25 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
